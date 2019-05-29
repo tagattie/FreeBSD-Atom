@@ -1,0 +1,22 @@
+--- script/package.json.orig	2019-05-22 03:44:37 UTC
++++ script/package.json
+@@ -10,10 +10,10 @@
+     "coffeelint": "1.15.7",
+     "colors": "1.1.2",
+     "donna": "1.0.16",
+-    "electron-chromedriver": "^4.0.0",
+     "electron-link": "0.4.0",
+     "electron-mksnapshot": "^4.2.0",
+     "electron-packager": "12.2.0",
++    "electron-rebuild": "^1.8.4",
+     "electron-winstaller": "2.6.4",
+     "eslint": "^5.16.0",
+     "eslint-config-prettier": "^4.2.0",
+@@ -31,7 +31,6 @@
+     "legal-eagle": "0.14.0",
+     "lodash.startcase": "4.4.0",
+     "lodash.template": "4.4.0",
+-    "minidump": "0.9.0",
+     "mkdirp": "0.5.1",
+     "normalize-package-data": "2.3.5",
+     "npm": "6.2.0",

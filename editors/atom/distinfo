@@ -1,0 +1,17 @@
+TIMESTAMP = 1558681731
+SHA256 (atom/1.39.0.g20190522/node-v10.11.0.tar.gz) = f721552552fb11ef99aba290fc6e696a8647adc98d643db6651e81ed07c4037e
+SIZE (atom/1.39.0.g20190522/node-v10.11.0.tar.gz) = 36198226
+SHA256 (atom/1.39.0.g20190522/SHASUMS256.txt) = c75bd653e1adbe562935561dccef503b01eebaf6935d9b11e819d41705783cd8
+SIZE (atom/1.39.0.g20190522/SHASUMS256.txt) = 612
+SHA256 (atom/1.39.0.g20190522/chromedriver-v4.2.0-freebsd11-x64.zip) = 5a3ff69de8b678ed58bf30ed04d777d7f78682631d23117e53c20cccfa2af735
+SIZE (atom/1.39.0.g20190522/chromedriver-v4.2.0-freebsd11-x64.zip) = 9120632
+SHA256 (atom/1.39.0.g20190522/chromedriver-v4.2.0-freebsd12-x64.zip) = 7544f81e4f47d00bf61da100f4307441ddffc42f0130140be5661d6013ad1941
+SIZE (atom/1.39.0.g20190522/chromedriver-v4.2.0-freebsd12-x64.zip) = 9141507
+SHA256 (atom/1.39.0.g20190522/electron-v4.2.0-freebsd11-x64.zip) = e8fab150fcb6927160b9e0158dedddfc4ba0e0801e703851d6f5d53e8a3324fa
+SIZE (atom/1.39.0.g20190522/electron-v4.2.0-freebsd11-x64.zip) = 63016380
+SHA256 (atom/1.39.0.g20190522/electron-v4.2.0-freebsd12-x64.zip) = 2e034a40314f81a8d82b5088e6c0c2cbbf8d84768b957988b2bac745db52ee39
+SIZE (atom/1.39.0.g20190522/electron-v4.2.0-freebsd12-x64.zip) = 63110000
+SHA256 (atom/1.39.0.g20190522/mksnapshot-v4.2.0-freebsd11-x64.zip) = 0a8d663333529faad9f15e7577d7f5ea356eaebf243bd1077841809787095d5a
+SIZE (atom/1.39.0.g20190522/mksnapshot-v4.2.0-freebsd11-x64.zip) = 37246258
+SHA256 (atom/1.39.0.g20190522/mksnapshot-v4.2.0-freebsd12-x64.zip) = cee8342cd4698bc97ba5719bf5bdc07f6df0bfdf215bce81c68e990f7f6dab1e
+SIZE (atom/1.39.0.g20190522/mksnapshot-v4.2.0-freebsd12-x64.zip) = 37293544
