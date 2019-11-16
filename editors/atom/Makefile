@@ -16,6 +16,7 @@ EXTRACT_DEPENDS=	zip:archivers/zip \
 		git:devel/git \
 		electron:devel/electron4
 BUILD_DEPENDS=	${UNZIP_CMD}:archivers/unzip \
+		rg:textproc/ripgrep \
 		node:www/node10 \
 		npm:www/npm-node10
 LIB_DEPENDS=	libatk-bridge-2.0.so:accessibility/at-spi2-atk \
