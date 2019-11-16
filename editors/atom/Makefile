@@ -105,19 +105,23 @@ post-patch:
 	${REINPLACE_CMD} -e 's|/usr/share|${PREFIX}/share|g' \
 		${WRKSRC}/script/lib/install-application.js
 
-pre-build:
+do-build: build-apm-node bootstrap-1 bootstrap-2 bootstrap-3 \
+		clean-backup build-atom
+
+build-apm-node:
 	cd ${WRKDIR}/node-v${APM_NODE_VER} && \
 		${SETENV} ${CONFIGURE_ENV} CC=${CC} CXX=${CXX} ./configure && \
 		${SETENV} ${MAKE_ENV} ${BSDMAKE} -j ${MAKE_JOBS_NUMBER}
-
-do-build:
-	### bootstrap - part 1
+bootstrap-1:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ./script/bootstrap-part1
 	${PATCH} -p0 -d ${WRKSRC} < ${FILESDIR}/post-bootstrap-part1.diff
 	${MKDIR} ${WRKSRC}/script/node_modules/electron-chromedriver/bin
-	${UNZIP_CMD} -qo ${WRKDIR}/.cache/electron/chromedriver-v${ELECTRON_CACHE_VER}-freebsd-x64.zip \
-		-d ${WRKSRC}/script/node_modules/electron-chromedriver/bin
-	### bootstrap - part 2
+	${CP} ${LOCALBASE}/share/electron/chromedriver \
+		${WRKSRC}/script/node_modules/electron-chromedriver/bin
+	${MKDIR} ${WRKSRC}/script/node_modules/electron-mksnapshot/bin
+	${CP} ${LOCALBASE}/share/electron/mksnapshot \
+		${WRKSRC}/script/node_modules/electron-mksnapshot/bin
+bootstrap-2:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ./script/bootstrap-part2 || ${TRUE}	# script fails at the 1st try
 	${PATCH} -p0 -d ${WRKSRC} < ${FILESDIR}/post-bootstrap-part2.diff
 	${CP} ${WRKDIR}/node-v${APM_NODE_VER}/out/Release/node \
@@ -126,15 +130,15 @@ do-build:
 	cd ${WRKSRC}/apm/node_modules/atom-package-manager && \
 		${SETENV} ${MAKE_ENV} ./bin/npm rebuild && \
 		${SETENV} ${MAKE_ENV} ./bin/npm dedupe
-	### bootstrap - part 3
+bootstrap-3:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ./script/bootstrap-part3 --ci || ${TRUE}	# script fails
 	${PATCH} -p0 -d ${WRKSRC} < ${FILESDIR}/post-bootstrap-part3.diff
 	${MKDIR} ${WRKSRC}/node_modules/vscode-ripgrep/bin
 	${CP} ${LOCALBASE}/bin/rg ${WRKSRC}/node_modules/vscode-ripgrep/bin
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ./script/node_modules/.bin/electron-rebuild -v ${ELECTRON_TARGET_VER}
-	### clean up backup files
+clean-backup:
 	cd ${WRKSRC} && ${FIND} . \( -name '*.bak' -o -name '*.orig' -o -name '*~' \) -print -delete
-	### build
+build-atom:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ./script/build --no-bootstrap
 
 do-install:
