@@ -1,6 +1,6 @@
---- script/test.orig	2019-05-22 03:44:37 UTC
+--- script/test.orig	2019-10-21 17:33:40 UTC
 +++ script/test
-@@ -50,7 +50,7 @@ if (process.platform === 'darwin') {
+@@ -51,7 +51,7 @@ if (process.platform === 'darwin') {
    const executablePaths = glob.sync(path.join(CONFIG.buildOutputPath, '*.app'))
    assert(executablePaths.length === 1, `More than one application to run tests against was found. ${executablePaths.join(',')}`)
    executablePath = path.join(executablePaths[0], 'Contents', 'MacOS', path.basename(executablePaths[0], '.app'))
@@ -9,7 +9,7 @@
    const executablePaths = glob.sync(path.join(CONFIG.buildOutputPath, 'atom-*', 'atom'))
    assert(executablePaths.length === 1, `More than one application to run tests against was found. ${executablePaths.join(',')}`)
    executablePath = executablePaths[0]
-@@ -207,6 +207,7 @@ function testSuitesForPlatform (platform) {
+@@ -216,6 +216,7 @@ function testSuitesForPlatform (platform) {
        suites = (process.arch === 'x64') ? [runCoreMainProcessTests, runCoreRenderProcessTests] : [runCoreMainProcessTests]
        break
      case 'linux':

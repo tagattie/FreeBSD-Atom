@@ -1,5 +1,5 @@
 --- node_modules/@atom/nsfw/binding.gyp.orig	1985-10-26 17:15:00.000000000 +0900
-+++ node_modules/@atom/nsfw/binding.gyp	2019-05-29 14:14:03.319787000 +0900
++++ node_modules/@atom/nsfw/binding.gyp	2019-11-16 20:16:35.275469000 +0900
 @@ -97,7 +97,10 @@
              ["OS=='freebsd'", {
                  "include_dirs": [
@@ -13,7 +13,7 @@
          ]
      }]
 --- node_modules/@atom/watcher/binding.gyp.orig	1985-10-26 17:15:00.000000000 +0900
-+++ node_modules/@atom/watcher/binding.gyp	2019-05-29 14:14:03.318423000 +0900
++++ node_modules/@atom/watcher/binding.gyp	2019-11-16 20:16:35.276854000 +0900
 @@ -66,7 +66,7 @@
                      "src/worker/windows/windows_worker_platform.cpp"
                  ]
@@ -23,8 +23,8 @@
                  "defines": [
                      'PLATFORM_LINUX'
                  ],
---- node_modules/atom-keymap/lib/helpers.js.orig	2019-05-29 14:31:15.133741000 +0900
-+++ node_modules/atom-keymap/lib/helpers.js	2019-05-29 14:33:06.445540000 +0900
+--- node_modules/atom-keymap/lib/helpers.js.orig	1985-10-26 17:15:00.000000000 +0900
++++ node_modules/atom-keymap/lib/helpers.js	2019-11-16 20:16:35.278817000 +0900
 @@ -218,7 +218,7 @@
      if (KEY_NAMES_BY_KEYBOARD_EVENT_CODE[code] != null) {
        key = KEY_NAMES_BY_KEYBOARD_EVENT_CODE[code];
@@ -43,8 +43,8 @@
            nonAltModifiedKey = nonAltModifiedKeyForKeyboardEvent(event);
            if (nonAltModifiedKey && (ctrlKey || altKey || metaKey)) {
              key = nonAltModifiedKey;
---- node_modules/dugite/build/lib/git-environment.js.orig	2019-05-29 14:33:49.936754000 +0900
-+++ node_modules/dugite/build/lib/git-environment.js	2019-05-29 14:42:29.690762000 +0900
+--- node_modules/dugite/build/lib/git-environment.js.orig	1985-10-26 17:15:00.000000000 +0900
++++ node_modules/dugite/build/lib/git-environment.js	2019-11-16 20:16:35.280353000 +0900
 @@ -4,6 +4,7 @@
  function resolveEmbeddedGitDir() {
      if (process.platform === 'darwin' ||
@@ -87,7 +87,7 @@
 \ No newline at end of file
 +//# sourceMappingURL=git-environment.js.map
 --- node_modules/fs-admin/binding.gyp.orig	1985-10-26 17:15:00.000000000 +0900
-+++ node_modules/fs-admin/binding.gyp	2019-05-29 14:14:03.315578000 +0900
++++ node_modules/fs-admin/binding.gyp	2019-11-16 20:16:35.281750000 +0900
 @@ -37,7 +37,7 @@
              '$(SDKROOT)/System/Library/Frameworks/Security.framework',
            ],
@@ -97,8 +97,8 @@
            'sources': [
              'src/fs-admin-linux.cc',
            ],
---- node_modules/github/lib/git-shell-out-strategy.js.orig	2019-05-08 21:50:13.000000000 +0900
-+++ node_modules/github/lib/git-shell-out-strategy.js	2019-05-29 14:14:03.326974000 +0900
+--- node_modules/github/lib/git-shell-out-strategy.js.orig	2019-08-21 22:55:10.000000000 +0900
++++ node_modules/github/lib/git-shell-out-strategy.js	2019-11-16 20:16:35.284346000 +0900
 @@ -189,7 +189,7 @@
          env.SSH_ASKPASS = normalizeGitHelperPath(gitTempDir.getAskPassSh());
          env.GIT_ASKPASS = normalizeGitHelperPath(gitTempDir.getAskPassSh());
@@ -108,8 +108,8 @@
            env.GIT_SSH_COMMAND = gitTempDir.getSshWrapperSh();
          } else {
            env.GIT_SSH_COMMAND = process.env.GIT_SSH_COMMAND;
---- node_modules/github/lib/models/workdir-context.js.orig	2019-05-29 14:45:06.165658000 +0900
-+++ node_modules/github/lib/models/workdir-context.js	2019-05-29 14:45:58.134933000 +0900
+--- node_modules/github/lib/models/workdir-context.js.orig	2019-08-21 22:55:10.000000000 +0900
++++ node_modules/github/lib/models/workdir-context.js	2019-11-16 20:16:35.285919000 +0900
 @@ -116,7 +116,7 @@
    }
  
@@ -119,9 +119,9 @@
    }
  
    // Event subscriptions
---- node_modules/github/package.json.orig	2019-05-29 14:11:53.202880000 +0900
-+++ node_modules/github/package.json	2019-05-29 14:14:03.328682000 +0900
-@@ -86,7 +86,6 @@
+--- node_modules/github/package.json.orig	2019-11-16 20:15:12.771095000 +0900
++++ node_modules/github/package.json	2019-11-16 20:16:35.287472000 +0900
+@@ -88,7 +88,6 @@
      "dedent-js": "1.0.1",
      "electron-devtools-installer": "2.2.4",
      "electron-link": "0.3.2",
@@ -129,16 +129,9 @@
      "enzyme": "3.9.0",
      "enzyme-adapter-react-16": "1.7.1",
      "eslint": "5.16.0",
-@@ -218,4 +217,4 @@
-   "_resolved": "",
-   "_integrity": "sha512-XlPinyfFjpsCEbEoZMspiJtrjwAVD/27kJJZWqRZhGxieAEO4wH6X/F5p5BoYbq3LfwMASIWEZXJ0pP5v1O/0Q==",
-   "_from": "github@https://www.atom.io/api/packages/github/versions/0.29.0/tarball"
--}
-\ No newline at end of file
-+}
---- node_modules/nslog/binding.gyp.orig	2015-01-28 09:20:01.000000000 +0900
-+++ node_modules/nslog/binding.gyp	2019-05-29 14:14:03.320961000 +0900
-@@ -32,7 +32,7 @@
+--- node_modules/nslog/binding.gyp.orig	1985-10-26 17:15:00.000000000 +0900
++++ node_modules/nslog/binding.gyp	2019-11-16 20:16:35.289094000 +0900
+@@ -33,7 +33,7 @@
              'src/nslog_win.cc',
            ],
          }],
@@ -147,8 +140,8 @@
            'sources': [
              'src/nslog_linux.cc',
            ],
---- node_modules/os-homedir/index.js.orig	2019-05-29 14:49:45.187931000 +0900
-+++ node_modules/os-homedir/index.js	2019-05-29 14:50:13.824787000 +0900
+--- node_modules/os-homedir/index.js.orig	2015-07-21 08:25:14.000000000 +0900
++++ node_modules/os-homedir/index.js	2019-11-16 20:16:35.290249000 +0900
 @@ -14,7 +14,7 @@
  		return home || (user ? '/Users/' + user : null);
  	}
@@ -159,7 +152,7 @@
  	}
  
 --- node_modules/scrollbar-style/binding.gyp.orig	2015-01-28 10:01:40.000000000 +0900
-+++ node_modules/scrollbar-style/binding.gyp	2019-05-29 14:14:03.316927000 +0900
++++ node_modules/scrollbar-style/binding.gyp	2019-11-16 20:16:35.291405000 +0900
 @@ -33,11 +33,11 @@
              4996,  # function was declared deprecated
            ],
@@ -175,7 +168,7 @@
      }
    ]
 --- node_modules/spellchecker/binding.gyp.orig	1985-10-26 17:15:00.000000000 +0900
-+++ node_modules/spellchecker/binding.gyp	2019-05-29 14:14:03.322377000 +0900
++++ node_modules/spellchecker/binding.gyp	2019-11-16 20:16:35.292792000 +0900
 @@ -4,7 +4,7 @@
        ['OS=="mac"', {
          'spellchecker_use_hunspell%': 'true',
@@ -195,7 +188,7 @@
               'src/spellchecker_linux.cc',
               'src/transcoder_posix.cc',
 --- node_modules/spellchecker/vendor/hunspell/src/hunspell/affentry.hxx.orig	1985-10-26 17:15:00.000000000 +0900
-+++ node_modules/spellchecker/vendor/hunspell/src/hunspell/affentry.hxx	2019-05-29 14:14:03.323947000 +0900
++++ node_modules/spellchecker/vendor/hunspell/src/hunspell/affentry.hxx	2019-11-16 20:16:35.294368000 +0900
 @@ -27,7 +27,7 @@
    struct hentry *      checkword(const char * word, int len, char in_compound, 
                              const FLAG needflag = FLAG_NULL);
@@ -214,8 +207,8 @@
  
    char *      check_twosfx_morph(const char * word, int len, int optflags,
                   PfxEntry* ppfx, const FLAG needflag = FLAG_NULL);
---- node_modules/tabs/lib/tab-bar-view.coffee.orig	2019-05-29 14:46:31.190440000 +0900
-+++ node_modules/tabs/lib/tab-bar-view.coffee	2019-05-29 14:47:50.432768000 +0900
+--- node_modules/tabs/lib/tab-bar-view.coffee.orig	2019-01-24 09:42:27.000000000 +0900
++++ node_modules/tabs/lib/tab-bar-view.coffee	2019-11-16 20:16:35.296303000 +0900
 @@ -462,7 +462,7 @@
  
    updateTabScrolling: (value) ->
@@ -225,8 +218,8 @@
      else
        @tabScrolling = value
  
---- node_modules/tree-view/lib/root-drag-and-drop.coffee.orig	2019-05-29 14:43:21.071931000 +0900
-+++ node_modules/tree-view/lib/root-drag-and-drop.coffee	2019-05-29 14:43:52.376623000 +0900
+--- node_modules/tree-view/lib/root-drag-and-drop.coffee.orig	2019-05-15 06:29:00.000000000 +0900
++++ node_modules/tree-view/lib/root-drag-and-drop.coffee	2019-11-16 20:16:35.297889000 +0900
 @@ -42,7 +42,7 @@
  
      e.dataTransfer.setData 'text/plain', directory.path
@@ -236,8 +229,8 @@
        pathUri = "file://#{directory.path}" unless @uriHasProtocol(directory.path)
        e.dataTransfer.setData 'text/uri-list', pathUri
  
---- node_modules/welcome/lib/guide-view.js.orig	2019-05-29 14:48:34.908077000 +0900
-+++ node_modules/welcome/lib/guide-view.js	2019-05-29 14:49:09.572141000 +0900
+--- node_modules/welcome/lib/guide-view.js.orig	2019-03-25 22:58:31.000000000 +0900
++++ node_modules/welcome/lib/guide-view.js	2019-11-16 20:16:35.299628000 +0900
 @@ -281,7 +281,7 @@
    getApplicationMenuName () {
      if (process.platform === 'darwin') {

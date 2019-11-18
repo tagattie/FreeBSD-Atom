@@ -1,7 +1,8 @@
 # $FreeBSD$
 
 PORTNAME=	atom
-DISTVERSION=	1.39.0.g20190522
+DISTVERSIONPREFIX=	v
+DISTVERSION=	1.41.0
 CATEGORIES=	editors
 MASTER_SITES=	https://nodejs.org/dist/v${APM_NODE_VER}/:node
 DISTFILES=	node-v${APM_NODE_VER}${EXTRACT_SUFX}:node
@@ -13,7 +14,6 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 EXTRACT_DEPENDS=	zip:archivers/zip \
-		git:devel/git \
 		electron:devel/electron4
 BUILD_DEPENDS=	${UNZIP_CMD}:archivers/unzip \
 		rg:textproc/ripgrep \
@@ -42,12 +42,10 @@ TEST_DEPENDS=	bash:shells/bash
 USES=		desktop-file-utils gnome jpeg localbase:ldflags python:2.7 \
 		shebangfix
 
-# USE_GITHUB=	yes
-GH_TAGNAME=	00362ccd0adbc211c38627f0055e3ff5001f5db9
-WRKSRC=		${WRKDIR}/${PORTNAME}
+USE_GITHUB=	yes
 
-APM_NODE_VER=	10.11.0
-ELECTRON_CACHE_VER=	4.2.0	# version specified in ${WRKSRC}/package.json
+APM_NODE_VER=	10.2.1
+ELECTRON_CACHE_VER=	4.2.7	# version specified in ${WRKSRC}/package.json
 ELECTRON_TARGET_VER=	4.2.12	# version of port "devel/electron4"
 
 BINARY_ALIAS=	python=${PYTHON_CMD}
@@ -59,14 +57,7 @@ USE_LDCONFIG=	${DATADIR}
 
 SHEBANG_FILES=	atom.sh
 
-DATADIR=	${PREFIX}/share/atom-dev
-
 post-extract:
-	# clone atom repository & checkout electron-4 branch
-	# (this is a temorary workaround since atom version with "-dev" \
-	# suffix requires the source directory is a git repo to be built)
-	cd ${WRKDIR} && git clone https://github.com/atom/atom.git
-	cd ${WRKSRC} && git checkout ${GH_TAGNAME}
 	# create electron distribution zip archives
 	${MKDIR} ${WRKDIR}/electron-dist
 	cd ${LOCALBASE}/share/electron && \

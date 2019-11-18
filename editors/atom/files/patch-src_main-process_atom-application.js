@@ -1,11 +1,11 @@
---- src/main-process/atom-application.js.orig	2019-05-22 03:44:37 UTC
+--- src/main-process/atom-application.js.orig	2019-10-21 17:33:40 UTC
 +++ src/main-process/atom-application.js
-@@ -408,7 +408,7 @@ class AtomApplication extends EventEmitter {
+@@ -463,7 +463,7 @@ module.exports = class AtomApplication extends EventEm
        if (this.applicationMenu != null) {
-         this.applicationMenu.enableWindowSpecificItems(false)
+         this.applicationMenu.enableWindowSpecificItems(false);
        }
 -      if (['win32', 'linux'].includes(process.platform)) {
 +      if (['win32', 'linux', 'freebsd'].includes(process.platform)) {
-         app.quit()
-         return
+         app.quit();
+         return;
        }

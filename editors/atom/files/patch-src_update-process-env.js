@@ -1,12 +1,11 @@
---- src/update-process-env.js.orig	2019-05-22 03:44:37 UTC
+--- src/update-process-env.js.orig	2019-10-21 17:33:40 UTC
 +++ src/update-process-env.js
-@@ -10,7 +10,8 @@ const ENVIRONMENT_VARIABLES_TO_PRESERVE = new Set([
+@@ -8,7 +8,7 @@ const ENVIRONMENT_VARIABLES_TO_PRESERVE = new Set([
+   'ATOM_DISABLE_SHELLING_OUT_FOR_ENVIRONMENT'
+ ]);
  
- const PLATFORMS_KNOWN_TO_WORK = new Set([
-   'darwin',
--  'linux'
-+  'linux',
-+  'freebsd'
- ])
+-const PLATFORMS_KNOWN_TO_WORK = new Set(['darwin', 'linux']);
++const PLATFORMS_KNOWN_TO_WORK = new Set(['darwin', 'linux', 'freebsd']);
  
- async function updateProcessEnv (launchEnv) {
+ async function updateProcessEnv(launchEnv) {
+   let envToAssign;

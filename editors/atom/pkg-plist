@@ -1,6 +1,6 @@
-bin/apm-dev
-bin/atom-dev
-share/applications/atom-dev.desktop
+bin/apm
+bin/atom
+share/applications/atom.desktop
 %%DATADIR%%/LICENSE
 %%DATADIR%%/LICENSES.chromium.html
 %%DATADIR%%/atom
@@ -10,7 +10,6 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/icudtl.dat
 %%DATADIR%%/libEGL.so
 %%DATADIR%%/libGLESv2.so
-%%DATADIR%%/libVkICD_mock_icd.so
 %%DATADIR%%/locales/am.pak
 %%DATADIR%%/locales/ar.pak
 %%DATADIR%%/locales/bg.pak
@@ -115,6 +114,10 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/symbols-view/vendor/ctags-darwin
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/symbols-view/vendor/ctags-linux
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/symbols-view/vendor/ctags-win32.exe
+%%DATADIR%%/resources/app.asar.unpacked/node_modules/text-buffer/node_modules/fs-admin/bin/freebsd-x64-69/fs-admin.node
+%%DATADIR%%/resources/app.asar.unpacked/node_modules/text-buffer/node_modules/fs-admin/build/Release/fs_admin.node
+%%DATADIR%%/resources/app.asar.unpacked/node_modules/text-buffer/node_modules/superstring/bin/freebsd-x64-69/superstring.node
+%%DATADIR%%/resources/app.asar.unpacked/node_modules/text-buffer/node_modules/superstring/build/Release/superstring.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-bash/bin/freebsd-x64-69/tree-sitter-bash.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-bash/build/Release/tree_sitter_bash_binding.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-c/bin/freebsd-x64-69/tree-sitter-c.node
@@ -144,6 +147,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-rust/bin/freebsd-x64-69/tree-sitter-rust.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-rust/build/Release/tree_sitter_rust_binding.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-typescript/bin/freebsd-x64-69/tree-sitter-typescript.node
+%%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-typescript/build/Release/tree_sitter_tsx_binding.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-typescript/build/Release/tree_sitter_typescript_binding.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter/bin/freebsd-x64-69/tree-sitter.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter/build/Release/tree_sitter_runtime_binding.node
@@ -254,6 +258,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/ajv/lib/compile/ucs2length.js
 %%DATADIR%%/resources/app/apm/node_modules/ajv/lib/compile/util.js
 %%DATADIR%%/resources/app/apm/node_modules/ajv/lib/data.js
+%%DATADIR%%/resources/app/apm/node_modules/ajv/lib/definition_schema.js
 %%DATADIR%%/resources/app/apm/node_modules/ajv/lib/dot/_limit.jst
 %%DATADIR%%/resources/app/apm/node_modules/ajv/lib/dot/_limitItems.jst
 %%DATADIR%%/resources/app/apm/node_modules/ajv/lib/dot/_limitLength.jst
@@ -336,12 +341,14 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/README.md
 %%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/index.js
+%%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/node_modules/isarray/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/node_modules/isarray/Makefile
 %%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/node_modules/isarray/README.md
 %%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/node_modules/isarray/component.json
 %%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/node_modules/isarray/index.js
 %%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/node_modules/isarray/package.json
 %%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/node_modules/isarray/test.js
+%%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/node_modules/readable-stream/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/node_modules/readable-stream/CONTRIBUTING.md
 %%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/node_modules/readable-stream/GOVERNANCE.md
 %%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/node_modules/readable-stream/LICENSE
@@ -365,6 +372,11 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/node_modules/readable-stream/transform.js
 %%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/node_modules/readable-stream/writable-browser.js
 %%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/node_modules/readable-stream/writable.js
+%%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/node_modules/safe-buffer/LICENSE
+%%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/node_modules/safe-buffer/README.md
+%%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/node_modules/safe-buffer/index.js
+%%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/node_modules/safe-buffer/package.json
+%%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/node_modules/string_decoder/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/node_modules/string_decoder/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/node_modules/string_decoder/README.md
 %%DATADIR%%/resources/app/apm/node_modules/are-we-there-yet/node_modules/string_decoder/lib/string_decoder.js
@@ -377,6 +389,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/asar-require/README.md
 %%DATADIR%%/resources/app/apm/node_modules/asar-require/lib/require.js
 %%DATADIR%%/resources/app/apm/node_modules/asar-require/package.json
+%%DATADIR%%/resources/app/apm/node_modules/asar/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/asar/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/asar/README.md
 %%DATADIR%%/resources/app/apm/node_modules/asar/bin/asar
@@ -429,6 +442,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/aws-sign2/README.md
 %%DATADIR%%/resources/app/apm/node_modules/aws-sign2/index.js
 %%DATADIR%%/resources/app/apm/node_modules/aws-sign2/package.json
+%%DATADIR%%/resources/app/apm/node_modules/aws4/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/aws4/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/aws4/README.md
 %%DATADIR%%/resources/app/apm/node_modules/aws4/aws4.js
@@ -443,21 +457,25 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/bcrypt-pbkdf/README.md
 %%DATADIR%%/resources/app/apm/node_modules/bcrypt-pbkdf/index.js
 %%DATADIR%%/resources/app/apm/node_modules/bcrypt-pbkdf/package.json
+%%DATADIR%%/resources/app/apm/node_modules/binary/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/binary/README.markdown
 %%DATADIR%%/resources/app/apm/node_modules/binary/index.js
 %%DATADIR%%/resources/app/apm/node_modules/binary/lib/vars.js
 %%DATADIR%%/resources/app/apm/node_modules/binary/package.json
 %%DATADIR%%/resources/app/apm/node_modules/binary/perf/loop.js
 %%DATADIR%%/resources/app/apm/node_modules/binary/perf/small.js
+%%DATADIR%%/resources/app/apm/node_modules/bl/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/bl/LICENSE.md
 %%DATADIR%%/resources/app/apm/node_modules/bl/README.md
 %%DATADIR%%/resources/app/apm/node_modules/bl/bl.js
+%%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/isarray/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/isarray/Makefile
 %%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/isarray/README.md
 %%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/isarray/component.json
 %%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/isarray/index.js
 %%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/isarray/package.json
 %%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/isarray/test.js
+%%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/readable-stream/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/readable-stream/CONTRIBUTING.md
 %%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/readable-stream/GOVERNANCE.md
 %%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/readable-stream/LICENSE
@@ -474,6 +492,10 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/readable-stream/lib/internal/streams/destroy.js
 %%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/readable-stream/lib/internal/streams/stream-browser.js
 %%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/readable-stream/lib/internal/streams/stream.js
+%%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/readable-stream/node_modules/safe-buffer/LICENSE
+%%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/readable-stream/node_modules/safe-buffer/README.md
+%%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/readable-stream/node_modules/safe-buffer/index.js
+%%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/readable-stream/node_modules/safe-buffer/package.json
 %%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/readable-stream/package.json
 %%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/readable-stream/passthrough.js
 %%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/readable-stream/readable-browser.js
@@ -481,9 +503,14 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/readable-stream/transform.js
 %%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/readable-stream/writable-browser.js
 %%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/readable-stream/writable.js
+%%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/string_decoder/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/string_decoder/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/string_decoder/README.md
 %%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/string_decoder/lib/string_decoder.js
+%%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/string_decoder/node_modules/safe-buffer/LICENSE
+%%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/string_decoder/node_modules/safe-buffer/README.md
+%%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/string_decoder/node_modules/safe-buffer/index.js
+%%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/string_decoder/node_modules/safe-buffer/package.json
 %%DATADIR%%/resources/app/apm/node_modules/bl/node_modules/string_decoder/package.json
 %%DATADIR%%/resources/app/apm/node_modules/bl/package.json
 %%DATADIR%%/resources/app/apm/node_modules/block-stream/LICENCE
@@ -583,6 +610,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/commander/Readme.md
 %%DATADIR%%/resources/app/apm/node_modules/commander/index.js
 %%DATADIR%%/resources/app/apm/node_modules/commander/package.json
+%%DATADIR%%/resources/app/apm/node_modules/concat-map/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/concat-map/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/concat-map/README.markdown
 %%DATADIR%%/resources/app/apm/node_modules/concat-map/index.js
@@ -597,6 +625,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/core-util-is/lib/util.js
 %%DATADIR%%/resources/app/apm/node_modules/core-util-is/package.json
 %%DATADIR%%/resources/app/apm/node_modules/core-util-is/test.js
+%%DATADIR%%/resources/app/apm/node_modules/cson-parser/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/cson-parser/CHANGELOG.md
 %%DATADIR%%/resources/app/apm/node_modules/cson-parser/CONTRIBUTING.md
 %%DATADIR%%/resources/app/apm/node_modules/cson-parser/LICENSE
@@ -616,6 +645,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/cuint/lib/uint32.js
 %%DATADIR%%/resources/app/apm/node_modules/cuint/lib/uint64.js
 %%DATADIR%%/resources/app/apm/node_modules/cuint/package.json
+%%DATADIR%%/resources/app/apm/node_modules/d/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/d/CHANGES
 %%DATADIR%%/resources/app/apm/node_modules/d/LICENCE
 %%DATADIR%%/resources/app/apm/node_modules/d/README.md
@@ -919,6 +949,8 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/es5-ext/math/trunc/index.js
 %%DATADIR%%/resources/app/apm/node_modules/es5-ext/math/trunc/is-implemented.js
 %%DATADIR%%/resources/app/apm/node_modules/es5-ext/math/trunc/shim.js
+%%DATADIR%%/resources/app/apm/node_modules/es5-ext/node_modules/d/.github/FUNDING.yml
+%%DATADIR%%/resources/app/apm/node_modules/es5-ext/node_modules/d/CHANGELOG.md
 %%DATADIR%%/resources/app/apm/node_modules/es5-ext/node_modules/d/CHANGES
 %%DATADIR%%/resources/app/apm/node_modules/es5-ext/node_modules/d/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/es5-ext/node_modules/d/README.md
@@ -931,6 +963,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/es5-ext/node_modules/es6-iterator/CHANGES
 %%DATADIR%%/resources/app/apm/node_modules/es5-ext/node_modules/es6-iterator/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/es5-ext/node_modules/es6-iterator/README.md
+%%DATADIR%%/resources/app/apm/node_modules/es5-ext/node_modules/es6-iterator/appveyor.yml
 %%DATADIR%%/resources/app/apm/node_modules/es5-ext/node_modules/es6-iterator/array.js
 %%DATADIR%%/resources/app/apm/node_modules/es5-ext/node_modules/es6-iterator/for-of.js
 %%DATADIR%%/resources/app/apm/node_modules/es5-ext/node_modules/es6-iterator/get.js
@@ -939,6 +972,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/es5-ext/node_modules/es6-iterator/package.json
 %%DATADIR%%/resources/app/apm/node_modules/es5-ext/node_modules/es6-iterator/string.js
 %%DATADIR%%/resources/app/apm/node_modules/es5-ext/node_modules/es6-iterator/valid-iterable.js
+%%DATADIR%%/resources/app/apm/node_modules/es5-ext/node_modules/es6-symbol/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/es5-ext/node_modules/es6-symbol/CHANGES
 %%DATADIR%%/resources/app/apm/node_modules/es5-ext/node_modules/es6-symbol/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/es5-ext/node_modules/es6-symbol/README.md
@@ -1158,6 +1192,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/es5-ext/string/raw/shim.js
 %%DATADIR%%/resources/app/apm/node_modules/es5-ext/to-short-string-representation.js
 %%DATADIR%%/resources/app/apm/node_modules/es6-iterator/#/chain.js
+%%DATADIR%%/resources/app/apm/node_modules/es6-iterator/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/es6-iterator/CHANGES
 %%DATADIR%%/resources/app/apm/node_modules/es6-iterator/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/es6-iterator/README.md
@@ -1169,6 +1204,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/es6-iterator/package.json
 %%DATADIR%%/resources/app/apm/node_modules/es6-iterator/string.js
 %%DATADIR%%/resources/app/apm/node_modules/es6-iterator/valid-iterable.js
+%%DATADIR%%/resources/app/apm/node_modules/es6-symbol/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/es6-symbol/CHANGES
 %%DATADIR%%/resources/app/apm/node_modules/es6-symbol/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/es6-symbol/README.md
@@ -1180,6 +1216,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/es6-symbol/package.json
 %%DATADIR%%/resources/app/apm/node_modules/es6-symbol/polyfill.js
 %%DATADIR%%/resources/app/apm/node_modules/es6-symbol/validate-symbol.js
+%%DATADIR%%/resources/app/apm/node_modules/es6-weak-map/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/es6-weak-map/CHANGES
 %%DATADIR%%/resources/app/apm/node_modules/es6-weak-map/LICENCE
 %%DATADIR%%/resources/app/apm/node_modules/es6-weak-map/README.md
@@ -1199,12 +1236,14 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/event-kit/lib/emitter.js
 %%DATADIR%%/resources/app/apm/node_modules/event-kit/lib/event-kit.js
 %%DATADIR%%/resources/app/apm/node_modules/event-kit/package.json
+%%DATADIR%%/resources/app/apm/node_modules/expand-template/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/expand-template/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/expand-template/README.md
 %%DATADIR%%/resources/app/apm/node_modules/expand-template/index.js
 %%DATADIR%%/resources/app/apm/node_modules/expand-template/package.json
 %%DATADIR%%/resources/app/apm/node_modules/expand-template/test.js
 %%DATADIR%%/resources/app/apm/node_modules/extend/.jscs.json
+%%DATADIR%%/resources/app/apm/node_modules/extend/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/extend/CHANGELOG.md
 %%DATADIR%%/resources/app/apm/node_modules/extend/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/extend/README.md
@@ -1223,6 +1262,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/fast-deep-equal/README.md
 %%DATADIR%%/resources/app/apm/node_modules/fast-deep-equal/index.js
 %%DATADIR%%/resources/app/apm/node_modules/fast-deep-equal/package.json
+%%DATADIR%%/resources/app/apm/node_modules/fast-json-stable-stringify/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/fast-json-stable-stringify/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/fast-json-stable-stringify/README.md
 %%DATADIR%%/resources/app/apm/node_modules/fast-json-stable-stringify/benchmark/index.js
@@ -1306,6 +1346,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/fs-extra/package.json
 %%DATADIR%%/resources/app/apm/node_modules/fs-plus/LICENSE.md
 %%DATADIR%%/resources/app/apm/node_modules/fs-plus/README.md
+%%DATADIR%%/resources/app/apm/node_modules/fs-plus/appveyor.yml
 %%DATADIR%%/resources/app/apm/node_modules/fs-plus/lib/fs-plus.js
 %%DATADIR%%/resources/app/apm/node_modules/fs-plus/node_modules/async/CHANGELOG.md
 %%DATADIR%%/resources/app/apm/node_modules/fs-plus/node_modules/async/LICENSE
@@ -1320,6 +1361,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/fs.realpath/index.js
 %%DATADIR%%/resources/app/apm/node_modules/fs.realpath/old.js
 %%DATADIR%%/resources/app/apm/node_modules/fs.realpath/package.json
+%%DATADIR%%/resources/app/apm/node_modules/fstream/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/fstream/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/fstream/README.md
 %%DATADIR%%/resources/app/apm/node_modules/fstream/fstream.js
@@ -1357,6 +1399,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/gauge/theme-set.js
 %%DATADIR%%/resources/app/apm/node_modules/gauge/themes.js
 %%DATADIR%%/resources/app/apm/node_modules/gauge/wide-truncate.js
+%%DATADIR%%/resources/app/apm/node_modules/getpass/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/getpass/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/getpass/README.md
 %%DATADIR%%/resources/app/apm/node_modules/getpass/lib/index.js
@@ -1369,6 +1412,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/git-utils/build/Release/zlib.a
 %%DATADIR%%/resources/app/apm/node_modules/git-utils/lib/git.js
 %%DATADIR%%/resources/app/apm/node_modules/git-utils/package.json
+%%DATADIR%%/resources/app/apm/node_modules/github-from-package/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/github-from-package/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/github-from-package/index.js
 %%DATADIR%%/resources/app/apm/node_modules/github-from-package/package.json
@@ -1471,6 +1515,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/isarray/component.json
 %%DATADIR%%/resources/app/apm/node_modules/isarray/index.js
 %%DATADIR%%/resources/app/apm/node_modules/isarray/package.json
+%%DATADIR%%/resources/app/apm/node_modules/isstream/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/isstream/LICENSE.md
 %%DATADIR%%/resources/app/apm/node_modules/isstream/README.md
 %%DATADIR%%/resources/app/apm/node_modules/isstream/isstream.js
@@ -1482,6 +1527,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/jsbn/example.js
 %%DATADIR%%/resources/app/apm/node_modules/jsbn/index.js
 %%DATADIR%%/resources/app/apm/node_modules/jsbn/package.json
+%%DATADIR%%/resources/app/apm/node_modules/json-schema-traverse/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/json-schema-traverse/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/json-schema-traverse/README.md
 %%DATADIR%%/resources/app/apm/node_modules/json-schema-traverse/index.js
@@ -1522,6 +1568,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/jsonfile/CHANGELOG.md
 %%DATADIR%%/resources/app/apm/node_modules/jsonfile/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/jsonfile/README.md
+%%DATADIR%%/resources/app/apm/node_modules/jsonfile/appveyor.yml
 %%DATADIR%%/resources/app/apm/node_modules/jsonfile/index.js
 %%DATADIR%%/resources/app/apm/node_modules/jsonfile/package.json
 %%DATADIR%%/resources/app/apm/node_modules/jsprim/CHANGES.md
@@ -1565,6 +1612,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/minimatch/README.md
 %%DATADIR%%/resources/app/apm/node_modules/minimatch/minimatch.js
 %%DATADIR%%/resources/app/apm/node_modules/minimatch/package.json
+%%DATADIR%%/resources/app/apm/node_modules/minimist/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/minimist/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/minimist/index.js
 %%DATADIR%%/resources/app/apm/node_modules/minimist/package.json
@@ -1573,6 +1621,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/mixto/README.md
 %%DATADIR%%/resources/app/apm/node_modules/mixto/lib/mixin.js
 %%DATADIR%%/resources/app/apm/node_modules/mixto/package.json
+%%DATADIR%%/resources/app/apm/node_modules/mkdirp/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/mkdirp/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/mkdirp/bin/cmd.js
 %%DATADIR%%/resources/app/apm/node_modules/mkdirp/bin/usage.txt
@@ -1593,14 +1642,17 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/mute-stream/README.md
 %%DATADIR%%/resources/app/apm/node_modules/mute-stream/mute.js
 %%DATADIR%%/resources/app/apm/node_modules/mute-stream/package.json
+%%DATADIR%%/resources/app/apm/node_modules/mv/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/mv/README.md
 %%DATADIR%%/resources/app/apm/node_modules/mv/index.js
 %%DATADIR%%/resources/app/apm/node_modules/mv/node_modules/.bin/ncp
 %%DATADIR%%/resources/app/apm/node_modules/mv/node_modules/.bin/rimraf
+%%DATADIR%%/resources/app/apm/node_modules/mv/node_modules/mkdirp/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/mv/node_modules/mkdirp/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/mv/node_modules/mkdirp/index.js
 %%DATADIR%%/resources/app/apm/node_modules/mv/node_modules/mkdirp/package.json
 %%DATADIR%%/resources/app/apm/node_modules/mv/node_modules/mkdirp/readme.markdown
+%%DATADIR%%/resources/app/apm/node_modules/mv/node_modules/ncp/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/mv/node_modules/ncp/LICENSE.md
 %%DATADIR%%/resources/app/apm/node_modules/mv/node_modules/ncp/README.md
 %%DATADIR%%/resources/app/apm/node_modules/mv/node_modules/ncp/bin/ncp
@@ -1619,16 +1671,19 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/napi-build-utils/index.md
 %%DATADIR%%/resources/app/apm/node_modules/napi-build-utils/napi-build-utils-1.0.0.tgz
 %%DATADIR%%/resources/app/apm/node_modules/napi-build-utils/package.json
+%%DATADIR%%/resources/app/apm/node_modules/ncp/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/ncp/LICENSE.md
 %%DATADIR%%/resources/app/apm/node_modules/ncp/README.md
 %%DATADIR%%/resources/app/apm/node_modules/ncp/bin/ncp
 %%DATADIR%%/resources/app/apm/node_modules/ncp/lib/ncp.js
 %%DATADIR%%/resources/app/apm/node_modules/ncp/package.json
+%%DATADIR%%/resources/app/apm/node_modules/next-tick/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/next-tick/CHANGES
 %%DATADIR%%/resources/app/apm/node_modules/next-tick/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/next-tick/README.md
 %%DATADIR%%/resources/app/apm/node_modules/next-tick/index.js
 %%DATADIR%%/resources/app/apm/node_modules/next-tick/package.json
+%%DATADIR%%/resources/app/apm/node_modules/node-abi/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/node-abi/CODE_OF_CONDUCT.md
 %%DATADIR%%/resources/app/apm/node_modules/node-abi/CONTRIBUTING.md
 %%DATADIR%%/resources/app/apm/node_modules/node-abi/LICENSE
@@ -1641,18 +1696,21 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/noop-logger/circle.yml
 %%DATADIR%%/resources/app/apm/node_modules/noop-logger/lib/index.js
 %%DATADIR%%/resources/app/apm/node_modules/noop-logger/package.json
+%%DATADIR%%/resources/app/apm/node_modules/nopt/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/nopt/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/nopt/README.md
 %%DATADIR%%/resources/app/apm/node_modules/nopt/bin/nopt.js
 %%DATADIR%%/resources/app/apm/node_modules/nopt/lib/nopt.js
 %%DATADIR%%/resources/app/apm/node_modules/nopt/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/.mailmap
+%%DATADIR%%/resources/app/apm/node_modules/npm/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/AUTHORS
 %%DATADIR%%/resources/app/apm/node_modules/npm/CHANGELOG.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/CONTRIBUTING.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/Makefile
 %%DATADIR%%/resources/app/apm/node_modules/npm/README.md
+%%DATADIR%%/resources/app/apm/node_modules/npm/appveyor.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/bin/node-gyp-bin/node-gyp
 %%DATADIR%%/resources/app/apm/node_modules/npm/bin/node-gyp-bin/node-gyp.cmd
 %%DATADIR%%/resources/app/apm/node_modules/npm/bin/npm
@@ -1880,6 +1938,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/.bin/sshpk-verify
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/.bin/uuid
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/.bin/which
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/JSONStream/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/JSONStream/LICENSE.APACHE2
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/JSONStream/LICENSE.MIT
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/JSONStream/bin.js
@@ -1890,6 +1949,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/abbrev/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/abbrev/abbrev.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/abbrev/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/agent-base/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/agent-base/History.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/agent-base/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/agent-base/index.js
@@ -1928,6 +1988,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/aproba/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/aproba/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/aproba/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/archy/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/archy/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/archy/README.markdown
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/archy/index.js
@@ -1949,6 +2010,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/asap/browser-raw.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/asap/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/asap/raw.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/asn1/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/asn1/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/asn1/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/asn1/lib/ber/errors.js
@@ -1987,6 +2049,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/aws-sign2/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/aws-sign2/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/aws-sign2/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/aws4/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/aws4/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/aws4/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/aws4/aws4.js
@@ -2056,6 +2119,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/bluebird/js/release/using.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/bluebird/js/release/util.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/bluebird/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/boom/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/boom/CONTRIBUTING.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/boom/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/boom/README.md
@@ -2080,6 +2144,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/builtin-modules/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/builtin-modules/readme.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/builtin-modules/static.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/builtins/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/builtins/History.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/builtins/License
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/builtins/Readme.md
@@ -2195,6 +2260,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/clone/clone.iml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/clone/clone.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/clone/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/cmd-shim/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/cmd-shim/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/cmd-shim/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/cmd-shim/index.js
@@ -2250,6 +2316,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/combined-stream/lib/combined_stream.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/combined-stream/lib/defer.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/combined-stream/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/concat-map/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/concat-map/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/concat-map/README.markdown
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/concat-map/index.js
@@ -2302,6 +2369,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/cross-spawn/lib/util/readShebang.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/cross-spawn/lib/util/resolveCommand.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/cross-spawn/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/cryptiles/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/cryptiles/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/cryptiles/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/cryptiles/lib/index.js
@@ -2325,6 +2393,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/dashdash/node_modules/assert-plus/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/dashdash/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/debug/.coveralls.yml
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/debug/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/debug/CHANGELOG.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/debug/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/debug/Makefile
@@ -2382,6 +2451,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/detect-newline/license
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/detect-newline/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/detect-newline/readme.md
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/dezalgo/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/dezalgo/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/dezalgo/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/dezalgo/dezalgo.js
@@ -2393,6 +2463,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/dotenv/CHANGELOG.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/dotenv/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/dotenv/README.md
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/dotenv/appveyor.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/dotenv/config.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/dotenv/lib/main.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/dotenv/package.json
@@ -2400,6 +2471,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/duplexer3/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/duplexer3/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/duplexer3/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/duplexify/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/duplexify/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/duplexify/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/duplexify/example.js
@@ -2418,6 +2490,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/editor/README.markdown
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/editor/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/editor/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/encoding/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/encoding/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/encoding/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/encoding/lib/encoding.js
@@ -2427,11 +2500,13 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/end-of-stream/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/end-of-stream/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/end-of-stream/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/err-code/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/err-code/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/err-code/bower.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/err-code/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/err-code/index.umd.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/err-code/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/errno/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/errno/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/errno/build.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/errno/cli.js
@@ -2480,6 +2555,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/execa/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/execa/readme.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/extend/.jscs.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/extend/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/extend/CHANGELOG.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/extend/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/extend/README.md
@@ -2507,6 +2583,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/find-up/license
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/find-up/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/find-up/readme.md
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/flush-write-stream/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/flush-write-stream/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/flush-write-stream/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/flush-write-stream/example.js
@@ -2523,6 +2600,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/form-data/lib/form_data.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/form-data/lib/populate.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/form-data/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/from2/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/from2/LICENSE.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/from2/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/from2/index.js
@@ -2532,10 +2610,12 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fs-minipass/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fs-minipass/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fs-minipass/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fs-vacuum/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fs-vacuum/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fs-vacuum/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fs-vacuum/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fs-vacuum/vacuum.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fs-write-stream-atomic/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fs-write-stream-atomic/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fs-write-stream-atomic/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fs-write-stream-atomic/index.js
@@ -2550,6 +2630,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fs.realpath/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fs.realpath/old.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fs.realpath/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fstream/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fstream/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fstream/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fstream/fstream.js
@@ -2618,6 +2699,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/get-stream/license
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/get-stream/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/get-stream/readme.md
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/getpass/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/getpass/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/getpass/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/getpass/lib/index.js
@@ -2781,6 +2863,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/has-unicode/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/has-unicode/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/has-unicode/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/hawk/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/hawk/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/hawk/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/hawk/bower.json
@@ -2795,6 +2878,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/hawk/lib/server.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/hawk/lib/utils.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/hawk/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/hoek/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/hoek/CONTRIBUTING.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/hoek/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/hoek/README.md
@@ -2812,6 +2896,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/http-cache-semantics/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/http-cache-semantics/node4/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/http-cache-semantics/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/http-proxy-agent/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/http-proxy-agent/History.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/http-proxy-agent/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/http-proxy-agent/index.js
@@ -2827,6 +2912,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/http-signature/lib/utils.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/http-signature/lib/verify.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/http-signature/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/https-proxy-agent/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/https-proxy-agent/History.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/https-proxy-agent/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/https-proxy-agent/index.js
@@ -2836,6 +2922,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/humanize-ms/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/humanize-ms/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/humanize-ms/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/iconv-lite/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/iconv-lite/Changelog.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/iconv-lite/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/iconv-lite/README.md
@@ -2904,6 +2991,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ip-regex/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ip-regex/readme.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ip/.jscsrc
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ip/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ip/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ip/lib/ip.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ip/package.json
@@ -2911,6 +2999,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/is-builtin-module/license
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/is-builtin-module/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/is-builtin-module/readme.md
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/is-ci/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/is-ci/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/is-ci/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/is-ci/bin.js
@@ -2957,6 +3046,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/is-typedarray/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/is-typedarray/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/is-typedarray/test.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/isarray/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/isarray/Makefile
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/isarray/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/isarray/component.json
@@ -2969,6 +3059,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/isexe/mode.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/isexe/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/isexe/windows.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/isstream/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/isstream/LICENSE.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/isstream/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/isstream/isstream.js
@@ -3010,6 +3101,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/json-schema/lib/links.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/json-schema/lib/validate.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/json-schema/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/json-stable-stringify/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/json-stable-stringify/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/json-stable-stringify/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/json-stable-stringify/package.json
@@ -3127,6 +3219,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/lock-verify/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/lock-verify/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/lock-verify/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/lockfile/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/lockfile/CHANGELOG.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/lockfile/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/lockfile/README.md
@@ -3207,6 +3300,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/make-fetch-happen/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/make-fetch-happen/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/make-fetch-happen/warning.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/meant/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/meant/CHANGELOG.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/meant/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/meant/README.md
@@ -3236,6 +3330,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/minimatch/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/minimatch/minimatch.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/minimatch/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/minimist/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/minimist/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/minimist/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/minimist/package.json
@@ -3258,6 +3353,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/mississippi/license
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/mississippi/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/mississippi/readme.md
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/mkdirp/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/mkdirp/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/mkdirp/README.markdown
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/mkdirp/bin/cmd.js
@@ -3272,6 +3368,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ms/license.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ms/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ms/readme.md
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/mute-stream/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/mute-stream/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/mute-stream/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/mute-stream/coverage/lcov-report/__root__/index.html
@@ -3401,6 +3498,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/lib/remove.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/node_modules/.bin/nopt
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/node_modules/.bin/semver
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/node_modules/nopt/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/node_modules/nopt/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/node_modules/nopt/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/node_modules/nopt/bin/nopt.js
@@ -3412,6 +3510,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/node_modules/semver/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/node_modules/semver/range.bnf
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/node_modules/semver/semver.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/node_modules/tar/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/node_modules/tar/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/node_modules/tar/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/node_modules/tar/lib/buffer-entry.js
@@ -3428,6 +3527,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/node_modules/tar/tar.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/src/win_delay_load_hook.cc
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/nopt/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/nopt/CHANGELOG.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/nopt/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/nopt/README.md
@@ -3599,17 +3699,20 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/npm-registry-fetch/node_modules/make-fetch-happen/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/npm-registry-fetch/node_modules/make-fetch-happen/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/npm-registry-fetch/node_modules/make-fetch-happen/warning.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/npm-registry-fetch/node_modules/pump/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/npm-registry-fetch/node_modules/pump/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/npm-registry-fetch/node_modules/pump/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/npm-registry-fetch/node_modules/pump/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/npm-registry-fetch/node_modules/pump/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/npm-registry-fetch/node_modules/pump/test-browser.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/npm-registry-fetch/node_modules/pump/test-node.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/npm-registry-fetch/node_modules/smart-buffer/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/npm-registry-fetch/node_modules/smart-buffer/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/npm-registry-fetch/node_modules/smart-buffer/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/npm-registry-fetch/node_modules/smart-buffer/build/smartbuffer.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/npm-registry-fetch/node_modules/smart-buffer/lib/smart-buffer.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/npm-registry-fetch/node_modules/smart-buffer/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/npm-registry-fetch/node_modules/socks-proxy-agent/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/npm-registry-fetch/node_modules/socks-proxy-agent/History.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/npm-registry-fetch/node_modules/socks-proxy-agent/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/npm-registry-fetch/node_modules/socks-proxy-agent/index.js
@@ -3750,6 +3853,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/path-key/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/path-key/readme.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/performance-now/.tm_properties
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/performance-now/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/performance-now/Makefile
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/performance-now/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/performance-now/lib/performance-now.js
@@ -3772,6 +3876,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/promise-inflight/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/promise-inflight/inflight.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/promise-inflight/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/promise-retry/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/promise-retry/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/promise-retry/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/promise-retry/index.js
@@ -3797,6 +3902,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/protoduck/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/protoduck/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/protoduck/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/prr/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/prr/LICENSE.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/prr/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/prr/package.json
@@ -3807,15 +3913,18 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/pseudomap/map.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/pseudomap/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/pseudomap/pseudomap.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/pump/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/pump/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/pump/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/pump/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/pump/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/pump/test-browser.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/pump/test-node.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/pumpify/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/pumpify/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/pumpify/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/pumpify/index.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/pumpify/node_modules/pump/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/pumpify/node_modules/pump/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/pumpify/node_modules/pump/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/pumpify/node_modules/pump/index.js
@@ -3828,6 +3937,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/punycode/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/punycode/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/punycode/punycode.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/qrcode-terminal/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/qrcode-terminal/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/qrcode-terminal/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/qrcode-terminal/bin/qrcode-terminal.js
@@ -3871,6 +3981,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/rc/cli.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/rc/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/rc/lib/utils.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/rc/node_modules/minimist/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/rc/node_modules/minimist/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/rc/node_modules/minimist/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/rc/node_modules/minimist/package.json
@@ -3879,6 +3990,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/read-cmd-shim/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/read-cmd-shim/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/read-cmd-shim/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/read-installed/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/read-installed/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/read-installed/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/read-installed/package.json
@@ -3896,6 +4008,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/read/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/read/lib/read.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/read/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/readable-stream/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/readable-stream/CONTRIBUTING.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/readable-stream/GOVERNANCE.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/readable-stream/LICENSE
@@ -3919,6 +4032,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/readable-stream/transform.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/readable-stream/writable-browser.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/readable-stream/writable.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/readdir-scoped-modules/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/readdir-scoped-modules/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/readdir-scoped-modules/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/readdir-scoped-modules/package.json
@@ -3951,10 +4065,12 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/request/lib/tunnel.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/request/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/request/request.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/require-directory/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/require-directory/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/require-directory/README.markdown
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/require-directory/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/require-directory/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/require-main-filename/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/require-main-filename/LICENSE.txt
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/require-main-filename/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/require-main-filename/index.js
@@ -3964,6 +4080,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/resolve-from/license
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/resolve-from/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/resolve-from/readme.md
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/retry/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/retry/License
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/retry/Makefile
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/retry/Readme.md
@@ -4036,6 +4153,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/slide/lib/chain.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/slide/lib/slide.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/slide/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/smart-buffer/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/smart-buffer/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/smart-buffer/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/smart-buffer/build/smartbuffer.js
@@ -4045,17 +4163,20 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/smart-buffer/docs/ROADMAP.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/smart-buffer/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/smart-buffer/yarn.lock
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/sntp/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/sntp/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/sntp/Makefile
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/sntp/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/sntp/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/sntp/lib/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/sntp/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/socks-proxy-agent/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/socks-proxy-agent/History.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/socks-proxy-agent/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/socks-proxy-agent/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/socks-proxy-agent/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/socks/.prettierrc.yaml
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/socks/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/socks/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/socks/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/socks/build/client/socksclient.js
@@ -4072,6 +4193,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/sorted-object/LICENSE.txt
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/sorted-object/lib/sorted-object.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/sorted-object/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/sorted-union-stream/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/sorted-union-stream/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/sorted-union-stream/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/sorted-union-stream/example.js
@@ -4124,6 +4246,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/spdx-license-ids/deprecated.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/spdx-license-ids/index.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/spdx-license-ids/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/sshpk/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/sshpk/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/sshpk/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/sshpk/bin/sshpk-conv
@@ -4167,17 +4290,20 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ssri/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ssri/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ssri/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/stream-each/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/stream-each/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/stream-each/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/stream-each/collaborators.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/stream-each/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/stream-each/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/stream-each/test.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/stream-iterate/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/stream-iterate/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/stream-iterate/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/stream-iterate/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/stream-iterate/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/stream-iterate/test.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/stream-shift/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/stream-shift/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/stream-shift/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/stream-shift/index.js
@@ -4203,10 +4329,12 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/string-width/node_modules/strip-ansi/readme.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/string-width/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/string-width/readme.md
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/string_decoder/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/string_decoder/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/string_decoder/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/string_decoder/lib/string_decoder.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/string_decoder/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/stringstream/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/stringstream/LICENSE.txt
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/stringstream/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/stringstream/example.js
@@ -4264,10 +4392,12 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/term-size/readme.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/term-size/vendor/macos/term-size
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/term-size/vendor/windows/term-size.exe
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/text-table/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/text-table/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/text-table/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/text-table/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/text-table/readme.markdown
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/through/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/through/LICENSE.APACHE2
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/through/LICENSE.MIT
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/through/index.js
@@ -4317,6 +4447,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/tweetnacl/nacl.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/tweetnacl/nacl.min.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/tweetnacl/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/typedarray/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/typedarray/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/typedarray/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/typedarray/package.json
@@ -4342,6 +4473,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/unique-filename/coverage/sorter.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/unique-filename/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/unique-filename/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/unique-slug/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/unique-slug/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/unique-slug/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/unique-slug/package.json
@@ -4403,6 +4535,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/validate-npm-package-license/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/validate-npm-package-license/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/validate-npm-package-license/test.log
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/validate-npm-package-name/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/validate-npm-package-name/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/validate-npm-package-name/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/validate-npm-package-name/index.js
@@ -4447,6 +4580,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/widest-line/license
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/widest-line/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/widest-line/readme.md
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/worker-farm/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/worker-farm/LICENSE.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/worker-farm/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/worker-farm/lib/child/index.js
@@ -4578,6 +4712,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/once/package.json
 %%DATADIR%%/resources/app/apm/node_modules/oniguruma/LICENSE.md
 %%DATADIR%%/resources/app/apm/node_modules/oniguruma/README.md
+%%DATADIR%%/resources/app/apm/node_modules/oniguruma/appveyor.yml
 %%DATADIR%%/resources/app/apm/node_modules/oniguruma/build/Release/onig_scanner.node
 %%DATADIR%%/resources/app/apm/node_modules/oniguruma/build/Release/oniguruma.a
 %%DATADIR%%/resources/app/apm/node_modules/oniguruma/package.json
@@ -4590,6 +4725,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/open/lib/open.js
 %%DATADIR%%/resources/app/apm/node_modules/open/package.json
 %%DATADIR%%/resources/app/apm/node_modules/open/vendor/xdg-open
+%%DATADIR%%/resources/app/apm/node_modules/optimist/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/optimist/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/optimist/index.js
 %%DATADIR%%/resources/app/apm/node_modules/optimist/package.json
@@ -4611,14 +4747,17 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/path-is-absolute/package.json
 %%DATADIR%%/resources/app/apm/node_modules/path-is-absolute/readme.md
 %%DATADIR%%/resources/app/apm/node_modules/performance-now/.tm_properties
+%%DATADIR%%/resources/app/apm/node_modules/performance-now/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/performance-now/README.md
 %%DATADIR%%/resources/app/apm/node_modules/performance-now/lib/performance-now.js
 %%DATADIR%%/resources/app/apm/node_modules/performance-now/license.txt
 %%DATADIR%%/resources/app/apm/node_modules/performance-now/package.json
 %%DATADIR%%/resources/app/apm/node_modules/performance-now/src/performance-now.coffee
+%%DATADIR%%/resources/app/apm/node_modules/prebuild-install/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/prebuild-install/CONTRIBUTING.md
 %%DATADIR%%/resources/app/apm/node_modules/prebuild-install/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/prebuild-install/README.md
+%%DATADIR%%/resources/app/apm/node_modules/prebuild-install/appveyor.yml
 %%DATADIR%%/resources/app/apm/node_modules/prebuild-install/asset.js
 %%DATADIR%%/resources/app/apm/node_modules/prebuild-install/bin.js
 %%DATADIR%%/resources/app/apm/node_modules/prebuild-install/download.js
@@ -4626,6 +4765,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/prebuild-install/help.txt
 %%DATADIR%%/resources/app/apm/node_modules/prebuild-install/index.js
 %%DATADIR%%/resources/app/apm/node_modules/prebuild-install/log.js
+%%DATADIR%%/resources/app/apm/node_modules/prebuild-install/node_modules/minimist/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/prebuild-install/node_modules/minimist/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/prebuild-install/node_modules/minimist/index.js
 %%DATADIR%%/resources/app/apm/node_modules/prebuild-install/node_modules/minimist/package.json
@@ -4643,6 +4783,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/property-accessors/lib/property-accessors.js
 %%DATADIR%%/resources/app/apm/node_modules/property-accessors/package.json
 %%DATADIR%%/resources/app/apm/node_modules/psl/.eslintignore
+%%DATADIR%%/resources/app/apm/node_modules/psl/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/psl/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/psl/README.md
 %%DATADIR%%/resources/app/apm/node_modules/psl/data/rules.json
@@ -4651,7 +4792,9 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/psl/index.js
 %%DATADIR%%/resources/app/apm/node_modules/psl/karma.conf.js
 %%DATADIR%%/resources/app/apm/node_modules/psl/package.json
-%%DATADIR%%/resources/app/apm/node_modules/psl/yarn.lock
+%%DATADIR%%/resources/app/apm/node_modules/psl/scripts/ci-build.sh
+%%DATADIR%%/resources/app/apm/node_modules/psl/scripts/update-rules.js
+%%DATADIR%%/resources/app/apm/node_modules/pump/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/pump/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/pump/README.md
 %%DATADIR%%/resources/app/apm/node_modules/pump/index.js
@@ -4690,6 +4833,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/rc/cli.js
 %%DATADIR%%/resources/app/apm/node_modules/rc/index.js
 %%DATADIR%%/resources/app/apm/node_modules/rc/lib/utils.js
+%%DATADIR%%/resources/app/apm/node_modules/rc/node_modules/minimist/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/rc/node_modules/minimist/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/rc/node_modules/minimist/index.js
 %%DATADIR%%/resources/app/apm/node_modules/rc/node_modules/minimist/package.json
@@ -4799,6 +4943,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/season/node_modules/cson-parser/package.json
 %%DATADIR%%/resources/app/apm/node_modules/season/node_modules/fs-plus/LICENSE.md
 %%DATADIR%%/resources/app/apm/node_modules/season/node_modules/fs-plus/README.md
+%%DATADIR%%/resources/app/apm/node_modules/season/node_modules/fs-plus/appveyor.yml
 %%DATADIR%%/resources/app/apm/node_modules/season/node_modules/fs-plus/lib/fs-plus.js
 %%DATADIR%%/resources/app/apm/node_modules/season/node_modules/fs-plus/package.json
 %%DATADIR%%/resources/app/apm/node_modules/season/package.json
@@ -4820,6 +4965,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/signal-exit/index.js
 %%DATADIR%%/resources/app/apm/node_modules/signal-exit/package.json
 %%DATADIR%%/resources/app/apm/node_modules/signal-exit/signals.js
+%%DATADIR%%/resources/app/apm/node_modules/simple-concat/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/simple-concat/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/simple-concat/README.md
 %%DATADIR%%/resources/app/apm/node_modules/simple-concat/index.js
@@ -4828,6 +4974,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/simple-get/README.md
 %%DATADIR%%/resources/app/apm/node_modules/simple-get/index.js
 %%DATADIR%%/resources/app/apm/node_modules/simple-get/package.json
+%%DATADIR%%/resources/app/apm/node_modules/sshpk/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/sshpk/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/sshpk/README.md
 %%DATADIR%%/resources/app/apm/node_modules/sshpk/bin/sshpk-conv
@@ -4878,9 +5025,11 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/strip-json-comments/license
 %%DATADIR%%/resources/app/apm/node_modules/strip-json-comments/package.json
 %%DATADIR%%/resources/app/apm/node_modules/strip-json-comments/readme.md
+%%DATADIR%%/resources/app/apm/node_modules/tar-fs/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/tar-fs/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/tar-fs/README.md
 %%DATADIR%%/resources/app/apm/node_modules/tar-fs/index.js
+%%DATADIR%%/resources/app/apm/node_modules/tar-fs/node_modules/pump/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/tar-fs/node_modules/pump/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/tar-fs/node_modules/pump/README.md
 %%DATADIR%%/resources/app/apm/node_modules/tar-fs/node_modules/pump/index.js
@@ -4893,12 +5042,14 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/tar-stream/extract.js
 %%DATADIR%%/resources/app/apm/node_modules/tar-stream/headers.js
 %%DATADIR%%/resources/app/apm/node_modules/tar-stream/index.js
+%%DATADIR%%/resources/app/apm/node_modules/tar-stream/node_modules/isarray/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/tar-stream/node_modules/isarray/Makefile
 %%DATADIR%%/resources/app/apm/node_modules/tar-stream/node_modules/isarray/README.md
 %%DATADIR%%/resources/app/apm/node_modules/tar-stream/node_modules/isarray/component.json
 %%DATADIR%%/resources/app/apm/node_modules/tar-stream/node_modules/isarray/index.js
 %%DATADIR%%/resources/app/apm/node_modules/tar-stream/node_modules/isarray/package.json
 %%DATADIR%%/resources/app/apm/node_modules/tar-stream/node_modules/isarray/test.js
+%%DATADIR%%/resources/app/apm/node_modules/tar-stream/node_modules/readable-stream/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/tar-stream/node_modules/readable-stream/CONTRIBUTING.md
 %%DATADIR%%/resources/app/apm/node_modules/tar-stream/node_modules/readable-stream/GOVERNANCE.md
 %%DATADIR%%/resources/app/apm/node_modules/tar-stream/node_modules/readable-stream/LICENSE
@@ -4922,6 +5073,11 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/tar-stream/node_modules/readable-stream/transform.js
 %%DATADIR%%/resources/app/apm/node_modules/tar-stream/node_modules/readable-stream/writable-browser.js
 %%DATADIR%%/resources/app/apm/node_modules/tar-stream/node_modules/readable-stream/writable.js
+%%DATADIR%%/resources/app/apm/node_modules/tar-stream/node_modules/safe-buffer/LICENSE
+%%DATADIR%%/resources/app/apm/node_modules/tar-stream/node_modules/safe-buffer/README.md
+%%DATADIR%%/resources/app/apm/node_modules/tar-stream/node_modules/safe-buffer/index.js
+%%DATADIR%%/resources/app/apm/node_modules/tar-stream/node_modules/safe-buffer/package.json
+%%DATADIR%%/resources/app/apm/node_modules/tar-stream/node_modules/string_decoder/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/tar-stream/node_modules/string_decoder/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/tar-stream/node_modules/string_decoder/README.md
 %%DATADIR%%/resources/app/apm/node_modules/tar-stream/node_modules/string_decoder/lib/string_decoder.js
@@ -4953,6 +5109,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/tar/.nyc_output/processinfo/fb518800-240c-42ff-811f-79e92708d9db.json
 %%DATADIR%%/resources/app/apm/node_modules/tar/.nyc_output/processinfo/fdecfc06-a944-4897-9530-e08f62883fc1.json
 %%DATADIR%%/resources/app/apm/node_modules/tar/.nyc_output/processinfo/index.json
+%%DATADIR%%/resources/app/apm/node_modules/tar/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/tar/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/tar/README.md
 %%DATADIR%%/resources/app/apm/node_modules/tar/coverage/lcov-report/base.css
@@ -4995,6 +5152,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/tar/lib/parse.js
 %%DATADIR%%/resources/app/apm/node_modules/tar/package.json
 %%DATADIR%%/resources/app/apm/node_modules/tar/tar.js
+%%DATADIR%%/resources/app/apm/node_modules/temp/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/temp/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/temp/README.md
 %%DATADIR%%/resources/app/apm/node_modules/temp/lib/temp.js
@@ -5009,12 +5167,14 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/temp/node_modules/rimraf/package.json
 %%DATADIR%%/resources/app/apm/node_modules/temp/node_modules/rimraf/rimraf.js
 %%DATADIR%%/resources/app/apm/node_modules/temp/package.json
+%%DATADIR%%/resources/app/apm/node_modules/tmp/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/tmp/Gruntfile.js
 %%DATADIR%%/resources/app/apm/node_modules/tmp/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/tmp/README.md
 %%DATADIR%%/resources/app/apm/node_modules/tmp/cleanup.sh
 %%DATADIR%%/resources/app/apm/node_modules/tmp/lib/tmp.js
 %%DATADIR%%/resources/app/apm/node_modules/tmp/package.json
+%%DATADIR%%/resources/app/apm/node_modules/to-buffer/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/to-buffer/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/to-buffer/README.md
 %%DATADIR%%/resources/app/apm/node_modules/to-buffer/index.js
@@ -5062,8 +5222,60 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/tweetnacl/nacl.js
 %%DATADIR%%/resources/app/apm/node_modules/tweetnacl/nacl.min.js
 %%DATADIR%%/resources/app/apm/node_modules/tweetnacl/package.json
+%%DATADIR%%/resources/app/apm/node_modules/type/.prettierrc.js
+%%DATADIR%%/resources/app/apm/node_modules/type/CHANGELOG.md
+%%DATADIR%%/resources/app/apm/node_modules/type/README.md
+%%DATADIR%%/resources/app/apm/node_modules/type/array-length/coerce.js
+%%DATADIR%%/resources/app/apm/node_modules/type/array-length/ensure.js
+%%DATADIR%%/resources/app/apm/node_modules/type/array-like/ensure.js
+%%DATADIR%%/resources/app/apm/node_modules/type/array-like/is.js
+%%DATADIR%%/resources/app/apm/node_modules/type/array/ensure.js
+%%DATADIR%%/resources/app/apm/node_modules/type/array/is.js
+%%DATADIR%%/resources/app/apm/node_modules/type/date/ensure.js
+%%DATADIR%%/resources/app/apm/node_modules/type/date/is.js
+%%DATADIR%%/resources/app/apm/node_modules/type/error/ensure.js
+%%DATADIR%%/resources/app/apm/node_modules/type/error/is.js
+%%DATADIR%%/resources/app/apm/node_modules/type/finite/coerce.js
+%%DATADIR%%/resources/app/apm/node_modules/type/finite/ensure.js
+%%DATADIR%%/resources/app/apm/node_modules/type/function/ensure.js
+%%DATADIR%%/resources/app/apm/node_modules/type/function/is.js
+%%DATADIR%%/resources/app/apm/node_modules/type/integer/coerce.js
+%%DATADIR%%/resources/app/apm/node_modules/type/integer/ensure.js
+%%DATADIR%%/resources/app/apm/node_modules/type/iterable/ensure.js
+%%DATADIR%%/resources/app/apm/node_modules/type/iterable/is.js
+%%DATADIR%%/resources/app/apm/node_modules/type/lib/is-to-string-tag-supported.js
+%%DATADIR%%/resources/app/apm/node_modules/type/lib/resolve-exception.js
+%%DATADIR%%/resources/app/apm/node_modules/type/lib/safe-to-string.js
+%%DATADIR%%/resources/app/apm/node_modules/type/lib/to-short-string.js
+%%DATADIR%%/resources/app/apm/node_modules/type/natural-number/coerce.js
+%%DATADIR%%/resources/app/apm/node_modules/type/natural-number/ensure.js
+%%DATADIR%%/resources/app/apm/node_modules/type/number/coerce.js
+%%DATADIR%%/resources/app/apm/node_modules/type/number/ensure.js
+%%DATADIR%%/resources/app/apm/node_modules/type/object/ensure.js
+%%DATADIR%%/resources/app/apm/node_modules/type/object/is.js
+%%DATADIR%%/resources/app/apm/node_modules/type/package.json
+%%DATADIR%%/resources/app/apm/node_modules/type/plain-function/ensure.js
+%%DATADIR%%/resources/app/apm/node_modules/type/plain-function/is.js
+%%DATADIR%%/resources/app/apm/node_modules/type/plain-object/ensure.js
+%%DATADIR%%/resources/app/apm/node_modules/type/plain-object/is.js
+%%DATADIR%%/resources/app/apm/node_modules/type/promise/ensure.js
+%%DATADIR%%/resources/app/apm/node_modules/type/promise/is.js
+%%DATADIR%%/resources/app/apm/node_modules/type/prototype/is.js
+%%DATADIR%%/resources/app/apm/node_modules/type/reg-exp/ensure.js
+%%DATADIR%%/resources/app/apm/node_modules/type/reg-exp/is.js
+%%DATADIR%%/resources/app/apm/node_modules/type/safe-integer/coerce.js
+%%DATADIR%%/resources/app/apm/node_modules/type/safe-integer/ensure.js
+%%DATADIR%%/resources/app/apm/node_modules/type/string/coerce.js
+%%DATADIR%%/resources/app/apm/node_modules/type/string/ensure.js
+%%DATADIR%%/resources/app/apm/node_modules/type/thenable/ensure.js
+%%DATADIR%%/resources/app/apm/node_modules/type/thenable/is.js
+%%DATADIR%%/resources/app/apm/node_modules/type/time-value/coerce.js
+%%DATADIR%%/resources/app/apm/node_modules/type/time-value/ensure.js
+%%DATADIR%%/resources/app/apm/node_modules/type/value/ensure.js
+%%DATADIR%%/resources/app/apm/node_modules/type/value/is.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore-plus/LICENSE.md
 %%DATADIR%%/resources/app/apm/node_modules/underscore-plus/README.md
+%%DATADIR%%/resources/app/apm/node_modules/underscore-plus/appveyor.yml
 %%DATADIR%%/resources/app/apm/node_modules/underscore-plus/lib/underscore-plus.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore-plus/package.json
 %%DATADIR%%/resources/app/apm/node_modules/underscore/LICENSE
@@ -5165,6 +5377,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/xmlbuilder/lib/XMLFragment.js
 %%DATADIR%%/resources/app/apm/node_modules/xmlbuilder/lib/index.js
 %%DATADIR%%/resources/app/apm/node_modules/xmlbuilder/package.json
+%%DATADIR%%/resources/app/apm/node_modules/xmldom/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/xmldom/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/xmldom/__package__.js
 %%DATADIR%%/resources/app/apm/node_modules/xmldom/changelog
@@ -5174,8 +5387,7 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/resources/app/apm/node_modules/xmldom/package.json
 %%DATADIR%%/resources/app/apm/node_modules/xmldom/readme.md
 %%DATADIR%%/resources/app/apm/node_modules/xmldom/sax.js
-%%DATADIR%%/resources/app/apm/node_modules/xtend/LICENCE
-%%DATADIR%%/resources/app/apm/node_modules/xtend/Makefile
+%%DATADIR%%/resources/app/apm/node_modules/xtend/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/xtend/README.md
 %%DATADIR%%/resources/app/apm/node_modules/xtend/immutable.js
 %%DATADIR%%/resources/app/apm/node_modules/xtend/mutable.js
@@ -5272,15 +5484,15 @@ share/applications/atom-dev.desktop
 %%DATADIR%%/swiftshader/libGLESv2.so
 %%DATADIR%%/v8_context_snapshot.bin
 %%DATADIR%%/version
-share/icons/hicolor/1024x1024/apps/atom-dev.png
-share/icons/hicolor/128x128/apps/atom-dev.png
-share/icons/hicolor/16x16/apps/atom-dev.png
-share/icons/hicolor/24x24/apps/atom-dev.png
-share/icons/hicolor/256x256/apps/atom-dev.png
-share/icons/hicolor/32x32/apps/atom-dev.png
-share/icons/hicolor/48x48/apps/atom-dev.png
-share/icons/hicolor/512x512/apps/atom-dev.png
-share/icons/hicolor/64x64/apps/atom-dev.png
+share/icons/hicolor/1024x1024/apps/atom.png
+share/icons/hicolor/128x128/apps/atom.png
+share/icons/hicolor/16x16/apps/atom.png
+share/icons/hicolor/24x24/apps/atom.png
+share/icons/hicolor/256x256/apps/atom.png
+share/icons/hicolor/32x32/apps/atom.png
+share/icons/hicolor/48x48/apps/atom.png
+share/icons/hicolor/512x512/apps/atom.png
+share/icons/hicolor/64x64/apps/atom.png
 @dir %%DATADIR%%/resources/app/apm/native-module/src
 @dir %%DATADIR%%/resources/app/apm/node_modules/asar/test/expected/extractthis/dir1
 @dir %%DATADIR%%/resources/app/apm/node_modules/asar/test/expected/extractthis/dir2
@@ -7262,8 +7474,6 @@ share/icons/hicolor/64x64/apps/atom-dev.png
 @dir %%DATADIR%%/resources/app/apm/node_modules/json-stringify-safe/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/keytar/build/Release/.deps/Release/obj.target/keytar/src
 @dir %%DATADIR%%/resources/app/apm/node_modules/keytar/build/Release/obj.target/keytar/src
-@dir %%DATADIR%%/resources/app/apm/node_modules/keytar/node_modules/nan/doc
-@dir %%DATADIR%%/resources/app/apm/node_modules/keytar/node_modules/nan/tools
 @dir %%DATADIR%%/resources/app/apm/node_modules/keytar/src
 @dir %%DATADIR%%/resources/app/apm/node_modules/minimist/example
 @dir %%DATADIR%%/resources/app/apm/node_modules/minimist/test
@@ -7443,6 +7653,30 @@ share/icons/hicolor/64x64/apps/atom-dev.png
 @dir %%DATADIR%%/resources/app/apm/node_modules/touch/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/traverse/examples
 @dir %%DATADIR%%/resources/app/apm/node_modules/traverse/test
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/_lib
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/array
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/array-length
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/array-like
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/date
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/error
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/finite
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/function
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/integer
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/iterable
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/lib
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/natural-number
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/number
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/object
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/plain-function
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/plain-object
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/promise
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/prototype
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/reg-exp
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/safe-integer
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/string
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/thenable
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/time-value
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/value
 @dir %%DATADIR%%/resources/app/apm/node_modules/uri-js/tests
 @dir %%DATADIR%%/resources/app/apm/node_modules/wordwrap/example
 @dir %%DATADIR%%/resources/app/apm/node_modules/wordwrap/test
