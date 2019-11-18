@@ -140,6 +140,9 @@ do-install:
 	cd ${WRKSRC} && \
 		${SETENV} ${MAKE_ENV} XDG_DATA_DIRS=${STAGEDIR}${PREFIX}/share \
 		./script/build --no-bootstrap --existing-binaries --install=${STAGEDIR}${PREFIX}
+.for f in chromedriver mksnapshot v8_context_snapshot_generator
+	${RM} ${STAGEDIR}${DATADIR}/${f}
+.endfor
 
 do-test:
 	# Note: Xvfb or something similar is necessary for headless testing
