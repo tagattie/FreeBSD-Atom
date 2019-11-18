@@ -115,12 +115,6 @@ build-apm-node:
 bootstrap-1:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ./script/bootstrap-part1
 	${PATCH} -p0 -d ${WRKSRC} < ${FILESDIR}/post-bootstrap-part1.diff
-	${MKDIR} ${WRKSRC}/script/node_modules/electron-chromedriver/bin
-	${CP} ${LOCALBASE}/share/electron/chromedriver \
-		${WRKSRC}/script/node_modules/electron-chromedriver/bin
-	${MKDIR} ${WRKSRC}/script/node_modules/electron-mksnapshot/bin
-	${CP} ${LOCALBASE}/share/electron/mksnapshot \
-		${WRKSRC}/script/node_modules/electron-mksnapshot/bin
 bootstrap-2:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ./script/bootstrap-part2 || ${TRUE}	# script fails at the 1st try
 	${PATCH} -p0 -d ${WRKSRC} < ${FILESDIR}/post-bootstrap-part2.diff
