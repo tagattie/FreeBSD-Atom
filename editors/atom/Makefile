@@ -4,10 +4,15 @@ PORTNAME=	atom
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.41.0
 CATEGORIES=	editors
-MASTER_SITES=	https://nodejs.org/dist/v${APM_NODE_VER}/:node \
+MASTER_SITES=	https://atom.io/download/electron/v${ELECTRON_VER}/:electron_headers \
+		https://nodejs.org/dist/v${APM_NODE_VER}/:node \
 		https://github.com/tagattie/FreeBSD-Atom/releases/download/${DISTVERSIONPREFIX}${DISTVERSION}/:npm_cache
-DISTFILES=	node-v${APM_NODE_VER}${EXTRACT_SUFX}:node \
+DISTFILES=	node-v${ELECTRON_VER}-headers${EXTRACT_SUFX}:electron_headers \
+		node-v${APM_NODE_VER}${EXTRACT_SUFX}:node \
 		atom-npm-cache-${DISTVERSION}${EXTRACT_SUFX}:npm_cache
+EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX} \
+		node-v${APM_NODE_VER}${EXTRACT_SUFX} \
+		atom-npm-cache-${DISTVERSION}${EXTRACT_SUFX}
 
 MAINTAINER=	maintainer@example.com
 COMMENT=	Hackable text editor for the 21st century
@@ -63,6 +68,12 @@ SHEBANG_FILES_APM=	apm/node_modules/atom-package-manager/bin/apm \
 			apm/node_modules/atom-package-manager/script/postinstall.sh
 
 post-extract:
+	# setup electron headers for node-gyp
+	${MKDIR} ${WRKDIR}/.cache/node-gyp/${ELECTRON_VER}
+	${TAR} -xzf ${DISTDIR}/node-v${ELECTRON_VER}-headers${EXTRACT_SUFX} \
+		--strip-components 1 -C ${WRKDIR}/.cache/node-gyp/${ELECTRON_VER}
+	${ECHO} 9 > ${WRKDIR}/.cache/node-gyp/${ELECTRON_VER}/installVersion
+	# copy linux keymaps and menus files
 	cd ${WRKSRC}/keymaps && ${CP} linux.cson freebsd.cson
 	cd ${WRKSRC}/menus && ${CP} linux.cson freebsd.cson
 
