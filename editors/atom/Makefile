@@ -130,12 +130,12 @@ bootstrap-apm:
 		npm_config_build_from_source=true \
 		npm_config_offline=true \
 		npm_config_target=${APM_NODE_VER} \
-		npm rebuild --verbose --no-progress && \
+		npm rebuild --nodedir=${WRKDIR}/node-v${APM_NODE_VER} --verbose --no-progress && \
 		${SETENV} ${MAKE_ENV} \
 		npm_config_build_from_source=true \
 		npm_config_offline=true \
 		npm_config_target=${APM_NODE_VER} \
-		npm dedupe --verbose --no-progress
+		npm dedupe --nodedir=${WRKDIR}/node-v${APM_NODE_VER} --verbose --no-progress
 bootstrap-atom:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} \
 		npm install --ignore-scripts --offline --verbose --no-progress
