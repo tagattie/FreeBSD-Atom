@@ -1,5 +1,7 @@
-TIMESTAMP = 1574054699
+TIMESTAMP = 1577296350
 SHA256 (node-v10.2.1.tar.gz) = dcdba29f6b933969d6a8a36ea91cfd44bcb500a1e582a3273ac3d4d930e721e4
 SIZE (node-v10.2.1.tar.gz) = 35757099
+SHA256 (atom-npm-cache-1.41.0.tar.gz) = d856704c6499a233a9a70b05fde73c6fdfce41009852d710589a72196d64bc1a
+SIZE (atom-npm-cache-1.41.0.tar.gz) = 102564893
 SHA256 (atom-atom-v1.41.0_GH0.tar.gz) = 4a440909462c461cbec9b82b5f97bd21719a34f0ab59f2d859df85a40246c949
 SIZE (atom-atom-v1.41.0_GH0.tar.gz) = 11877243

@@ -4,8 +4,10 @@ PORTNAME=	atom
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.41.0
 CATEGORIES=	editors
-MASTER_SITES=	https://nodejs.org/dist/v${APM_NODE_VER}/:node
-DISTFILES=	node-v${APM_NODE_VER}${EXTRACT_SUFX}:node
+MASTER_SITES=	https://nodejs.org/dist/v${APM_NODE_VER}/:node \
+		https://github.com/tagattie/FreeBSD-Atom/releases/download/${DISTVERSIONPREFIX}${DISTVERSION}/:npm_cache
+DISTFILES=	node-v${APM_NODE_VER}${EXTRACT_SUFX}:node \
+		atom-npm-cache-${DISTVERSION}${EXTRACT_SUFX}:npm_cache
 
 MAINTAINER=	maintainer@example.com
 COMMENT=	Hackable text editor for the 21st century
@@ -141,5 +143,16 @@ do-test:
 	cd ${WRKSRC} && ${SETENV} ${TEST_ENV} ./script/test
 	# bundled package tests
 	cd ${WRKSRC} && ${SETENV} ${TEST_ENV} ./script/test --package
+
+# Helper targets for port maintainers
+make-npm-cache:
+	cd ${WRKSRC}/script && \
+		${SETENV} HOME=${WRKDIR} npm install --ignore-scripts
+	cd ${WRKSRC}/apm && \
+		${SETENV} HOME=${WRKDIR} npm install --ignore-scripts
+	cd ${WRKSRC} && \
+		${SETENV} HOME=${WRKDIR} npm install --ignore-scripts
+	cd ${WRKDIR} && \
+		${TAR} -czf atom-npm-cache-${DISTVERSION}${EXTRACT_SUFX} .npm
 
 .include <bsd.port.mk>
