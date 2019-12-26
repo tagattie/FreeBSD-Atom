@@ -115,7 +115,7 @@ bootstrap-script:
 	cd ${WRKSRC}/script && ${SETENV} ${MAKE_ENV} \
 		npm_config_build_from_source=true \
 		npm_config_offline=true \
-		npm rebuild --verbose --no-progress
+		npm rebuild --nodedir=${LOCALBASE} --verbose --no-progress
 bootstrap-apm:
 	cd ${WRKSRC}/apm && ${SETENV} ${MAKE_ENV} \
 		npm install --global-style --ignore-scripts --offline --verbose --no-progress
