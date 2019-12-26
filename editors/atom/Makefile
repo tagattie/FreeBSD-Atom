@@ -15,9 +15,9 @@ COMMENT=	Hackable text editor for the 21st century
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-EXTRACT_DEPENDS=	zip:archivers/zip \
-		electron:devel/electron4
 BUILD_DEPENDS=	${UNZIP_CMD}:archivers/unzip \
+		zip:archivers/zip \
+		electron:devel/electron4 \
 		rg:textproc/ripgrep \
 		node:www/node10 \
 		npm:www/npm-node10
@@ -63,14 +63,6 @@ SHEBANG_FILES_APM=	apm/node_modules/atom-package-manager/bin/apm \
 			apm/node_modules/atom-package-manager/script/postinstall.sh
 
 post-extract:
-	# setup download cache for electron-packager
-	${MKDIR} ${WRKSRC}/electron
-	cd ${LOCALBASE}/share/electron && \
-		zip -q -r ${WRKSRC}/electron/electron-v${ELECTRON_VER}-freebsd-x64.zip .
-	cd ${WRKSRC}/electron && \
-		${SHA256} -r *-v${ELECTRON_VER}-freebsd-*.zip | \
-		${SED} -e 's/ / */' > SHASUMS256.txt-${ELECTRON_VER}
-	# copy linux keymaps and menus files
 	cd ${WRKSRC}/keymaps && ${CP} linux.cson freebsd.cson
 	cd ${WRKSRC}/menus && ${CP} linux.cson freebsd.cson
 
@@ -135,6 +127,14 @@ clean-backup:
 	cd ${WRKSRC} && ${FIND} . \( -name '*.bak' -o -name '*.orig' -o -name '*~' \) -print -delete
 
 do-build:
+	# setup download cache for electron-packager
+	${MKDIR} ${WRKSRC}/electron
+	cd ${LOCALBASE}/share/electron && \
+		zip -q -r ${WRKSRC}/electron/electron-v${ELECTRON_VER}-freebsd-x64.zip .
+	cd ${WRKSRC}/electron && \
+		${SHA256} -r *-v${ELECTRON_VER}-freebsd-*.zip | \
+		${SED} -e 's/ / */' > SHASUMS256.txt-${ELECTRON_VER}
+	# build atom
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ./script/build --no-bootstrap
 
 do-install:
