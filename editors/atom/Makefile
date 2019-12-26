@@ -58,6 +58,10 @@ INSTALLS_ICONS=	yes
 USE_LDCONFIG=	${DATADIR}
 
 SHEBANG_FILES=	atom.sh
+SHEBANG_FILES_APM=	apm/node_modules/atom-package-manager/bin/apm \
+			apm/node_modules/atom-package-manager/bin/npm \
+			apm/node_modules/atom-package-manager/bin/python-interceptor.sh \
+			apm/node_modules/atom-package-manager/script/postinstall.sh
 
 post-extract:
 	# create electron distribution zip archives
@@ -98,7 +102,7 @@ post-patch:
 	${REINPLACE_CMD} -e 's|/usr/share|${PREFIX}/share|g' \
 		${WRKSRC}/script/lib/install-application.js
 
-do-build: build-apm-node bootstrap-script bootstrap-2 bootstrap-3 \
+do-build: build-apm-node bootstrap-script bootstrap-apm bootstrap-3 \
 		clean-backup build-atom
 
 build-apm-node:
@@ -115,15 +119,26 @@ bootstrap-script:
 		npm_config_build_from_source=true \
 		npm_config_offline=true \
 		npm rebuild --verbose --no-progress
-bootstrap-2:
-	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ./script/bootstrap-part2 || ${TRUE}	# script fails at the 1st try
-	${PATCH} -p0 -d ${WRKSRC} < ${FILESDIR}/post-bootstrap-part2.diff
+bootstrap-apm:
+	cd ${WRKSRC}/apm && ${SETENV} ${MAKE_ENV} \
+		npm install --global-style --ignore-scripts --offline --verbose --no-progress
+	cd ${WRKSRC} && ${FIND} ${SHEBANG_FILES_APM} -type f \
+		-exec ${SED} -i '' -e 's|#!/bin/bash|#!${LOCALBASE}/bin/bash|' \
+				-e 's|exec python|exec python2.7|' {} ';'
 	${CP} ${WRKDIR}/node-v${APM_NODE_VER}/out/Release/node \
-		${WRKSRC}/apm/node_modules/atom-package-manager/bin
-	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ./script/bootstrap-part2	# should now succeed
+		${WRKSRC}/apm/node_modules/atom-package-manager/bin && \
+		${STRIP_CMD} ${WRKSRC}/apm/node_modules/atom-package-manager/bin/node
 	cd ${WRKSRC}/apm/node_modules/atom-package-manager && \
-		${SETENV} ${MAKE_ENV} ./bin/npm rebuild && \
-		${SETENV} ${MAKE_ENV} ./bin/npm dedupe
+		${SETENV} ${MAKE_ENV} \
+		npm_config_build_from_source=true \
+		npm_config_offline=true \
+		npm_config_target=${APM_NODE_VER} \
+		npm rebuild --verbose --no-progress && \
+		${SETENV} ${MAKE_ENV} \
+		npm_config_build_from_source=true \
+		npm_config_offline=true \
+		npm_config_target=${APM_NODE_VER} \
+		npm dedupe --verbose --no-progress
 bootstrap-3:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ./script/bootstrap-part3 --ci || ${TRUE}	# script fails
 	${PATCH} -p0 -d ${WRKSRC} < ${FILESDIR}/post-bootstrap-part3.diff
