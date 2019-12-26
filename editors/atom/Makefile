@@ -91,9 +91,6 @@ post-extract:
 .endfor
 	${CP} ${WRKDIR}/electron-dist/SHASUMS256.txt \
 		${WRKSRC}/electron/SHASUMS256.txt-${ELECTRON_CACHE_VER}
-	# copy divided bootstrap scripts
-	${CP} ${FILESDIR}/bootstrap-part? ${WRKSRC}/script
-	${CHMOD} ${BINMODE} ${WRKSRC}/script/bootstrap-part?
 	# copy linux keymaps and menus files
 	cd ${WRKSRC}/keymaps && ${CP} linux.cson freebsd.cson
 	cd ${WRKSRC}/menus && ${CP} linux.cson freebsd.cson
