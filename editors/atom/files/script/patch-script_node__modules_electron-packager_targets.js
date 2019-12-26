@@ -1,6 +1,6 @@
---- script/node_modules/electron-packager/targets.js.orig	2019-05-21 23:42:45.365961000 +0900
-+++ script/node_modules/electron-packager/targets.js	2019-05-21 23:43:40.375024000 +0900
-@@ -5,9 +5,10 @@
+--- script/node_modules/electron-packager/targets.js.orig	1985-10-26 08:15:00 UTC
++++ script/node_modules/electron-packager/targets.js
+@@ -5,9 +5,10 @@ const downloadArch = require('electron-download/lib/ar
  const semver = require('semver')
  
  const officialArchs = ['ia32', 'x64', 'armv7l', 'arm64', 'mips64el']
@@ -12,7 +12,7 @@
    linux: ['ia32', 'x64', 'armv7l', 'arm64', 'mips64el'],
    mas: ['x64'],
    win32: ['ia32', 'x64']
-@@ -21,6 +22,7 @@
+@@ -21,6 +22,7 @@ const linuxArchBuildVersions = {
  // Maps to module filename for each platform (lazy-required if used)
  const osModules = {
    darwin: './mac',

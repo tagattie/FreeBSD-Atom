@@ -98,16 +98,23 @@ post-patch:
 	${REINPLACE_CMD} -e 's|/usr/share|${PREFIX}/share|g' \
 		${WRKSRC}/script/lib/install-application.js
 
-do-build: build-apm-node bootstrap-1 bootstrap-2 bootstrap-3 \
+do-build: build-apm-node bootstrap-script bootstrap-2 bootstrap-3 \
 		clean-backup build-atom
 
 build-apm-node:
 	cd ${WRKDIR}/node-v${APM_NODE_VER} && \
 		${SETENV} ${CONFIGURE_ENV} CC=${CC} CXX=${CXX} ./configure && \
 		${SETENV} ${MAKE_ENV} ${BSDMAKE} -j ${MAKE_JOBS_NUMBER}
-bootstrap-1:
-	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ./script/bootstrap-part1
-	${PATCH} -p0 -d ${WRKSRC} < ${FILESDIR}/post-bootstrap-part1.diff
+bootstrap-script:
+	cd ${WRKSRC}/script && ${SETENV} ${MAKE_ENV} \
+		npm install --ignore-scripts --offline --verbose --no-progress
+	for p in ${PATCHDIR}/script/patch-*; do \
+		${PATCH} -p0 -d ${WRKSRC} < $${p}; \
+	done
+	cd ${WRKSRC}/script && ${SETENV} ${MAKE_ENV} \
+		npm_config_build_from_source=true \
+		npm_config_offline=true \
+		npm rebuild --verbose --no-progress
 bootstrap-2:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ./script/bootstrap-part2 || ${TRUE}	# script fails at the 1st try
 	${PATCH} -p0 -d ${WRKSRC} < ${FILESDIR}/post-bootstrap-part2.diff
