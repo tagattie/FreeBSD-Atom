@@ -63,33 +63,13 @@ SHEBANG_FILES_APM=	apm/node_modules/atom-package-manager/bin/apm \
 			apm/node_modules/atom-package-manager/script/postinstall.sh
 
 post-extract:
-	# create electron distribution zip archives
-	${MKDIR} ${WRKDIR}/electron-dist
-	cd ${LOCALBASE}/share/electron && \
-		zip -q -r ${WRKDIR}/electron-dist/electron-v${ELECTRON_VER}-freebsd-x64.zip .
-	cd ${WRKDIR}/electron-dist && \
-		${CP} electron-v${ELECTRON_VER}-freebsd-x64.zip \
-			chromedriver-v${ELECTRON_VER}-freebsd-x64.zip && \
-		${CP} electron-v${ELECTRON_VER}-freebsd-x64.zip \
-			mksnapshot-v${ELECTRON_VER}-freebsd-x64.zip && \
-		${SHA256} -r *-v${ELECTRON_VER}-freebsd-*.zip | \
-			${SED} -e 's/ / */' > SHASUMS256.txt
-	# setup download cache for electron-download
-	${MKDIR} ${WRKDIR}/.cache/electron
-.for i in chromedriver electron mksnapshot
-	${CP} ${WRKDIR}/electron-dist/${i}-v${ELECTRON_VER}-freebsd-x64.zip \
-		${WRKDIR}/.cache/electron
-.endfor
-	${CP} ${WRKDIR}/electron-dist/SHASUMS256.txt \
-		${WRKDIR}/.cache/electron/SHASUMS256.txt-${ELECTRON_VER}
 	# setup download cache for electron-packager
 	${MKDIR} ${WRKSRC}/electron
-.for i in electron
-	${CP} ${WRKDIR}/electron-dist/${i}-v${ELECTRON_VER}-freebsd-x64.zip \
-		${WRKSRC}/electron
-.endfor
-	${CP} ${WRKDIR}/electron-dist/SHASUMS256.txt \
-		${WRKSRC}/electron/SHASUMS256.txt-${ELECTRON_VER}
+	cd ${LOCALBASE}/share/electron && \
+		zip -q -r ${WRKSRC}/electron/electron-v${ELECTRON_VER}-freebsd-x64.zip .
+	cd ${WRKSRC}/electron && \
+		${SHA256} -r *-v${ELECTRON_VER}-freebsd-*.zip | \
+		${SED} -e 's/ / */' > SHASUMS256.txt-${ELECTRON_VER}
 	# copy linux keymaps and menus files
 	cd ${WRKSRC}/keymaps && ${CP} linux.cson freebsd.cson
 	cd ${WRKSRC}/menus && ${CP} linux.cson freebsd.cson
