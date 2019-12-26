@@ -47,8 +47,7 @@ USES=		desktop-file-utils gnome jpeg localbase:ldflags python:2.7 \
 USE_GITHUB=	yes
 
 APM_NODE_VER=	10.2.1
-ELECTRON_CACHE_VER=	4.2.7	# version specified in ${WRKSRC}/package.json
-ELECTRON_TARGET_VER=	4.2.12	# version of port "devel/electron4"
+ELECTRON_VER=	4.2.12	# keep in sync with devel/electron4 port
 
 BINARY_ALIAS=	python=${PYTHON_CMD}
 
@@ -67,35 +66,37 @@ post-extract:
 	# create electron distribution zip archives
 	${MKDIR} ${WRKDIR}/electron-dist
 	cd ${LOCALBASE}/share/electron && \
-		zip -q -r ${WRKDIR}/electron-dist/electron-v${ELECTRON_CACHE_VER}-freebsd-x64.zip .
+		zip -q -r ${WRKDIR}/electron-dist/electron-v${ELECTRON_VER}-freebsd-x64.zip .
 	cd ${WRKDIR}/electron-dist && \
-		${CP} electron-v${ELECTRON_CACHE_VER}-freebsd-x64.zip \
-			chromedriver-v${ELECTRON_CACHE_VER}-freebsd-x64.zip && \
-		${CP} electron-v${ELECTRON_CACHE_VER}-freebsd-x64.zip \
-			mksnapshot-v${ELECTRON_CACHE_VER}-freebsd-x64.zip && \
-		${SHA256} -r *-v${ELECTRON_CACHE_VER}-freebsd-*.zip | \
+		${CP} electron-v${ELECTRON_VER}-freebsd-x64.zip \
+			chromedriver-v${ELECTRON_VER}-freebsd-x64.zip && \
+		${CP} electron-v${ELECTRON_VER}-freebsd-x64.zip \
+			mksnapshot-v${ELECTRON_VER}-freebsd-x64.zip && \
+		${SHA256} -r *-v${ELECTRON_VER}-freebsd-*.zip | \
 			${SED} -e 's/ / */' > SHASUMS256.txt
 	# setup download cache for electron-download
 	${MKDIR} ${WRKDIR}/.cache/electron
 .for i in chromedriver electron mksnapshot
-	${CP} ${WRKDIR}/electron-dist/${i}-v${ELECTRON_CACHE_VER}-freebsd-x64.zip \
+	${CP} ${WRKDIR}/electron-dist/${i}-v${ELECTRON_VER}-freebsd-x64.zip \
 		${WRKDIR}/.cache/electron
 .endfor
 	${CP} ${WRKDIR}/electron-dist/SHASUMS256.txt \
-		${WRKDIR}/.cache/electron/SHASUMS256.txt-${ELECTRON_CACHE_VER}
+		${WRKDIR}/.cache/electron/SHASUMS256.txt-${ELECTRON_VER}
 	# setup download cache for electron-packager
 	${MKDIR} ${WRKSRC}/electron
 .for i in electron
-	${CP} ${WRKDIR}/electron-dist/${i}-v${ELECTRON_CACHE_VER}-freebsd-x64.zip \
+	${CP} ${WRKDIR}/electron-dist/${i}-v${ELECTRON_VER}-freebsd-x64.zip \
 		${WRKSRC}/electron
 .endfor
 	${CP} ${WRKDIR}/electron-dist/SHASUMS256.txt \
-		${WRKSRC}/electron/SHASUMS256.txt-${ELECTRON_CACHE_VER}
+		${WRKSRC}/electron/SHASUMS256.txt-${ELECTRON_VER}
 	# copy linux keymaps and menus files
 	cd ${WRKSRC}/keymaps && ${CP} linux.cson freebsd.cson
 	cd ${WRKSRC}/menus && ${CP} linux.cson freebsd.cson
 
 post-patch:
+	${REINPLACE_CMD} -E 's|("electronVersion":.*").*(")|\1${ELECTRON_VER}\2|' \
+		${WRKSRC}/package.json
 	${REINPLACE_CMD} -e 's|/usr/share|${PREFIX}/share|g' \
 		${WRKSRC}/script/lib/install-application.js
 
@@ -150,7 +151,7 @@ bootstrap-atom:
 		npm_config_offline=true \
 		npm_config_disturl=https://electronjs.org/headers \
 		npm_config_runtime=electron \
-		npm_config_target=${ELECTRON_TARGET_VER} \
+		npm_config_target=${ELECTRON_VER} \
 		npm rebuild --verbose --no-progress
 clean-backup:
 	cd ${WRKSRC} && ${FIND} . \( -name '*.bak' -o -name '*.orig' -o -name '*~' \) -print -delete
