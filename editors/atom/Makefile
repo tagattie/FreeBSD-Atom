@@ -82,6 +82,8 @@ post-patch:
 		${WRKSRC}/package.json
 	${REINPLACE_CMD} -e 's|/usr/share|${PREFIX}/share|g' \
 		${WRKSRC}/script/lib/install-application.js
+	${REINPLACE_CMD} -e 's|<%= installDir %>|${PREFIX}|' \
+		${WRKSRC}/resources/linux/atom.desktop.in
 
 pre-build: build-apm-node bootstrap-script bootstrap-apm bootstrap-atom clean-backup
 build-apm-node:
