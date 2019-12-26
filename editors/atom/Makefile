@@ -80,9 +80,7 @@ post-patch:
 	${REINPLACE_CMD} -e 's|/usr/share|${PREFIX}/share|g' \
 		${WRKSRC}/script/lib/install-application.js
 
-do-build: build-apm-node bootstrap-script bootstrap-apm bootstrap-atom \
-		clean-backup build-atom
-
+pre-build: build-apm-node bootstrap-script bootstrap-apm bootstrap-atom clean-backup
 build-apm-node:
 	cd ${WRKDIR}/node-v${APM_NODE_VER} && \
 		${SETENV} ${CONFIGURE_ENV} CC=${CC} CXX=${CXX} ./configure && \
@@ -135,7 +133,8 @@ bootstrap-atom:
 		npm rebuild --verbose --no-progress
 clean-backup:
 	cd ${WRKSRC} && ${FIND} . \( -name '*.bak' -o -name '*.orig' -o -name '*~' \) -print -delete
-build-atom:
+
+do-build:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ./script/build --no-bootstrap
 
 do-install:
