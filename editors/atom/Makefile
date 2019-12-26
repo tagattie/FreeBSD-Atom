@@ -102,7 +102,7 @@ post-patch:
 	${REINPLACE_CMD} -e 's|/usr/share|${PREFIX}/share|g' \
 		${WRKSRC}/script/lib/install-application.js
 
-do-build: build-apm-node bootstrap-script bootstrap-apm bootstrap-3 \
+do-build: build-apm-node bootstrap-script bootstrap-apm bootstrap-atom \
 		clean-backup build-atom
 
 build-apm-node:
@@ -139,12 +139,22 @@ bootstrap-apm:
 		npm_config_offline=true \
 		npm_config_target=${APM_NODE_VER} \
 		npm dedupe --verbose --no-progress
-bootstrap-3:
-	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ./script/bootstrap-part3 --ci || ${TRUE}	# script fails
-	${PATCH} -p0 -d ${WRKSRC} < ${FILESDIR}/post-bootstrap-part3.diff
+bootstrap-atom:
+	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} \
+		npm install --ignore-scripts --offline --verbose --no-progress
+	# cd ${WRKSRC} && ${FIND} . -name '*.orig' -print -delete
+	for p in ${PATCHDIR}/atom/patch-*; do \
+		${PATCH} -p0 -d ${WRKSRC} < $${p}; \
+	done
 	${MKDIR} ${WRKSRC}/node_modules/vscode-ripgrep/bin
 	${CP} ${LOCALBASE}/bin/rg ${WRKSRC}/node_modules/vscode-ripgrep/bin
-	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ./script/node_modules/.bin/electron-rebuild -v ${ELECTRON_TARGET_VER}
+	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} \
+		npm_config_build_from_source=true \
+		npm_config_offline=true \
+		npm_config_disturl=https://electronjs.org/headers \
+		npm_config_runtime=electron \
+		npm_config_target=${ELECTRON_TARGET_VER} \
+		npm rebuild --verbose --no-progress
 clean-backup:
 	cd ${WRKSRC} && ${FIND} . \( -name '*.bak' -o -name '*.orig' -o -name '*~' \) -print -delete
 build-atom:
