@@ -128,7 +128,11 @@ bootstrap-apm:
 		npm dedupe --nodedir=${WRKDIR}/node-v${APM_NODE_VER} --verbose --no-progress
 bootstrap-atom:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} \
-		npm install --ignore-scripts --offline --verbose --no-progress
+		ATOM_RESOURCE_PATH=${WRKSRC} \
+		npm_config_target=${ELECTRON_VER} \
+		npm_config_ignore_scripts=true \
+		npm_config_offline=true \
+		./apm/node_modules/atom-package-manager/bin/apm install
 	# cd ${WRKSRC} && ${FIND} . -name '*.orig' -print -delete
 	for p in ${PATCHDIR}/atom/patch-*; do \
 		${PATCH} -p0 -d ${WRKSRC} < $${p}; \
@@ -136,12 +140,10 @@ bootstrap-atom:
 	${MKDIR} ${WRKSRC}/node_modules/vscode-ripgrep/bin
 	${CP} ${LOCALBASE}/bin/rg ${WRKSRC}/node_modules/vscode-ripgrep/bin
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} \
-		npm_config_build_from_source=true \
-		npm_config_offline=true \
-		npm_config_disturl=https://electronjs.org/headers \
-		npm_config_runtime=electron \
+		ATOM_RESOURCE_PATH=${WRKSRC} \
 		npm_config_target=${ELECTRON_VER} \
-		npm rebuild --verbose --no-progress
+		npm_config_offline=true \
+		./apm/node_modules/atom-package-manager/bin/apm rebuild
 clean-backup:
 	cd ${WRKSRC} && ${FIND} . \( -name '*.bak' -o -name '*.orig' -o -name '*~' \) -print -delete
 
