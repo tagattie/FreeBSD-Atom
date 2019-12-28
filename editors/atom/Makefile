@@ -161,12 +161,16 @@ do-build:
 		${SHA256} -r *-v${ELECTRON_VER}-freebsd-*.zip | \
 		${SED} -e 's/ / */' > SHASUMS256.txt-${ELECTRON_VER}
 	# build atom
-	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ./script/build --no-bootstrap
+	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} \
+		npm_config_build_from_source=true \
+		npm_config_offline=true \
+		./script/build --no-bootstrap
 
 do-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/share/icons/hicolor
-	cd ${WRKSRC} && \
-		${SETENV} ${MAKE_ENV} XDG_DATA_DIRS=${STAGEDIR}${PREFIX}/share \
+	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} XDG_DATA_DIRS=${STAGEDIR}${PREFIX}/share \
+		npm_config_build_from_source=true \
+		npm_config_offline=true \
 		./script/build --no-bootstrap --existing-binaries --install=${STAGEDIR}${PREFIX}
 .for f in chromedriver mksnapshot v8_context_snapshot_generator
 	${RM} ${STAGEDIR}${DATADIR}/${f}
