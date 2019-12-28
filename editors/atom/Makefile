@@ -25,6 +25,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.md
 BUILD_DEPENDS=	${UNZIP_CMD}:archivers/unzip \
 		zip:archivers/zip \
 		electron:devel/electron4 \
+		bash:shells/bash \
 		rg:textproc/ripgrep \
 		node:www/node10 \
 		npm:www/npm-node10
@@ -49,8 +50,8 @@ RUN_DEPENDS=	git:devel/git \
 		bash:shells/bash
 TEST_DEPENDS=	bash:shells/bash
 
-USES=		desktop-file-utils gnome jpeg localbase:ldflags python:2.7 \
-		shebangfix
+USES=		desktop-file-utils gnome jpeg localbase:ldflags pkgconfig \
+		python:2.7 shebangfix
 
 USE_GITHUB=	yes
 
