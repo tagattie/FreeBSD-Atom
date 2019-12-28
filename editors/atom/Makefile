@@ -9,10 +9,12 @@ MASTER_SITES=	https://atom.io/download/electron/v${ELECTRON_VER}/:electron_heade
 		https://github.com/tagattie/FreeBSD-Atom/releases/download/${DISTVERSIONPREFIX}${DISTVERSION}/:npm_cache
 DISTFILES=	node-v${ELECTRON_VER}-headers${EXTRACT_SUFX}:electron_headers \
 		node-v${APM_NODE_VER}${EXTRACT_SUFX}:node \
-		atom-npm-cache-${DISTVERSION}${EXTRACT_SUFX}:npm_cache
+		atom-npm-cache-${DISTVERSION}${EXTRACT_SUFX}:npm_cache \
+		atom-apm-cache-${DISTVERSION}${EXTRACT_SUFX}:npm_cache
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX} \
 		node-v${APM_NODE_VER}${EXTRACT_SUFX} \
-		atom-npm-cache-${DISTVERSION}${EXTRACT_SUFX}
+		atom-npm-cache-${DISTVERSION}${EXTRACT_SUFX} \
+		atom-apm-cache-${DISTVERSION}${EXTRACT_SUFX}
 
 MAINTAINER=	maintainer@example.com
 COMMENT=	Hackable text editor for the 21st century
@@ -177,11 +179,33 @@ make-npm-cache:
 		${SETENV} HOME=${WRKDIR} npm install --ignore-scripts
 	cd ${WRKSRC}/apm && \
 		${SETENV} HOME=${WRKDIR} npm install --ignore-scripts
-	cd ${WRKSRC} && \
-		${SETENV} HOME=${WRKDIR} npm install --ignore-scripts
 	cd ${WRKDIR}/.npm && \
 		${RM} -r _locks anonymous-cli-metrics.json
 	cd ${WRKDIR} && \
 		${TAR} -czf atom-npm-cache-${DISTVERSION}${EXTRACT_SUFX} .npm
+
+make-apm-cache:
+	cd ${WRKDIR} && ${RM} -r .atom
+	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} \
+		ATOM_RESOURCE_PATH=${WRKSRC} \
+		npm_config_target=${ELECTON_VER} \
+		npm_config_ignore_scripts=true \
+		${WRKSRC}/apm/node_modules/atom-package-manager/bin/apm install
+	cd ${WRKSRC}/node_modules && \
+		for p in `${AWK} '/packageDependencies.*{/,/}/' ${WRKSRC}/package.json | \
+			${SED} -e '1d; $$d' | ${AWK} -F ': ' '{print $$1}' | ${SED} -e 's/"//g'`; do \
+			echo "Installing modules for $${p}"; \
+			cd ${WRKSRC}/node_modules/$${p} && ${SETENV} ${MAKE_ENV} \
+				ATOM_RESOURCE_PATH=${WRKSRC} \
+				npm_config_target=${ELECTON_VER} \
+				npm_config_ignore_scripts=true \
+				${WRKSRC}/apm/node_modules/atom-package-manager/bin/apm install; \
+		done
+	cd ${WRKDIR}/.atom && \
+		${RM} -r .node-gyp packages
+	cd ${WRKDIR}/.atom/.apm && \
+		${RM} -r .apmrc _locks anonymous-cli-metrics.json index-v5
+	cd ${WRKDIR} && \
+		${TAR} -czf atom-apm-cache-${DISTVERSION}${EXTRACT_SUFX} .atom
 
 .include <bsd.port.mk>
