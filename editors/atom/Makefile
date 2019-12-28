@@ -172,12 +172,15 @@ do-test:
 
 # Helper targets for port maintainers
 make-npm-cache:
+	cd ${WRKDIR} && ${RM} -r .npm
 	cd ${WRKSRC}/script && \
 		${SETENV} HOME=${WRKDIR} npm install --ignore-scripts
 	cd ${WRKSRC}/apm && \
 		${SETENV} HOME=${WRKDIR} npm install --ignore-scripts
 	cd ${WRKSRC} && \
 		${SETENV} HOME=${WRKDIR} npm install --ignore-scripts
+	cd ${WRKDIR}/.npm && \
+		${RM} -r _locks anonymous-cli-metrics.json
 	cd ${WRKDIR} && \
 		${TAR} -czf atom-npm-cache-${DISTVERSION}${EXTRACT_SUFX} .npm
 
