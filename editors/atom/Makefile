@@ -2,7 +2,7 @@
 
 PORTNAME=	atom
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.41.0
+DISTVERSION=	1.42.0
 CATEGORIES=	editors
 MASTER_SITES=	https://atom.io/download/electron/v${ELECTRON_VER}/:electron_headers \
 		https://nodejs.org/dist/v${APM_NODE_VER}/:node \
@@ -42,7 +42,8 @@ LIB_DEPENDS=	libatk-bridge-2.0.so:accessibility/at-spi2-atk \
 		libsecret-1.so:security/libsecret \
 		libnss3.so:security/nss \
 		libfontconfig.so:x11-fonts/fontconfig
-RUN_DEPENDS=	xdg-open:devel/xdg-utils \
+RUN_DEPENDS=	git:devel/git \
+		xdg-open:devel/xdg-utils \
 		bash:shells/bash
 TEST_DEPENDS=	bash:shells/bash
 
@@ -103,6 +104,9 @@ bootstrap-script:
 bootstrap-apm:
 	cd ${WRKSRC}/apm && ${SETENV} ${MAKE_ENV} \
 		npm install --global-style --ignore-scripts --offline --verbose --no-progress
+	for p in ${PATCHDIR}/apm/patch-*; do \
+		${PATCH} -p0 -d ${WRKSRC} < $${p}; \
+	done
 	cd ${WRKSRC} && ${FIND} ${SHEBANG_FILES_APM} -type f \
 		-exec ${SED} -i '' -e 's|#!/bin/bash|#!${LOCALBASE}/bin/bash|' \
 				-e 's|exec python|exec python2.7|' {} ';'

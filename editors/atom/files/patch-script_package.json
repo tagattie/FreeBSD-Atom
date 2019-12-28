@@ -1,4 +1,4 @@
---- script/package.json.orig	2019-10-21 17:33:40 UTC
+--- script/package.json.orig	2019-12-13 19:07:42 UTC
 +++ script/package.json
 @@ -10,9 +10,7 @@
      "coffeelint": "1.15.7",
@@ -13,7 +13,7 @@
 @@ -31,7 +29,6 @@
      "legal-eagle": "0.14.0",
      "lodash.startcase": "4.4.0",
-     "lodash.template": "4.4.0",
+     "lodash.template": "4.5.0",
 -    "minidump": "0.9.0",
      "mkdirp": "0.5.1",
      "normalize-package-data": "2.3.5",

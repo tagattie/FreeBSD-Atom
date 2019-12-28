@@ -1,24 +1,25 @@
 --- node_modules/dugite/build/lib/git-environment.js.orig	1985-10-26 08:15:00 UTC
 +++ node_modules/dugite/build/lib/git-environment.js
-@@ -4,6 +4,7 @@ const path = require("path");
+@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: 
+ const path = require("path");
  function resolveEmbeddedGitDir() {
      if (process.platform === 'darwin' ||
-         process.platform === 'linux' ||
-+	process.platform === 'freebsd' ||
+-        process.platform === 'linux' ||
++        process.platform === 'linux' || process.platform === 'freebsd' ||
          process.platform === 'android' ||
          process.platform === 'win32') {
          const s = path.sep;
-@@ -23,6 +24,9 @@ function resolveGitDir() {
+@@ -23,6 +23,9 @@ function resolveGitDir() {
      if (process.env.LOCAL_GIT_DIRECTORY != null) {
          return path.resolve(process.env.LOCAL_GIT_DIRECTORY);
      }
 +    else if (process.platform === 'freebsd') {
-+        return '/usr/local'
++        return '/usr/local';
 +    }
      else {
          return resolveEmbeddedGitDir();
      }
-@@ -94,13 +98,13 @@ function setupEnvironment(environmentVariables) {
+@@ -94,13 +97,13 @@ function setupEnvironment(environmentVariables) {
              delete env.Path;
          }
      }
@@ -34,7 +35,15 @@
          // when building Git for Linux and then running it from
          // an arbitrary location, you should set PREFIX for the
          // process to ensure that it knows how to resolve things
-@@ -116,4 +120,4 @@ function setupEnvironment(environmentVariables) {
+@@ -109,11 +112,11 @@ function setupEnvironment(environmentVariables) {
+             // use the SSL certificate bundle included in the distribution only
+             // when using embedded Git and not providing your own bundle
+             const distDir = resolveEmbeddedGitDir();
+-            const sslCABundle = `${distDir}/ssl/cacert.pem`;
++            const sslCABundle = `/etc/ssl/cert.pem`;
+             env.GIT_SSL_CAINFO = sslCABundle;
+         }
+     }
      return { env, gitLocation };
  }
  exports.setupEnvironment = setupEnvironment;
