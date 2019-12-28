@@ -76,6 +76,11 @@ post-extract:
 	${TAR} -xzf ${DISTDIR}/node-v${ELECTRON_VER}-headers${EXTRACT_SUFX} \
 		--strip-components 1 -C ${WRKDIR}/.cache/node-gyp/${ELECTRON_VER}
 	${ECHO} 9 > ${WRKDIR}/.cache/node-gyp/${ELECTRON_VER}/installVersion
+	# setup electron headers for node-gyp (apm)
+	${MKDIR} ${WRKDIR}/.atom/.node-gyp/.node-gyp/${ELECTRON_VER}
+	${TAR} -xzf ${DISTDIR}/node-v${ELECTRON_VER}-headers${EXTRACT_SUFX} \
+		--strip-components 1 -C ${WRKDIR}/.atom/.node-gyp/.node-gyp/${ELECTRON_VER}
+	${ECHO} 9 > ${WRKDIR}/.atom/.node-gyp/.node-gyp/${ELECTRON_VER}/installVersion
 	# copy linux keymaps and menus files
 	cd ${WRKSRC}/keymaps && ${CP} linux.cson freebsd.cson
 	cd ${WRKSRC}/menus && ${CP} linux.cson freebsd.cson
