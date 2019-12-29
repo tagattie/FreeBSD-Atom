@@ -69,9 +69,17 @@ USE_LDCONFIG=	${DATADIR}
 
 SHEBANG_FILES=	atom.sh
 SHEBANG_FILES_APM=	apm/node_modules/atom-package-manager/bin/apm \
-			apm/node_modules/atom-package-manager/bin/npm \
-			apm/node_modules/atom-package-manager/bin/python-interceptor.sh \
-			apm/node_modules/atom-package-manager/script/postinstall.sh
+		apm/node_modules/atom-package-manager/bin/npm \
+		apm/node_modules/atom-package-manager/bin/python-interceptor.sh \
+		apm/node_modules/atom-package-manager/script/postinstall.sh \
+		apm/node_modules/atom-package-manager/node_modules/npm/configure \
+		apm/node_modules/atom-package-manager/node_modules/npm/lib/utils/completion.sh \
+		apm/node_modules/atom-package-manager/node_modules/npm/node_modules/node-gyp/gyp/gyp \
+		apm/node_modules/atom-package-manager/node_modules/npm/node_modules/node-gyp/gyp/samples/samples \
+		apm/node_modules/atom-package-manager/node_modules/npm/scripts/clean-old.sh \
+		apm/node_modules/atom-package-manager/node_modules/npm/scripts/dep-update \
+		apm/node_modules/atom-package-manager/node_modules/npm/scripts/dev-dep-update \
+		apm/node_modules/atom-package-manager/node_modules/npm/scripts/relocate.sh \
 
 post-extract:
 	# setup electron headers for node-gyp
@@ -119,7 +127,11 @@ bootstrap-apm:
 	done
 	cd ${WRKSRC} && ${FIND} ${SHEBANG_FILES_APM} -type f \
 		-exec ${SED} -i '' -e 's|#!/bin/bash|#!${LOCALBASE}/bin/bash|' \
+				-e 's|#!/usr/bin/python|#!${LOCALBASE}/bin/python2.7|' \
 				-e 's|exec python|exec python2.7|' {} ';'
+	cd ${WRKSRC}/apm/node_modules/atom-package-manager/node_modules/npm/node_modules/node-gyp && \
+		${FIND} . -type f -name '*.py' -exec ${SED} -i '' \
+				-e 's|#!/usr/bin/env python|#!${LOCALBASE}/bin/python2.7|' {} ';'
 	${CP} ${WRKDIR}/node-v${APM_NODE_VER}/out/Release/node \
 		${WRKSRC}/apm/node_modules/atom-package-manager/bin && \
 		${STRIP_CMD} ${WRKSRC}/apm/node_modules/atom-package-manager/bin/node
