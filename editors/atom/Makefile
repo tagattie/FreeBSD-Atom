@@ -33,27 +33,33 @@ BUILD_DEPENDS=	${UNZIP_CMD}:archivers/unzip \
 		npm:www/npm-node10
 LIB_DEPENDS=	libatk-bridge-2.0.so:accessibility/at-spi2-atk \
 		libsnappy.so:archivers/snappy \
+		libasound.so:audio/alsa-lib \
 		libFLAC.so:audio/flac \
 		libopus.so:audio/opus \
+		libdbus-1.so:devel/dbus \
 		libinotify.so:devel/libinotify \
 		libnotify.so:devel/libnotify \
 		libpci.so:devel/libpci \
+		libnspr4.so:devel/nspr \
+		libpcre2-8.so:devel/pcre2 \
 		libdrm.so:graphics/libdrm \
 		libwebp.so:graphics/webp \
 		libavcodec.so:multimedia/ffmpeg \
 		libopenh264.so:multimedia/openh264 \
+		libcups.so:print/cups \
 		libfreetype.so:print/freetype2 \
 		libharfbuzz.so:print/harfbuzz \
 		libsecret-1.so:security/libsecret \
 		libnss3.so:security/nss \
+		libexpat.so:textproc/expat2 \
 		libfontconfig.so:x11-fonts/fontconfig
 RUN_DEPENDS=	git:devel/git \
 		xdg-open:devel/xdg-utils \
 		bash:shells/bash
 TEST_DEPENDS=	bash:shells/bash
 
-USES=		desktop-file-utils gnome jpeg localbase:ldflags pkgconfig \
-		python:2.7 shebangfix
+USES=		desktop-file-utils gl gnome jpeg localbase:ldflags pkgconfig \
+		python:2.7 shebangfix xorg
 
 USE_GITHUB=	yes
 
@@ -62,7 +68,10 @@ ELECTRON_VER=	4.2.12	# keep in sync with devel/electron4 port
 
 BINARY_ALIAS=	python=${PYTHON_CMD}
 
-USE_GNOME=	atk pango gtk30 libxml2 libxslt
+USE_XORG=	x11 xcb xcomposite xcursor xdamage xext xfixes xi xkbfile \
+		xrandr xrender xscrnsaver xtst
+USE_GL=		gl glesv2
+USE_GNOME=	atk cairo pango gtk30 libxml2 libxslt
 INSTALLS_ICONS=	yes
 
 USE_LDCONFIG=	${DATADIR}
