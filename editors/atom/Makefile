@@ -190,6 +190,10 @@ do-install:
 .for f in chromedriver mksnapshot v8_context_snapshot_generator
 	${RM} ${STAGEDIR}${DATADIR}/${f}
 .endfor
+	cd ${STAGEDIR}${DATADIR}/resources/app/apm && \
+		${FIND} . -type f -name '*.node' -exec ${STRIP_CMD} {} ';'
+	cd ${STAGEDIR}${DATADIR}/resources/app.asar.unpacked && \
+		${FIND} . -type f -name '*.node' -exec ${STRIP_CMD} {} ';'
 
 do-test:
 	# Note: Xvfb or something similar is necessary for headless testing
