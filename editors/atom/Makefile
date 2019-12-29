@@ -10,11 +10,13 @@ MASTER_SITES=	https://atom.io/download/electron/v${ELECTRON_VER}/:electron_heade
 DISTFILES=	node-v${ELECTRON_VER}-headers${EXTRACT_SUFX}:electron_headers \
 		node-v${APM_NODE_VER}${EXTRACT_SUFX}:node \
 		atom-npm-cache-${DISTVERSION}${EXTRACT_SUFX}:npm_cache \
-		atom-apm-cache-${DISTVERSION}${EXTRACT_SUFX}:npm_cache
+		atom-apm-cache-${DISTVERSION}${EXTRACT_SUFX}:npm_cache \
+		jasmine-tagged-1.1.4.tar.gz:npm_cache
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX} \
 		node-v${APM_NODE_VER}${EXTRACT_SUFX} \
 		atom-npm-cache-${DISTVERSION}${EXTRACT_SUFX} \
-		atom-apm-cache-${DISTVERSION}${EXTRACT_SUFX}
+		atom-apm-cache-${DISTVERSION}${EXTRACT_SUFX} \
+		jasmine-tagged-1.1.4.tar.gz
 
 MAINTAINER=	maintainer@example.com
 COMMENT=	Hackable text editor for the 21st century

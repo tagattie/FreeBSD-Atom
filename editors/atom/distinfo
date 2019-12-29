@@ -1,11 +1,13 @@
-TIMESTAMP = 1577518610
+TIMESTAMP = 1577602609
 SHA256 (node-v4.2.12-headers.tar.gz) = 4fac67bf8985d087508f0a65612a301baec77c2934d47fe74545938304e38324
 SIZE (node-v4.2.12-headers.tar.gz) = 190197
 SHA256 (node-v10.2.1.tar.gz) = dcdba29f6b933969d6a8a36ea91cfd44bcb500a1e582a3273ac3d4d930e721e4
 SIZE (node-v10.2.1.tar.gz) = 35757099
 SHA256 (atom-npm-cache-1.42.0.tar.gz) = 1407ac476bfcae0f2b12fc676c5672fe33d87406552a8861e3e10146bf7f0bc9
 SIZE (atom-npm-cache-1.42.0.tar.gz) = 48048127
-SHA256 (atom-apm-cache-1.42.0.tar.gz) = 76913e8174c42a5cbf676e064593253d23a4872a90241e64843d921e64574fa0
-SIZE (atom-apm-cache-1.42.0.tar.gz) = 116554223
+SHA256 (atom-apm-cache-1.42.0.tar.gz) = 2c6c1cc5840129468e6f6078008598b64849b764c4524437409f1ddc862be5e7
+SIZE (atom-apm-cache-1.42.0.tar.gz) = 116590983
+SHA256 (jasmine-tagged-1.1.4.tar.gz) = 8988597858ddf9e9ba3333a19d8651691c8384117bf2e362e8a5ba193ed47585
+SIZE (jasmine-tagged-1.1.4.tar.gz) = 3071259
 SHA256 (atom-atom-v1.42.0_GH0.tar.gz) = de1233385ee22440e245793a1f53e9912de3bfc791c624884d18fdcc4b414791
 SIZE (atom-atom-v1.42.0_GH0.tar.gz) = 11909319
