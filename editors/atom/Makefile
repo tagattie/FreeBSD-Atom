@@ -26,7 +26,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 BUILD_DEPENDS=	${UNZIP_CMD}:archivers/unzip \
 		zip:archivers/zip \
-		electron:devel/electron4 \
+		electron${ELECTRON_VER_MAJOR}:devel/electron${ELECTRON_VER_MAJOR} \
 		bash:shells/bash \
 		rg:textproc/ripgrep \
 		node:www/node10 \
@@ -65,6 +65,7 @@ USE_GITHUB=	yes
 
 APM_NODE_VER=	10.2.1
 ELECTRON_VER=	4.2.12	# keep in sync with devel/electron4 port
+ELECTRON_VER_MAJOR=	${ELECTRON_VER:C/^([0-9]+)\..+$$/\1/}
 
 BINARY_ALIAS=	python=${PYTHON_CMD}
 
@@ -179,7 +180,7 @@ clean-backup:
 do-build:
 	# setup download cache for electron-packager
 	${MKDIR} ${WRKSRC}/electron
-	cd ${LOCALBASE}/share/electron && \
+	cd ${LOCALBASE}/share/electron${ELECTRON_VER_MAJOR} && \
 		zip -q -r ${WRKSRC}/electron/electron-v${ELECTRON_VER}-freebsd-x64.zip .
 	cd ${WRKSRC}/electron && \
 		${SHA256} -r *-v${ELECTRON_VER}-freebsd-*.zip | \
