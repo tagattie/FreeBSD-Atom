@@ -172,7 +172,9 @@ do-build:
 		${SED} -e 's/ / */' > SHASUMS256.txt-${ELECTRON_VER}
 	# build atom
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} \
+		npm_config_target=${ELECTRON_VER} \
 		npm_config_build_from_source=true \
+		npm_config_nodedir=${LOCALBASE}/share/electron${ELECTRON_VER_MAJOR}/node_headers \
 		npm_config_offline=true \
 		./script/build --no-bootstrap
 
