@@ -4,19 +4,12 @@ PORTNAME=	atom
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.42.0
 CATEGORIES=	editors
-MASTER_SITES=	https://atom.io/download/electron/v${ELECTRON_VER}/:electron_headers \
-		https://nodejs.org/dist/v${APM_NODE_VER}/:node \
+MASTER_SITES=	https://nodejs.org/dist/v${APM_NODE_VER}/:node \
 		https://github.com/tagattie/FreeBSD-Atom/releases/download/${DISTVERSIONPREFIX}${DISTVERSION}/:npm_cache
-DISTFILES=	node-v${ELECTRON_VER}-headers${EXTRACT_SUFX}:electron_headers \
-		node-v${APM_NODE_VER}${EXTRACT_SUFX}:node \
+DISTFILES=	node-v${APM_NODE_VER}${EXTRACT_SUFX}:node \
 		atom-npm-cache-${DISTVERSION}${EXTRACT_SUFX}:npm_cache \
 		atom-apm-cache-${DISTVERSION}${EXTRACT_SUFX}:npm_cache \
 		jasmine-tagged-1.1.4.tar.gz:npm_cache
-EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX} \
-		node-v${APM_NODE_VER}${EXTRACT_SUFX} \
-		atom-npm-cache-${DISTVERSION}${EXTRACT_SUFX} \
-		atom-apm-cache-${DISTVERSION}${EXTRACT_SUFX} \
-		jasmine-tagged-1.1.4.tar.gz
 
 MAINTAINER=	maintainer@example.com
 COMMENT=	Hackable text editor for the 21st century
@@ -92,16 +85,6 @@ SHEBANG_FILES_APM=	apm/node_modules/atom-package-manager/bin/apm \
 		apm/node_modules/atom-package-manager/node_modules/npm/scripts/relocate.sh \
 
 post-extract:
-	# setup electron headers for node-gyp
-	${MKDIR} ${WRKDIR}/.cache/node-gyp/${ELECTRON_VER}
-	${TAR} -xzf ${DISTDIR}/node-v${ELECTRON_VER}-headers${EXTRACT_SUFX} \
-		--strip-components 1 -C ${WRKDIR}/.cache/node-gyp/${ELECTRON_VER}
-	${ECHO} 9 > ${WRKDIR}/.cache/node-gyp/${ELECTRON_VER}/installVersion
-	# setup electron headers for node-gyp (apm)
-	${MKDIR} ${WRKDIR}/.atom/.node-gyp/.node-gyp/${ELECTRON_VER}
-	${TAR} -xzf ${DISTDIR}/node-v${ELECTRON_VER}-headers${EXTRACT_SUFX} \
-		--strip-components 1 -C ${WRKDIR}/.atom/.node-gyp/.node-gyp/${ELECTRON_VER}
-	${ECHO} 9 > ${WRKDIR}/.atom/.node-gyp/.node-gyp/${ELECTRON_VER}/installVersion
 	# copy linux keymaps and menus files
 	cd ${WRKSRC}/keymaps && ${CP} linux.cson freebsd.cson
 	cd ${WRKSRC}/menus && ${CP} linux.cson freebsd.cson
@@ -172,6 +155,8 @@ bootstrap-atom:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} \
 		ATOM_RESOURCE_PATH=${WRKSRC} \
 		npm_config_target=${ELECTRON_VER} \
+		npm_config_build_from_source=true \
+		npm_config_nodedir=${LOCALBASE}/share/electron${ELECTRON_VER_MAJOR}/node_headers \
 		npm_config_offline=true \
 		./apm/node_modules/atom-package-manager/bin/apm rebuild
 clean-backup:
@@ -200,6 +185,7 @@ do-install:
 .for f in chromedriver mksnapshot v8_context_snapshot_generator
 	${RM} ${STAGEDIR}${DATADIR}/${f}
 .endfor
+	${RM} -r ${STAGEDIR}${DATADIR}/node_headers
 	cd ${STAGEDIR}${DATADIR}/resources/app/apm && \
 		${FIND} . -type f -name '*.node' -exec ${STRIP_CMD} {} ';'
 	cd ${STAGEDIR}${DATADIR}/resources/app.asar.unpacked && \
