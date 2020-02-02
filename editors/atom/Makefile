@@ -56,9 +56,8 @@ USES=		desktop-file-utils gl gnome jpeg localbase:ldflags pkgconfig \
 
 USE_GITHUB=	yes
 
+.include "${.CURDIR}/../../devel/electron4/Makefile.version"
 APM_NODE_VER=	10.2.1
-ELECTRON_VER=	4.2.12	# keep in sync with devel/electron4 port
-ELECTRON_VER_MAJOR=	${ELECTRON_VER:C/^([0-9]+)\..+$$/\1/}
 
 BINARY_ALIAS=	python=${PYTHON_CMD}
 
