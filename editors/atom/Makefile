@@ -11,7 +11,7 @@ DISTFILES=	node-v${APM_NODE_VER}${EXTRACT_SUFX}:node \
 		atom-apm-cache-${DISTVERSION}${EXTRACT_SUFX}:npm_cache \
 		jasmine-tagged-1.1.4.tar.gz:npm_cache
 
-MAINTAINER=	maintainer@example.com
+MAINTAINER=	tagattie@yandex.com
 COMMENT=	Hackable text editor for the 21st century
 
 LICENSE=	MIT
