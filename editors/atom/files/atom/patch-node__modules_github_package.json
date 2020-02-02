@@ -1,6 +1,6 @@
---- node_modules/github/package.json.orig	2019-12-27 07:34:14 UTC
+--- node_modules/github/package.json.orig	2020-02-02 05:50:42 UTC
 +++ node_modules/github/package.json
-@@ -202,7 +202,6 @@
+@@ -216,7 +216,6 @@
      "dedent-js": "1.0.1",
      "electron-devtools-installer": "2.2.4",
      "electron-link": "0.3.2",

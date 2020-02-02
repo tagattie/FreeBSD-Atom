@@ -2,14 +2,15 @@
 
 PORTNAME=	atom
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.42.0
+DISTVERSION=	1.43.0
 CATEGORIES=	editors
 MASTER_SITES=	https://nodejs.org/dist/v${APM_NODE_VER}/:node \
-		https://github.com/tagattie/FreeBSD-Atom/releases/download/${DISTVERSIONPREFIX}${DISTVERSION}/:npm_cache
+		https://github.com/tagattie/FreeBSD-Atom/releases/download/v1.42.0/:jasmine_tagged \
+		https://github.com/tagattie/FreeBSD-Atom/releases/download/${DISTVERSIONFULL}/:npm_cache
 DISTFILES=	node-v${APM_NODE_VER}${EXTRACT_SUFX}:node \
+		jasmine-tagged-1.1.4.tar.gz:jasmine_tagged \
 		atom-npm-cache-${DISTVERSION}${EXTRACT_SUFX}:npm_cache \
-		atom-apm-cache-${DISTVERSION}${EXTRACT_SUFX}:npm_cache \
-		jasmine-tagged-1.1.4.tar.gz:npm_cache
+		atom-apm-cache-${DISTVERSION}${EXTRACT_SUFX}:npm_cache
 
 MAINTAINER=	tagattie@yandex.com
 COMMENT=	Hackable text editor for the 21st century

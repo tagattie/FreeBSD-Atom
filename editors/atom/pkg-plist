@@ -100,7 +100,6 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/symbols-view/vendor/ctags-darwin
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/symbols-view/vendor/ctags-linux
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/symbols-view/vendor/ctags-win32.exe
-%%DATADIR%%/resources/app.asar.unpacked/node_modules/text-buffer/node_modules/fs-admin/build/Release/fs_admin.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/text-buffer/node_modules/superstring/build/Release/superstring.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-bash/build/Release/tree_sitter_bash_binding.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-c/build/Release/tree_sitter_c_binding.node
