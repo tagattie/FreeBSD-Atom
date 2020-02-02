@@ -17,8 +17,7 @@ COMMENT=	Hackable text editor for the 21st century
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-BUILD_DEPENDS=	${UNZIP_CMD}:archivers/unzip \
-		zip:archivers/zip \
+BUILD_DEPENDS=	zip:archivers/zip \
 		electron${ELECTRON_VER_MAJOR}:devel/electron${ELECTRON_VER_MAJOR} \
 		bash:shells/bash \
 		rg:textproc/ripgrep \
