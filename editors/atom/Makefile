@@ -119,11 +119,11 @@ bootstrap-apm:
 	done
 	cd ${WRKSRC} && ${FIND} ${SHEBANG_FILES_APM} -type f \
 		-exec ${SED} -i '' -e 's|#!/bin/bash|#!${LOCALBASE}/bin/bash|' \
-				-e 's|#!/usr/bin/python|#!${LOCALBASE}/bin/python2.7|' \
-				-e 's|exec python|exec python2.7|' {} ';'
+				-e 's|#!/usr/bin/python|#!${PYTHON_CMD}|' \
+				-e 's|exec python|exec ${PYTHON_VERSION}|' {} ';'
 	cd ${WRKSRC}/apm/node_modules/atom-package-manager/node_modules/npm/node_modules/node-gyp && \
 		${FIND} . -type f -name '*.py' -exec ${SED} -i '' \
-				-e 's|#!/usr/bin/env python|#!${LOCALBASE}/bin/python2.7|' {} ';'
+				-e 's|#!/usr/bin/env python|#!${PYTHON_CMD}|' {} ';'
 	${CP} ${WRKDIR}/node-v${APM_NODE_VER}/out/Release/node \
 		${WRKSRC}/apm/node_modules/atom-package-manager/bin && \
 		${STRIP_CMD} ${WRKSRC}/apm/node_modules/atom-package-manager/bin/node
