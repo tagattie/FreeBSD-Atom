@@ -201,6 +201,7 @@ do-test:
 
 # Helper targets for port maintainers
 make-npm-cache:
+	# do "make patch" before executing this target
 	cd ${WRKDIR} && ${RM} -r .npm
 	cd ${WRKSRC}/script && \
 		${SETENV} HOME=${WRKDIR} npm install --ignore-scripts
@@ -212,6 +213,7 @@ make-npm-cache:
 		${TAR} -czf atom-npm-cache-${DISTVERSION}${EXTRACT_SUFX} .npm
 
 make-apm-cache:
+	# do up to "make bootstrap-apm" before executing this target
 	cd ${WRKDIR} && ${RM} -r .atom
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} \
 		ATOM_RESOURCE_PATH=${WRKSRC} \
