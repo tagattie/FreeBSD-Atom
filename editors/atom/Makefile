@@ -103,17 +103,17 @@ build-apm-node:
 		${SETENV} ${MAKE_ENV} ${BSDMAKE} -j ${MAKE_JOBS_NUMBER}
 bootstrap-script:
 	cd ${WRKSRC}/script && ${SETENV} ${MAKE_ENV} \
-		npm install --ignore-scripts --offline --verbose --no-progress
+		npm install --ignore-scripts --offline
 	for p in ${PATCHDIR}/script/patch-*; do \
 		${PATCH} -p0 -d ${WRKSRC} < $${p}; \
 	done
 	cd ${WRKSRC}/script && ${SETENV} ${MAKE_ENV} \
 		npm_config_build_from_source=true \
 		npm_config_offline=true \
-		npm rebuild --nodedir=${LOCALBASE} --verbose --no-progress
+		npm rebuild --nodedir=${LOCALBASE}
 bootstrap-apm:
 	cd ${WRKSRC}/apm && ${SETENV} ${MAKE_ENV} \
-		npm install --global-style --ignore-scripts --offline --verbose --no-progress
+		npm install --global-style --ignore-scripts --offline
 	for p in ${PATCHDIR}/apm/patch-*; do \
 		${PATCH} -p0 -d ${WRKSRC} < $${p}; \
 	done
@@ -132,12 +132,12 @@ bootstrap-apm:
 		npm_config_build_from_source=true \
 		npm_config_offline=true \
 		npm_config_target=${APM_NODE_VER} \
-		npm rebuild --nodedir=${WRKDIR}/node-v${APM_NODE_VER} --verbose --no-progress && \
+		npm rebuild --nodedir=${WRKDIR}/node-v${APM_NODE_VER} && \
 		${SETENV} ${MAKE_ENV} \
 		npm_config_build_from_source=true \
 		npm_config_offline=true \
 		npm_config_target=${APM_NODE_VER} \
-		npm dedupe --nodedir=${WRKDIR}/node-v${APM_NODE_VER} --verbose --no-progress
+		npm dedupe --nodedir=${WRKDIR}/node-v${APM_NODE_VER}
 bootstrap-atom:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} \
 		ATOM_RESOURCE_PATH=${WRKSRC} \
