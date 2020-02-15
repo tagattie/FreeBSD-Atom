@@ -1,6 +1,6 @@
---- node_modules/github/lib/git-shell-out-strategy.js.orig	2019-12-11 02:36:49 UTC
+--- node_modules/github/lib/git-shell-out-strategy.js.orig	2019-12-11 03:24:32 UTC
 +++ node_modules/github/lib/git-shell-out-strategy.js
-@@ -189,7 +189,7 @@ export default class GitShellOutStrategy {
+@@ -190,7 +190,7 @@ export default class GitShellOutStrategy {
          env.SSH_ASKPASS = normalizeGitHelperPath(gitTempDir.getAskPassSh());
          env.GIT_ASKPASS = normalizeGitHelperPath(gitTempDir.getAskPassSh());
  

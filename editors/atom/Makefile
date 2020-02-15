@@ -2,7 +2,7 @@
 
 PORTNAME=	atom
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.43.0
+DISTVERSION=	1.44.0
 CATEGORIES=	editors
 MASTER_SITES=	https://nodejs.org/dist/v${APM_NODE_VER}/:node \
 		https://github.com/tagattie/FreeBSD-Atom/releases/download/v1.42.0/:jasmine_tagged \
@@ -145,7 +145,6 @@ bootstrap-atom:
 		npm_config_ignore_scripts=true \
 		npm_config_offline=true \
 		./apm/node_modules/atom-package-manager/bin/apm install
-	# cd ${WRKSRC} && ${FIND} . -name '*.orig' -print -delete
 	for p in ${PATCHDIR}/atom/patch-*; do \
 		${PATCH} -p0 -d ${WRKSRC} < $${p}; \
 	done
@@ -223,7 +222,7 @@ make-apm-cache:
 	cd ${WRKSRC}/node_modules && \
 		for p in `${AWK} '/packageDependencies.*{/,/}/' ${WRKSRC}/package.json | \
 			${SED} -e '1d; $$d' | ${AWK} -F ': ' '{print $$1}' | ${SED} -e 's/"//g'`; do \
-			echo "Installing modules for $${p}"; \
+			${ECHO_CMD} "Installing modules for $${p}"; \
 			cd ${WRKSRC}/node_modules/$${p} && ${SETENV} ${MAKE_ENV} \
 				ATOM_RESOURCE_PATH=${WRKSRC} \
 				npm_config_target=${ELECTON_VER} \
