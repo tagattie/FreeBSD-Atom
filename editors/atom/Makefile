@@ -11,12 +11,15 @@ DISTFILES=	node-v${APM_NODE_VER}${EXTRACT_SUFX}:node \
 		jasmine-tagged-1.1.4.tar.gz:jasmine_tagged \
 		atom-npm-cache-${DISTVERSION}${EXTRACT_SUFX}:npm_cache \
 		atom-apm-cache-${DISTVERSION}${EXTRACT_SUFX}:npm_cache
+PKGNAMESUFFIX=	-ide
 
 MAINTAINER=	tagattie@yandex.com
 COMMENT=	Hackable text editor for the 21st century
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
+
+ONLY_FOR_ARCHS=	amd64
 
 BUILD_DEPENDS=	zip:archivers/zip \
 		electron${ELECTRON_VER_MAJOR}:devel/electron${ELECTRON_VER_MAJOR} \
@@ -82,6 +85,15 @@ SHEBANG_FILES_APM=	apm/node_modules/atom-package-manager/bin/apm \
 		apm/node_modules/atom-package-manager/node_modules/npm/scripts/dep-update \
 		apm/node_modules/atom-package-manager/node_modules/npm/scripts/dev-dep-update \
 		apm/node_modules/atom-package-manager/node_modules/npm/scripts/relocate.sh \
+
+pre-everything::
+	@${ECHO_MSG} ""
+	@${ECHO_MSG} "The limit imposed by poudriere(8) for the maximum number of files allowed to be"
+	@${ECHO_MSG} "opened by a jail (default 1024) is exceeded during the build of ${PORTNAME}."
+	@${ECHO_MSG} "To successfully build ${PORTNAME} with poudriere(8), you must add the following"
+	@${ECHO_MSG} "line to poudriere.conf:"
+	@${ECHO_MSG} "MAX_FILES_${PORTNAME}${PKGNAMESUFFIX:C/-/_/}=4096"
+	@${ECHO_MSG} ""
 
 post-extract:
 	# copy linux keymaps and menus files
