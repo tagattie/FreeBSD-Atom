@@ -7,11 +7,11 @@ CATEGORIES=	editors
 MASTER_SITES=	https://nodejs.org/dist/v${APM_NODE_VER}/:node \
 		https://github.com/tagattie/FreeBSD-Atom/releases/download/v1.42.0/:jasmine_tagged \
 		https://github.com/tagattie/FreeBSD-Atom/releases/download/${DISTVERSIONFULL}/:npm_cache
+PKGNAMESUFFIX=	-ide
 DISTFILES=	node-v${APM_NODE_VER}${EXTRACT_SUFX}:node \
 		jasmine-tagged-1.1.4.tar.gz:jasmine_tagged \
 		atom-npm-cache-${DISTVERSION}${EXTRACT_SUFX}:npm_cache \
 		atom-apm-cache-${DISTVERSION}${EXTRACT_SUFX}:npm_cache
-PKGNAMESUFFIX=	-ide
 
 MAINTAINER=	tagattie@yandex.com
 COMMENT=	Hackable text editor for the 21st century
