@@ -228,7 +228,7 @@ make-apm-cache:
 	cd ${WRKDIR} && ${RM} -r .atom
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} \
 		ATOM_RESOURCE_PATH=${WRKSRC} \
-		npm_config_target=${ELECTON_VER} \
+		npm_config_target=${ELECTRON_VER} \
 		npm_config_ignore_scripts=true \
 		${WRKSRC}/apm/node_modules/atom-package-manager/bin/apm install
 	cd ${WRKSRC}/node_modules && \
@@ -237,7 +237,7 @@ make-apm-cache:
 			${ECHO_CMD} "Installing modules for $${p}"; \
 			cd ${WRKSRC}/node_modules/$${p} && ${SETENV} ${MAKE_ENV} \
 				ATOM_RESOURCE_PATH=${WRKSRC} \
-				npm_config_target=${ELECTON_VER} \
+				npm_config_target=${ELECTRON_VER} \
 				npm_config_ignore_scripts=true \
 				${WRKSRC}/apm/node_modules/atom-package-manager/bin/apm install; \
 		done
