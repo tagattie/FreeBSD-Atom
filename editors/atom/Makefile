@@ -25,8 +25,8 @@ BUILD_DEPENDS=	zip:archivers/zip \
 		electron${ELECTRON_VER_MAJOR}:devel/electron${ELECTRON_VER_MAJOR} \
 		bash:shells/bash \
 		rg:textproc/ripgrep \
-		node:www/node10 \
-		npm:www/npm-node10
+		node10>:www/node10 \
+		npm-node10>0:www/npm-node10
 LIB_DEPENDS=	libatk-bridge-2.0.so:accessibility/at-spi2-atk \
 		libsnappy.so:archivers/snappy \
 		libasound.so:audio/alsa-lib \
