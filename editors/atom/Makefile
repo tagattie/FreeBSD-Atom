@@ -111,6 +111,9 @@ post-patch:
 
 pre-build: build-apm-node bootstrap-script bootstrap-apm bootstrap-atom clean-backup
 build-apm-node:
+	for p in ${PATCHDIR}/node/patch-*; do \
+		${PATCH} -p0 -d ${WRKDIR}/node-v${APM_NODE_VER} < $${p}; \
+	done
 	cd ${WRKDIR}/node-v${APM_NODE_VER} && \
 		${SETENV} ${CONFIGURE_ENV} CC=${CC} CXX=${CXX} ./configure && \
 		${SETENV} ${MAKE_ENV} ${BSDMAKE} -j ${MAKE_JOBS_NUMBER}
