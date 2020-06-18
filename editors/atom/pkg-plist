@@ -3822,11 +3822,6 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/MSVSVersion.pyc
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/__init__.py
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/__init__.pyc
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/__pycache__/__init__.cpython-37.pyc
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/__pycache__/common.cpython-37.pyc
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/__pycache__/input.cpython-37.pyc
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/__pycache__/simple_copy.cpython-37.pyc
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/__pycache__/xcode_emulation.cpython-37.pyc
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/common.py
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/common.pyc
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/common_test.py
@@ -3835,8 +3830,6 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/flock_tool.py
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/generator/__init__.py
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/generator/__init__.pyc
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/generator/__pycache__/__init__.cpython-37.pyc
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/generator/__pycache__/make.cpython-37.pyc
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/generator/analyzer.py
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/generator/android.py
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/generator/cmake.py

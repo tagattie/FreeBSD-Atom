@@ -59,7 +59,7 @@ RUN_DEPENDS=	git:devel/git \
 TEST_DEPENDS=	bash:shells/bash
 
 USES=		desktop-file-utils gl gnome jpeg localbase:ldflags pkgconfig \
-		python shebangfix xorg
+		python:2.7 shebangfix xorg
 
 USE_GITHUB=	yes
 
