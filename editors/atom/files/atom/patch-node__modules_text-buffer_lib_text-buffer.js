@@ -1,6 +1,6 @@
---- node_modules/text-buffer/lib/text-buffer.js.orig	2019-12-27 06:41:17 UTC
+--- node_modules/text-buffer/lib/text-buffer.js.orig	1985-10-26 08:15:00 UTC
 +++ node_modules/text-buffer/lib/text-buffer.js
-@@ -1925,7 +1925,7 @@ class TextBuffer {
+@@ -1927,7 +1927,7 @@ class TextBuffer {
        try {
          await this.buffer.save(destination, this.getEncoding())
        } catch (error) {

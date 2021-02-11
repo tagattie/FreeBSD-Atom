@@ -1,6 +1,6 @@
---- src/main-process/atom-application.js.orig	2019-10-21 17:33:40 UTC
+--- src/main-process/atom-application.js.orig	2020-07-10 15:25:53 UTC
 +++ src/main-process/atom-application.js
-@@ -463,7 +463,7 @@ module.exports = class AtomApplication extends EventEm
+@@ -458,7 +458,7 @@ module.exports = class AtomApplication extends EventEm
        if (this.applicationMenu != null) {
          this.applicationMenu.enableWindowSpecificItems(false);
        }

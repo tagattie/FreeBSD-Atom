@@ -2,7 +2,7 @@
 
 PORTNAME=	atom
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.48.0
+DISTVERSION=	1.49.0
 CATEGORIES=	editors
 MASTER_SITES=	https://nodejs.org/dist/v${APM_NODE_VER}/:node \
 		https://github.com/tagattie/FreeBSD-Atom/releases/download/v1.42.0/:jasmine_tagged \
@@ -219,7 +219,7 @@ do-test:
 
 # Helper targets for port maintainers
 make-npm-cache:
-	# do "make patch" before executing this target
+	# do "make configure" before executing this target
 	cd ${WRKDIR} && ${RM} -r .npm
 	cd ${WRKSRC}/script && \
 		${SETENV} HOME=${WRKDIR} npm install --ignore-scripts

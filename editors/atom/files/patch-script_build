@@ -1,5 +1,14 @@
---- script/build.orig	2020-04-22 18:42:32 UTC
+--- script/build.orig	2020-07-10 15:25:53 UTC
 +++ script/build
+@@ -33,7 +33,7 @@ const argv = yargs
+   .wrap(yargs.terminalWidth())
+   .argv
+ 
+-const checkChromedriverVersion = require('./lib/check-chromedriver-version')
++// const checkChromedriverVersion = require('./lib/check-chromedriver-version')
+ const cleanOutputDirectory = require('./lib/clean-output-directory')
+ const codeSignOnMac = require('./lib/code-sign-on-mac')
+ const codeSignOnWindows = require('./lib/code-sign-on-windows')
 @@ -69,7 +69,7 @@ process.env.ELECTRON_VERSION = CONFIG.appMetadata.elec
  let binariesPromise = Promise.resolve()
  
