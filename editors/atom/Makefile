@@ -2,7 +2,7 @@
 
 PORTNAME=	atom
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.51.0
+DISTVERSION=	1.52.0
 CATEGORIES=	editors
 MASTER_SITES=	https://nodejs.org/dist/v${APM_NODE_VER}/:node \
 		https://github.com/tagattie/FreeBSD-Atom/releases/download/v1.42.0/:jasmine_tagged \
@@ -59,13 +59,13 @@ RUN_DEPENDS=	git:devel/git \
 TEST_DEPENDS=	bash:shells/bash
 
 USES=		desktop-file-utils gl gnome jpeg localbase:ldflags pkgconfig \
-		python:2.7 shebangfix xorg
+		python shebangfix xorg
 
 USE_GITHUB=	yes
 
-.include "${.CURDIR}/../../devel/electron5/Makefile.version"
+.include "${.CURDIR}/../../devel/electron6/Makefile.version"
 # See ${WRKSRC}/apm/node_modules/atom-package-manager/BUNDLED_NODE_VERSION for APM_NODE_VER
-APM_NODE_VER=	10.20.1
+APM_NODE_VER=	12.4.0
 
 BINARY_ALIAS=	python=${PYTHON_CMD}
 
@@ -181,10 +181,10 @@ clean-backup:
 
 do-build:
 	# setup download cache for electron-packager
-	${MKDIR} ${WRKSRC}/electron
+	${MKDIR} ${WRKDIR}/.cache/electron/httpsgithub.comelectronelectronreleasesdownloadv${ELECTRON_VER}electron-v${ELECTRON_VER}-freebsd-x64.zip
 	cd ${LOCALBASE}/share/electron${ELECTRON_VER_MAJOR} && \
-		zip -q -r ${WRKSRC}/electron/electron-v${ELECTRON_VER}-freebsd-x64.zip .
-	cd ${WRKSRC}/electron && \
+		zip -q -r ${WRKDIR}/.cache/electron/httpsgithub.comelectronelectronreleasesdownloadv${ELECTRON_VER}electron-v${ELECTRON_VER}-freebsd-x64.zip/electron-v${ELECTRON_VER}-freebsd-x64.zip .
+	cd ${WRKDIR}/.cache/electron/httpsgithub.comelectronelectronreleasesdownloadv${ELECTRON_VER}electron-v${ELECTRON_VER}-freebsd-x64.zip && \
 		${SHA256} -r *-v${ELECTRON_VER}-freebsd-*.zip | \
 		${SED} -e 's/ / */' > SHASUMS256.txt-${ELECTRON_VER}
 	# build atom

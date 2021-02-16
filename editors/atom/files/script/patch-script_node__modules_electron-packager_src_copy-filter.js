@@ -1,6 +1,6 @@
---- script/node_modules/electron-packager/ignore.js.orig	2019-12-27 05:37:51 UTC
-+++ script/node_modules/electron-packager/ignore.js
-@@ -19,7 +19,7 @@ function generateIgnores (opts) {
+--- script/node_modules/electron-packager/src/copy-filter.js.orig	2021-02-15 12:21:54 UTC
++++ script/node_modules/electron-packager/src/copy-filter.js
+@@ -21,7 +21,7 @@ function populateIgnoredPaths (opts) {
      } else {
        opts.ignore = [].concat(DEFAULT_IGNORES)
      }
