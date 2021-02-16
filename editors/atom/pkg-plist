@@ -3842,17 +3842,12 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/__init__.pyc
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/__pycache__/MSVSUtil.cpython-38.pyc
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/__pycache__/MSVSVersion.cpython-38.pyc
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/__pycache__/__init__.cpython-37.pyc
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/__pycache__/__init__.cpython-38.pyc
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/__pycache__/common.cpython-37.pyc
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/__pycache__/common.cpython-38.pyc
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/__pycache__/input.cpython-37.pyc
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/__pycache__/input.cpython-38.pyc
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/__pycache__/msvs_emulation.cpython-38.pyc
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/__pycache__/ninja_syntax.cpython-38.pyc
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/__pycache__/simple_copy.cpython-37.pyc
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/__pycache__/simple_copy.cpython-38.pyc
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/__pycache__/xcode_emulation.cpython-37.pyc
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/__pycache__/xcode_emulation.cpython-38.pyc
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/__pycache__/xcode_ninja.cpython-38.pyc
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/__pycache__/xcodeproj_file.cpython-38.pyc
@@ -3864,9 +3859,7 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/flock_tool.py
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/generator/__init__.py
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/generator/__init__.pyc
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/generator/__pycache__/__init__.cpython-37.pyc
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/generator/__pycache__/__init__.cpython-38.pyc
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/generator/__pycache__/make.cpython-37.pyc
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/generator/__pycache__/make.cpython-38.pyc
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/generator/__pycache__/ninja.cpython-38.pyc
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/pylib/gyp/generator/__pycache__/xcode.cpython-38.pyc
