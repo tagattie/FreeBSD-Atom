@@ -1,4 +1,4 @@
---- script/package.json.orig	2020-10-09 14:47:49 UTC
+--- script/package.json.orig	2020-11-06 18:27:28 UTC
 +++ script/package.json
 @@ -12,9 +12,7 @@
      "coffeelint": "1.15.7",
@@ -17,4 +17,4 @@
 -    "minidump": "0.9.0",
      "mkdirp": "0.5.1",
      "nock": "^13.0.2",
-     "node-fetch": "^2.6.0",
+     "node-fetch": "^2.6.1",

@@ -100,6 +100,7 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/symbols-view/vendor/ctags-darwin
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/symbols-view/vendor/ctags-linux
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/symbols-view/vendor/ctags-win32.exe
+%%DATADIR%%/resources/app.asar.unpacked/node_modules/text-buffer/node_modules/fs-admin/build/Release/fs_admin.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-bash/build/Release/tree_sitter_bash_binding.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-c/build/Release/tree_sitter_c_binding.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-cpp/build/Release/tree_sitter_cpp_binding.node
@@ -107,6 +108,7 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-embedded-template/build/Release/tree_sitter_embedded_template_binding.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-go/build/Release/tree_sitter_go_binding.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-html/build/Release/tree_sitter_html_binding.node
+%%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-java-dev/build/Release/tree_sitter_java_binding.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-javascript/build/Release/tree_sitter_javascript_binding.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-jsdoc/build/Release/tree_sitter_jsdoc_binding.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-json/build/Release/tree_sitter_json_binding.node
@@ -1631,8 +1633,6 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app/apm/node_modules/json-schema-traverse/README.md
 %%DATADIR%%/resources/app/apm/node_modules/json-schema-traverse/index.js
 %%DATADIR%%/resources/app/apm/node_modules/json-schema-traverse/package.json
-%%DATADIR%%/resources/app/apm/node_modules/json-schema-traverse/spec/fixtures/schema.js
-%%DATADIR%%/resources/app/apm/node_modules/json-schema-traverse/spec/index.spec.js
 %%DATADIR%%/resources/app/apm/node_modules/json-schema/README.md
 %%DATADIR%%/resources/app/apm/node_modules/json-schema/draft-00/hyper-schema
 %%DATADIR%%/resources/app/apm/node_modules/json-schema/draft-00/json-ref
@@ -2063,6 +2063,91 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/agentkeepalive/lib/agent.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/agentkeepalive/lib/https_agent.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/agentkeepalive/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/.tonic_example.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/LICENSE
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/README.md
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/dist/ajv.bundle.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/dist/ajv.min.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/dist/nodent.min.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/dist/regenerator.min.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/$data.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/ajv.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/cache.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/compile/_rules.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/compile/async.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/compile/equal.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/compile/error_classes.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/compile/formats.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/compile/index.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/compile/resolve.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/compile/rules.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/compile/schema_obj.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/compile/ucs2length.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/compile/util.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/_limit.jst
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/_limitItems.jst
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/_limitLength.jst
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/_limitProperties.jst
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/allOf.jst
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/anyOf.jst
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/coerce.def
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/const.jst
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/contains.jst
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/custom.jst
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/defaults.def
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/definitions.def
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/dependencies.jst
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/enum.jst
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/errors.def
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/format.jst
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/items.jst
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/missing.def
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/multipleOf.jst
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/not.jst
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/oneOf.jst
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/pattern.jst
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/properties.jst
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/propertyNames.jst
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/ref.jst
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/required.jst
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/uniqueItems.jst
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dot/validate.jst
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dotjs/README.md
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dotjs/_limit.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dotjs/_limitItems.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dotjs/_limitLength.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dotjs/_limitProperties.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dotjs/allOf.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dotjs/anyOf.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dotjs/const.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dotjs/contains.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dotjs/custom.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dotjs/dependencies.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dotjs/enum.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dotjs/format.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dotjs/items.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dotjs/multipleOf.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dotjs/not.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dotjs/oneOf.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dotjs/pattern.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dotjs/properties.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dotjs/propertyNames.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dotjs/ref.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dotjs/required.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dotjs/uniqueItems.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/dotjs/validate.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/keyword.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/patternGroups.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/refs/$data.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/refs/json-schema-draft-04.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/refs/json-schema-draft-06.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/lib/refs/json-schema-v5.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/scripts/bundle.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/scripts/compile-dots.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/scripts/info
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/scripts/prepare-tests
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ajv/scripts/travis-gh-pages
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ansi-align/CHANGELOG.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ansi-align/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ansi-align/README.md
@@ -2387,6 +2472,11 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/cmd-shim/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/cmd-shim/lib/to-batch-syntax.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/cmd-shim/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/co/History.md
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/co/LICENSE
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/co/Readme.md
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/co/index.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/co/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/code-point-at/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/code-point-at/license
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/code-point-at/package.json
@@ -2807,6 +2897,10 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/extsprintf/jsl.node.conf
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/extsprintf/lib/extsprintf.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/extsprintf/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fast-deep-equal/LICENSE
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fast-deep-equal/README.md
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fast-deep-equal/index.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fast-deep-equal/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fast-json-stable-stringify/.travis.yml
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fast-json-stable-stringify/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fast-json-stable-stringify/README.md
@@ -3087,109 +3181,6 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/lib/async.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/lib/error.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/lib/promise.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/.tonic_example.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/LICENSE
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/README.md
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/dist/ajv.bundle.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/dist/ajv.min.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/ajv.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/cache.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/compile/async.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/compile/equal.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/compile/error_classes.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/compile/formats.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/compile/index.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/compile/resolve.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/compile/rules.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/compile/schema_obj.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/compile/ucs2length.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/compile/util.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/data.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/definition_schema.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/_limit.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/_limitItems.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/_limitLength.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/_limitProperties.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/allOf.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/anyOf.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/coerce.def
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/comment.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/const.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/contains.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/custom.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/defaults.def
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/definitions.def
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/dependencies.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/enum.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/errors.def
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/format.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/if.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/items.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/missing.def
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/multipleOf.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/not.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/oneOf.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/pattern.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/properties.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/propertyNames.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/ref.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/required.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/uniqueItems.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dot/validate.jst
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/README.md
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/_limit.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/_limitItems.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/_limitLength.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/_limitProperties.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/allOf.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/anyOf.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/comment.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/const.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/contains.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/custom.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/dependencies.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/enum.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/format.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/if.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/index.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/items.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/multipleOf.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/not.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/oneOf.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/pattern.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/properties.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/propertyNames.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/ref.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/required.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/uniqueItems.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/dotjs/validate.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/keyword.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/refs/data.json
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/refs/json-schema-draft-04.json
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/refs/json-schema-draft-06.json
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/refs/json-schema-draft-07.json
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/lib/refs/json-schema-secure.json
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/package.json
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/scripts/bundle.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/scripts/compile-dots.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/scripts/info
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/scripts/prepare-tests
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/scripts/publish-built-version
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/ajv/scripts/travis-gh-pages
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/fast-deep-equal/LICENSE
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/fast-deep-equal/README.md
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/fast-deep-equal/es6/index.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/fast-deep-equal/es6/react.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/fast-deep-equal/index.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/fast-deep-equal/package.json
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/fast-deep-equal/react.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/json-schema-traverse/.travis.yml
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/json-schema-traverse/LICENSE
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/json-schema-traverse/README.md
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/json-schema-traverse/index.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/json-schema-traverse/package.json
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/json-schema-traverse/spec/fixtures/schema.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/node_modules/json-schema-traverse/spec/index.spec.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/har-validator/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/has-flag/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/has-flag/license
@@ -3437,6 +3428,11 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/json-parse-better-errors/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/json-parse-better-errors/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/json-parse-better-errors/package.json
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/json-schema-traverse/.travis.yml
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/json-schema-traverse/LICENSE
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/json-schema-traverse/README.md
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/json-schema-traverse/index.js
+%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/json-schema-traverse/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/json-schema/README.md
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/json-schema/draft-00/hyper-schema
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/json-schema/draft-00/json-ref
@@ -4912,29 +4908,6 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/update-notifier/license
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/update-notifier/package.json
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/update-notifier/readme.md
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/uri-js/LICENSE
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/uri-js/README.md
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/uri-js/dist/es5/uri.all.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/uri-js/dist/es5/uri.all.min.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/uri-js/dist/esnext/index.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/uri-js/dist/esnext/regexps-iri.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/uri-js/dist/esnext/regexps-uri.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/uri-js/dist/esnext/schemes/http.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/uri-js/dist/esnext/schemes/https.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/uri-js/dist/esnext/schemes/mailto.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/uri-js/dist/esnext/schemes/urn-uuid.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/uri-js/dist/esnext/schemes/urn.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/uri-js/dist/esnext/schemes/ws.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/uri-js/dist/esnext/schemes/wss.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/uri-js/dist/esnext/uri.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/uri-js/dist/esnext/util.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/uri-js/node_modules/punycode/LICENSE-MIT.txt
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/uri-js/node_modules/punycode/README.md
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/uri-js/node_modules/punycode/package.json
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/uri-js/node_modules/punycode/punycode.es6.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/uri-js/node_modules/punycode/punycode.js
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/uri-js/package.json
-%%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/uri-js/yarn.lock
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/url-parse-lax/index.js
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/url-parse-lax/license
 %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/url-parse-lax/package.json
@@ -5205,9 +5178,6 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app/apm/node_modules/oniguruma/build/Release/onig_scanner.node
 %%DATADIR%%/resources/app/apm/node_modules/oniguruma/build/Release/oniguruma.a
 %%DATADIR%%/resources/app/apm/node_modules/oniguruma/package.json
-%%DATADIR%%/resources/app/apm/node_modules/oniguruma/spec/onig-reg-exp-spec.js
-%%DATADIR%%/resources/app/apm/node_modules/oniguruma/spec/onig-scanner-spec.js
-%%DATADIR%%/resources/app/apm/node_modules/oniguruma/spec/onig-string-spec.js
 %%DATADIR%%/resources/app/apm/node_modules/oniguruma/src/oniguruma.js
 %%DATADIR%%/resources/app/apm/node_modules/open/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/open/README.md
@@ -5736,18 +5706,13 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/_getLength.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/_group.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/_has.js
-%%DATADIR%%/resources/app/apm/node_modules/underscore/amd/_hasObjectTag.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/_isArrayLike.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/_isBufferLike.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/_keyInObj.js
-%%DATADIR%%/resources/app/apm/node_modules/underscore/amd/_methodFingerprint.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/_optimizeCb.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/_setup.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/_shallowProperty.js
-%%DATADIR%%/resources/app/apm/node_modules/underscore/amd/_stringTagBug.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/_tagTester.js
-%%DATADIR%%/resources/app/apm/node_modules/underscore/amd/_toBufferView.js
-%%DATADIR%%/resources/app/apm/node_modules/underscore/amd/_toPath.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/_unescapeMap.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/after.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/allKeys.js
@@ -5782,7 +5747,6 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/first.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/flatten.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/functions.js
-%%DATADIR%%/resources/app/apm/node_modules/underscore/amd/get.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/groupBy.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/has.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/identity.js
@@ -5864,8 +5828,8 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/throttle.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/times.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/toArray.js
-%%DATADIR%%/resources/app/apm/node_modules/underscore/amd/toPath.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/underscore-array-methods.js
+%%DATADIR%%/resources/app/apm/node_modules/underscore/amd/underscore-oop.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/underscore.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/unescape.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/amd/union.js
@@ -5896,18 +5860,13 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/_getLength.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/_group.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/_has.js
-%%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/_hasObjectTag.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/_isArrayLike.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/_isBufferLike.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/_keyInObj.js
-%%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/_methodFingerprint.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/_optimizeCb.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/_setup.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/_shallowProperty.js
-%%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/_stringTagBug.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/_tagTester.js
-%%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/_toBufferView.js
-%%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/_toPath.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/_unescapeMap.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/after.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/allKeys.js
@@ -5942,7 +5901,6 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/first.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/flatten.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/functions.js
-%%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/get.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/groupBy.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/has.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/identity.js
@@ -6024,8 +5982,8 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/throttle.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/times.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/toArray.js
-%%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/toPath.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/underscore-array-methods.js
+%%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/underscore-oop.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/underscore.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/unescape.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/cjs/union.js
@@ -6056,18 +6014,13 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/_getLength.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/_group.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/_has.js
-%%DATADIR%%/resources/app/apm/node_modules/underscore/modules/_hasObjectTag.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/_isArrayLike.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/_isBufferLike.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/_keyInObj.js
-%%DATADIR%%/resources/app/apm/node_modules/underscore/modules/_methodFingerprint.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/_optimizeCb.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/_setup.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/_shallowProperty.js
-%%DATADIR%%/resources/app/apm/node_modules/underscore/modules/_stringTagBug.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/_tagTester.js
-%%DATADIR%%/resources/app/apm/node_modules/underscore/modules/_toBufferView.js
-%%DATADIR%%/resources/app/apm/node_modules/underscore/modules/_toPath.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/_unescapeMap.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/after.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/allKeys.js
@@ -6102,7 +6055,6 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/first.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/flatten.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/functions.js
-%%DATADIR%%/resources/app/apm/node_modules/underscore/modules/get.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/groupBy.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/has.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/identity.js
@@ -6185,7 +6137,6 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/throttle.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/times.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/toArray.js
-%%DATADIR%%/resources/app/apm/node_modules/underscore/modules/toPath.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/underscore-array-methods.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/underscore.js
 %%DATADIR%%/resources/app/apm/node_modules/underscore/modules/unescape.js
@@ -6302,7 +6253,6 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app/apm/node_modules/xtend/mutable.js
 %%DATADIR%%/resources/app/apm/node_modules/xtend/package.json
 %%DATADIR%%/resources/app/apm/node_modules/xtend/test.js
-%%DATADIR%%/resources/app/apm/node_modules/y18n/CHANGELOG.md
 %%DATADIR%%/resources/app/apm/node_modules/y18n/LICENSE
 %%DATADIR%%/resources/app/apm/node_modules/y18n/README.md
 %%DATADIR%%/resources/app/apm/node_modules/y18n/index.js
@@ -6403,20 +6353,7 @@ share/icons/hicolor/48x48/apps/atom.png
 share/icons/hicolor/512x512/apps/atom.png
 share/icons/hicolor/64x64/apps/atom.png
 @dir %%DATADIR%%/resources/app/apm/native-module/src
-@dir %%DATADIR%%/resources/app/apm/node_modules/asar/test/expected/extractthis/dir1
-@dir %%DATADIR%%/resources/app/apm/node_modules/asar/test/expected/extractthis/dir2
-@dir %%DATADIR%%/resources/app/apm/node_modules/asar/test/expected/packthis-unpack.asar.unpacked/dir2
-@dir %%DATADIR%%/resources/app/apm/node_modules/asar/test/input/extractthis-unpack-dir.asar.unpacked/dir2
-@dir %%DATADIR%%/resources/app/apm/node_modules/asar/test/input/extractthis-unpack.asar.unpacked/dir2
-@dir %%DATADIR%%/resources/app/apm/node_modules/asar/test/input/packthis/dir1
-@dir %%DATADIR%%/resources/app/apm/node_modules/asar/test/input/packthis/dir2
-@dir %%DATADIR%%/resources/app/apm/node_modules/asar/test/input/packthis-glob/x1
-@dir %%DATADIR%%/resources/app/apm/node_modules/asar/test/input/packthis-glob/x2
-@dir %%DATADIR%%/resources/app/apm/node_modules/asar/test/input/packthis-glob/y3/x1
-@dir %%DATADIR%%/resources/app/apm/node_modules/asar/test/input/packthis-glob/y3/z1/x2
-@dir %%DATADIR%%/resources/app/apm/node_modules/asar/test/input/packthis-glob/z4/w1
-@dir %%DATADIR%%/resources/app/apm/node_modules/asar/test/input/packthis-subdir/dir1
-@dir %%DATADIR%%/resources/app/apm/node_modules/asar/test/input/packthis-subdir/dir2/subdir
+@dir %%DATADIR%%/resources/app/apm/node_modules/asar/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/binary/example
 @dir %%DATADIR%%/resources/app/apm/node_modules/binary/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/bl/test
@@ -6432,240 +6369,41 @@ share/icons/hicolor/64x64/apps/atom.png
 @dir %%DATADIR%%/resources/app/apm/node_modules/d/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/delegates/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/node_modules/d/test
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/node_modules/es6-iterator/test/#
+@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/node_modules/es6-iterator/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/node_modules/es6-symbol/test
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/array/#/@@iterator
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/array/#/concat
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/array/#/copy-within
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/array/#/entries
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/array/#/fill
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/array/#/filter
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/array/#/find
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/array/#/find-index
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/array/#/keys
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/array/#/map
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/array/#/slice
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/array/#/splice
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/array/#/values
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/array/from
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/array/of
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/boolean
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/date/#
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/error/#
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/function/#
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/iterable
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/json
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/math/acosh
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/math/asinh
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/math/atanh
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/math/cbrt
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/math/clz32
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/math/cosh
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/math/expm1
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/math/fround
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/math/hypot
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/math/imul
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/math/log10
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/math/log1p
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/math/log2
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/math/sign
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/math/sinh
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/math/tanh
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/math/trunc
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/number/#
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/number/epsilon
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/number/is-finite
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/number/is-integer
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/number/is-nan
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/number/is-safe-integer
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/number/max-safe-integer
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/number/min-safe-integer
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/object/assign
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/object/entries
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/object/keys
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/object/set-prototype-of
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/promise/#/finally
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/reg-exp/#/match
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/reg-exp/#/replace
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/reg-exp/#/search
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/reg-exp/#/split
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/reg-exp/#/sticky
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/reg-exp/#/unicode
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/string/#/@@iterator
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/string/#/code-point-at
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/string/#/contains
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/string/#/ends-with
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/string/#/normalize
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/string/#/repeat
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/string/#/starts-with
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/string/from-code-point
-@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test/string/raw
-@dir %%DATADIR%%/resources/app/apm/node_modules/es6-iterator/test/#
+@dir %%DATADIR%%/resources/app/apm/node_modules/es5-ext/test
+@dir %%DATADIR%%/resources/app/apm/node_modules/es6-iterator/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/es6-symbol/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/es6-weak-map/test
-@dir %%DATADIR%%/resources/app/apm/node_modules/ext/test/function
-@dir %%DATADIR%%/resources/app/apm/node_modules/ext/test/global-this
-@dir %%DATADIR%%/resources/app/apm/node_modules/ext/test/math
-@dir %%DATADIR%%/resources/app/apm/node_modules/ext/test/object/entries
-@dir %%DATADIR%%/resources/app/apm/node_modules/ext/test/string
-@dir %%DATADIR%%/resources/app/apm/node_modules/ext/test/string_/includes
-@dir %%DATADIR%%/resources/app/apm/node_modules/ext/test/thenable_
+@dir %%DATADIR%%/resources/app/apm/node_modules/ext/node_modules/type/test
+@dir %%DATADIR%%/resources/app/apm/node_modules/ext/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/fast-json-stable-stringify/example
 @dir %%DATADIR%%/resources/app/apm/node_modules/fast-json-stable-stringify/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/fstream/examples
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/build/Release/.deps/Release/obj.target/git/src
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/build/Release/.deps/Release/obj.target/http_parser/deps/libgit2/deps/http-parser
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/build/Release/.deps/Release/obj.target/libgit2/deps/libgit2/src/allocators
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/build/Release/.deps/Release/obj.target/libgit2/deps/libgit2/src/hash
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/build/Release/.deps/Release/obj.target/libgit2/deps/libgit2/src/streams
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/build/Release/.deps/Release/obj.target/libgit2/deps/libgit2/src/transports
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/build/Release/.deps/Release/obj.target/libgit2/deps/libgit2/src/unix
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/build/Release/.deps/Release/obj.target/libgit2/deps/libgit2/src/xdiff
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/build/Release/.deps/Release/obj.target/zlib/deps/libgit2/deps/zlib
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/build/Release/obj.target/git/src
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/build/Release/obj.target/http_parser/deps/libgit2/deps/http-parser
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/build/Release/obj.target/libgit2/deps/libgit2/src/allocators
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/build/Release/obj.target/libgit2/deps/libgit2/src/hash
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/build/Release/obj.target/libgit2/deps/libgit2/src/streams
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/build/Release/obj.target/libgit2/deps/libgit2/src/transports
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/build/Release/obj.target/libgit2/deps/libgit2/src/unix
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/build/Release/obj.target/libgit2/deps/libgit2/src/xdiff
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/build/Release/obj.target/zlib/deps/libgit2/deps/zlib
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/deps/libgit2/.github
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/deps/libgit2/azure-pipelines
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/deps/libgit2/ci
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/deps/libgit2/cmake/Modules
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/deps/libgit2/deps/http-parser
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/deps/libgit2/deps/ntlmclient
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/deps/libgit2/deps/pcre/cmake
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/deps/libgit2/deps/winhttp
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/deps/libgit2/deps/zlib
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/deps/libgit2/docs
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/deps/libgit2/examples
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/deps/libgit2/include/git2/sys
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/deps/libgit2/script
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/deps/libgit2/src/allocators
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/deps/libgit2/src/hash/sha1dc
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/deps/libgit2/src/streams
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/deps/libgit2/src/transports
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/deps/libgit2/src/unix
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/deps/libgit2/src/win32
-@dir %%DATADIR%%/resources/app/apm/node_modules/git-utils/deps/libgit2/src/xdiff
 @dir %%DATADIR%%/resources/app/apm/node_modules/github-from-package/example
 @dir %%DATADIR%%/resources/app/apm/node_modules/github-from-package/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/json-schema/draft-03/examples
 @dir %%DATADIR%%/resources/app/apm/node_modules/json-schema/test
+@dir %%DATADIR%%/resources/app/apm/node_modules/json-schema-traverse/spec
 @dir %%DATADIR%%/resources/app/apm/node_modules/json-stringify-safe/test
-@dir %%DATADIR%%/resources/app/apm/node_modules/keytar/build/Release/.deps/Release/obj.target/keytar/src
-@dir %%DATADIR%%/resources/app/apm/node_modules/keytar/build/Release/obj.target/keytar/src
-@dir %%DATADIR%%/resources/app/apm/node_modules/keytar/node_modules/nan/doc
-@dir %%DATADIR%%/resources/app/apm/node_modules/keytar/node_modules/nan/tools
+@dir %%DATADIR%%/resources/app/apm/node_modules/keytar/node_modules
 @dir %%DATADIR%%/resources/app/apm/node_modules/keytar/src
 @dir %%DATADIR%%/resources/app/apm/node_modules/minimist/example
 @dir %%DATADIR%%/resources/app/apm/node_modules/minimist/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/mkpath/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/mv/node_modules/mkdirp/examples
 @dir %%DATADIR%%/resources/app/apm/node_modules/mv/node_modules/mkdirp/test
-@dir %%DATADIR%%/resources/app/apm/node_modules/mv/node_modules/ncp/test/fixtures/src/sub
+@dir %%DATADIR%%/resources/app/apm/node_modules/mv/node_modules/ncp/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/mv/node_modules/rimraf/test
-@dir %%DATADIR%%/resources/app/apm/node_modules/mv/test/a-folder/another-folder
-@dir %%DATADIR%%/resources/app/apm/node_modules/nan/doc
-@dir %%DATADIR%%/resources/app/apm/node_modules/nan/tools
-@dir %%DATADIR%%/resources/app/apm/node_modules/ncp/test/fixtures/src/sub
+@dir %%DATADIR%%/resources/app/apm/node_modules/mv/test
+@dir %%DATADIR%%/resources/app/apm/node_modules/ncp/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/next-tick/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/node-abi/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/noop-logger/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/nopt/examples
 @dir %%DATADIR%%/resources/app/apm/node_modules/nopt/test
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/content/cli-commands
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/content/configuring-npm
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/content/using-npm
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-access
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-adduser
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-audit
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-bin
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-bugs
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-build
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-bundle
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-cache
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-ci
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-completion
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-config
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-dedupe
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-deprecate
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-dist-tag
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-docs
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-doctor
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-edit
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-explore
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-fund
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-help
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-help-search
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-hook
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-init
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-install
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-install-ci-test
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-install-test
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-link
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-logout
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-ls
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-org
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-outdated
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-owner
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-pack
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-ping
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-prefix
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-profile
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-prune
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-publish
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-rebuild
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-repo
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-restart
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-root
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-run-script
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-search
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-shrinkwrap
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-star
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-stars
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-start
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-stop
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-team
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-test
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-token
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-uninstall
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-unpublish
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-update
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-version
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-view
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/cli-commands/npm-whoami
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/configuring-npm/folders
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/configuring-npm/install
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/configuring-npm/npmrc
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/configuring-npm/package-json
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/configuring-npm/package-lock-json
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/configuring-npm/package-locks
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/configuring-npm/shrinkwrap-json
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/icons
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/static/d
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/using-npm/config
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/using-npm/developers
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/using-npm/disputes
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/using-npm/orgs
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/using-npm/registry
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/using-npm/removal
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/using-npm/scope
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/using-npm/scripts
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/public/using-npm/semver
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/src/components/home
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/src/images
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/src/pages
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/docs/src/templates
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/man/man1
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/man/man5
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/man/man7
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/JSONStream/examples
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/JSONStream/test/fixtures
+@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/JSONStream/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/agent-base/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ansicolors/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ansistyles/test
@@ -6682,7 +6420,7 @@ share/icons/hicolor/64x64/apps/atom.png
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/editor/example
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/encoding/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/err-code/test
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/es-abstract/test/helpers
+@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/es-abstract/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/es-to-primitive/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fast-json-stable-stringify/example
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/fast-json-stable-stringify/test
@@ -6693,63 +6431,40 @@ share/icons/hicolor/64x64/apps/atom.png
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/function-bind/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/gentle-fs/node_modules/iferr/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/has/test
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/has-symbols/test/shams
+@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/has-symbols/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/http-proxy-agent/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/ip/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/is-symbol/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/isexe/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/json-schema/draft-03/examples
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/json-schema/test
+@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/json-schema-traverse/spec
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/json-stringify-safe/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/jsonparse/examples
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/jsonparse/test
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/libnpmaccess/test/util
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/libnpmorg/test/util
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/libnpmpublish/test/util
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/libnpmsearch/test/util
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/libnpmteam/test/util
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/lockfile/test/fixtures
+@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/libnpmaccess/test
+@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/libnpmorg/test
+@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/libnpmpublish/test
+@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/libnpmsearch/test
+@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/libnpmteam/test
+@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/lockfile/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/minimist/example
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/minimist/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/mkdirp/node_modules/minimist/example
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/mkdirp/node_modules/minimist/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/mute-stream/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/gyp/data/win
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/test/fixtures
+@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/node-gyp/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/example
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/dotdot/abc
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/module_dir/xmodules/aaa
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/module_dir/ymodules/aaa
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/module_dir/zmodules/bbb
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/node_path/x/aaa
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/node_path/x/ccc
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/node_path/y/bbb
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/node_path/y/ccc
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/pathfilter/deep_ref
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/precedence/aaa
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/precedence/bbb
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/resolver/baz
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/resolver/browser_field
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/resolver/dot_main
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/resolver/dot_slash_main
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/resolver/incorrect_main
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/resolver/invalid_main
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/resolver/multirepo/packages/package-a
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/resolver/multirepo/packages/package-b
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/resolver/other_path/lib
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/resolver/quux/foo
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/resolver/same_names/foo
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/resolver/symlinked/_/node_modules
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/resolver/symlinked/_/symlink_target
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test/resolver/without_basedir
+@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/normalize-package-data/node_modules/resolve/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/npm-normalize-package-bin/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/object-keys/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/object.getownpropertydescriptors/test
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/performance-now/test/scripts
+@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/performance-now/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/promise-retry/node_modules/retry/example
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/promise-retry/node_modules/retry/test/integration
+@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/promise-retry/node_modules/retry/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/promise-retry/test
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/promzard/example/npm-init
+@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/promzard/example
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/promzard/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/proto-list/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/pseudomap/test
@@ -6757,16 +6472,12 @@ share/icons/hicolor/64x64/apps/atom.png
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/qrcode-terminal/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/qs/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/rc/test
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/read-installed/test/fixtures/extraneous-detected
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/read-installed/test/fixtures/extraneous-dev-dep
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/read-installed/test/fixtures/grandparent-peer
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/read-installed/test/fixtures/grandparent-peer-dev
+@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/read-installed/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/registry-auth-token/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/retry/example
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/retry/test/integration
+@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/retry/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/smart-buffer/typings
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/socks/docs/examples/javascript
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/socks/docs/examples/typescript
+@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/socks/docs/examples
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/socks/typings/client
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/socks/typings/common
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/socks-proxy-agent/node_modules/agent-base/test
@@ -6775,68 +6486,29 @@ share/icons/hicolor/64x64/apps/atom.png
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/text-table/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/through/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/typedarray/example
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/typedarray/test/server
+@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/typedarray/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/umask/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/unique-filename/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/unique-slug/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/util-promisify/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/validate-npm-package-name/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/wcwidth/test
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/worker-farm/examples/basic
-@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/worker-farm/examples/pi
+@dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/worker-farm/examples
 @dir %%DATADIR%%/resources/app/apm/node_modules/npm/node_modules/worker-farm/tests
-@dir %%DATADIR%%/resources/app/apm/node_modules/oniguruma/build/Release/.deps/Release/obj.target/onig_scanner/src
-@dir %%DATADIR%%/resources/app/apm/node_modules/oniguruma/build/Release/.deps/Release/obj.target/oniguruma/deps/onig/enc
-@dir %%DATADIR%%/resources/app/apm/node_modules/oniguruma/build/Release/obj.target/onig_scanner/src
-@dir %%DATADIR%%/resources/app/apm/node_modules/oniguruma/build/Release/obj.target/oniguruma/deps/onig/enc
-@dir %%DATADIR%%/resources/app/apm/node_modules/oniguruma/deps/onig/doc
-@dir %%DATADIR%%/resources/app/apm/node_modules/oniguruma/deps/onig/enc
-@dir %%DATADIR%%/resources/app/apm/node_modules/oniguruma/deps/onig/m4
-@dir %%DATADIR%%/resources/app/apm/node_modules/oniguruma/deps/onig/sample
-@dir %%DATADIR%%/resources/app/apm/node_modules/oniguruma/deps/onig/win32
-@dir %%DATADIR%%/resources/app/apm/node_modules/performance-now/test/scripts
+@dir %%DATADIR%%/resources/app/apm/node_modules/oniguruma/spec
+@dir %%DATADIR%%/resources/app/apm/node_modules/performance-now/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/qs/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/rc/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/simple-concat/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/tar/examples
-@dir %%DATADIR%%/resources/app/apm/node_modules/tar/test/link-file-entry-collision
-@dir %%DATADIR%%/resources/app/apm/node_modules/tar-fs/test/fixtures/a
-@dir %%DATADIR%%/resources/app/apm/node_modules/tar-fs/test/fixtures/b/a
-@dir %%DATADIR%%/resources/app/apm/node_modules/tar-fs/test/fixtures/d/sub-dir
-@dir %%DATADIR%%/resources/app/apm/node_modules/tar-fs/test/fixtures/d/sub-files
-@dir %%DATADIR%%/resources/app/apm/node_modules/tar-fs/test/fixtures/e/directory
-@dir %%DATADIR%%/resources/app/apm/node_modules/tmp/test/symlinkme
+@dir %%DATADIR%%/resources/app/apm/node_modules/tar/test
+@dir %%DATADIR%%/resources/app/apm/node_modules/tar-fs/test
+@dir %%DATADIR%%/resources/app/apm/node_modules/tmp/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/touch/node_modules/nopt/examples
 @dir %%DATADIR%%/resources/app/apm/node_modules/touch/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/traverse/examples
 @dir %%DATADIR%%/resources/app/apm/node_modules/traverse/test
-@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/_lib
-@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/array
-@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/array-length
-@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/array-like
-@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/date
-@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/error
-@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/finite
-@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/function
-@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/integer
-@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/iterable
-@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/lib
-@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/natural-number
-@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/number
-@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/object
-@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/plain-function
-@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/plain-object
-@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/promise
-@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/prototype
-@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/reg-exp
-@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/safe-integer
-@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/string
-@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/thenable
-@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/time-value
-@dir %%DATADIR%%/resources/app/apm/node_modules/type/test/value
+@dir %%DATADIR%%/resources/app/apm/node_modules/type/test
 @dir %%DATADIR%%/resources/app/apm/node_modules/wordwrap/example
 @dir %%DATADIR%%/resources/app/apm/node_modules/wordwrap/test
-@dir %%DATADIR%%/resources/app/apm/node_modules/wrench/tests/readdir/foo/bar
-@dir %%DATADIR%%/resources/app/apm/node_modules/wrench/tests/shown/.hidden
-@dir %%DATADIR%%/resources/app/apm/node_modules/wrench/tests/shown/foo/bar
-@dir %%DATADIR%%/resources/app/apm/node_modules/wrench/tests/withsymlinks
+@dir %%DATADIR%%/resources/app/apm/node_modules/wrench/tests

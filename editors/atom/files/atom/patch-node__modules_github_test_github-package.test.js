@@ -1,6 +1,6 @@
---- node_modules/github/test/github-package.test.js.orig	2020-02-05 20:24:36 UTC
+--- node_modules/github/test/github-package.test.js.orig	2020-04-06 12:35:49 UTC
 +++ node_modules/github/test/github-package.test.js
-@@ -1040,7 +1040,7 @@ describe('GithubPackage', function() {
+@@ -1063,7 +1063,7 @@ describe('GithubPackage', function() {
  
      describe('when a file change is made outside Atom in workspace 1', function() {
        beforeEach(function() {
@@ -9,7 +9,7 @@
            this.skip();
          }
  
-@@ -1058,7 +1058,7 @@ describe('GithubPackage', function() {
+@@ -1081,7 +1081,7 @@ describe('GithubPackage', function() {
  
      describe('when a file change is made outside Atom in workspace 2', function() {
        beforeEach(function() {

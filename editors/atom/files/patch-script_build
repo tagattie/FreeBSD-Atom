@@ -1,4 +1,4 @@
---- script/build.orig	2020-07-10 15:25:53 UTC
+--- script/build.orig	2020-11-06 18:27:28 UTC
 +++ script/build
 @@ -33,7 +33,7 @@ const argv = yargs
    .wrap(yargs.terminalWidth())
@@ -9,7 +9,7 @@
  const cleanOutputDirectory = require('./lib/clean-output-directory')
  const codeSignOnMac = require('./lib/code-sign-on-mac')
  const codeSignOnWindows = require('./lib/code-sign-on-windows')
-@@ -69,7 +69,7 @@ process.env.ELECTRON_VERSION = CONFIG.appMetadata.elec
+@@ -71,7 +71,7 @@ process.env.ELECTRON_VERSION = CONFIG.appMetadata.elec
  let binariesPromise = Promise.resolve()
  
  if (!argv.existingBinaries) {
@@ -18,7 +18,7 @@
    cleanOutputDirectory()
    copyAssets()
    transpilePackagesWithCustomTranspilerPaths()
-@@ -89,7 +89,7 @@ if (!argv.existingBinaries) {
+@@ -91,7 +91,7 @@ if (!argv.existingBinaries) {
  if (!argv.generateApiDocs) {
    binariesPromise
      .then(packageApplication)

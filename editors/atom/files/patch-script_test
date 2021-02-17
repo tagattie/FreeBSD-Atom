@@ -1,4 +1,4 @@
---- script/test.orig	2020-10-09 14:47:49 UTC
+--- script/test.orig	2020-11-06 18:27:28 UTC
 +++ script/test
 @@ -56,7 +56,7 @@ if (process.platform === 'darwin') {
    const executablePaths = glob.sync(path.join(CONFIG.buildOutputPath, '*.app'))
@@ -9,12 +9,21 @@
    const executablePaths = glob.sync(path.join(CONFIG.buildOutputPath, 'atom-*', 'atom'))
    assertExecutablePaths(executablePaths)
    executablePath = executablePaths[0]
-@@ -227,7 +227,7 @@ function testSuitesForPlatform (platform) {
-     case 'win32':
-       suites = (process.arch === 'x64') ? [runCoreMainProcessTests, runCoreRenderProcessTests] : [runCoreMainProcessTests]
-       break
--    case 'linux':
-+    case 'linux': case 'freebsd':
-       suites = [runCoreMainProcessTests]
-       break
-     default:
+@@ -177,7 +177,7 @@ function runCoreMainProcessTests (callback) {
+     '--test', '--main-process', testPath
+   ]
+ 
+-  if(process.env.CI && process.platform === 'linux') {
++  if(process.env.CI && (process.platform === 'linux' || process.platform === 'freebsd')) {
+       testArguments.push('--no-sandbox')
+   }
+ 
+@@ -288,7 +288,7 @@ function requestedTestSuites (platform) {
+   let benchmark = argv.coreBenchmark
+ 
+   // Operating system overrides:
+-  coreMain = coreMain || (platform === 'linux') || (platform === 'win32' && process.arch === 'x86')
++  coreMain = coreMain || (platform === 'linux' || process.platform === 'freebsd') || (platform === 'win32' && process.arch === 'x86')
+ 
+   // split package tests (used for macos in CI)
+   const PACKAGES_TO_TEST_IN_PARALLEL = 23
