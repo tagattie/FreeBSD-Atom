@@ -1,29 +1,29 @@
---- script/test.orig	2020-11-06 18:27:28 UTC
+--- script/test.orig	2021-01-13 18:29:23 UTC
 +++ script/test
-@@ -56,7 +56,7 @@ if (process.platform === 'darwin') {
-   const executablePaths = glob.sync(path.join(CONFIG.buildOutputPath, '*.app'))
-   assertExecutablePaths(executablePaths)
-   executablePath = path.join(executablePaths[0], 'Contents', 'MacOS', path.basename(executablePaths[0], '.app'))
+@@ -69,7 +69,7 @@ if (process.platform === 'darwin') {
+     'MacOS',
+     path.basename(executablePaths[0], '.app')
+   );
 -} else if (process.platform === 'linux') {
 +} else if (process.platform === 'linux' || process.platform === 'freebsd') {
-   const executablePaths = glob.sync(path.join(CONFIG.buildOutputPath, 'atom-*', 'atom'))
-   assertExecutablePaths(executablePaths)
-   executablePath = executablePaths[0]
-@@ -177,7 +177,7 @@ function runCoreMainProcessTests (callback) {
-     '--test', '--main-process', testPath
-   ]
+   const executablePaths = glob.sync(
+     path.join(CONFIG.buildOutputPath, 'atom-*', 'atom')
+   );
+@@ -243,7 +243,7 @@ function runCoreMainProcessTests(callback) {
+     testPath
+   ];
  
--  if(process.env.CI && process.platform === 'linux') {
-+  if(process.env.CI && (process.platform === 'linux' || process.platform === 'freebsd')) {
-       testArguments.push('--no-sandbox')
+-  if (process.env.CI && process.platform === 'linux') {
++  if (process.env.CI && (process.platform === 'linux' || process.platform === 'freebsd')) {
+     testArguments.push('--no-sandbox');
    }
  
-@@ -288,7 +288,7 @@ function requestedTestSuites (platform) {
-   let benchmark = argv.coreBenchmark
- 
+@@ -396,7 +396,7 @@ function requestedTestSuites(platform) {
    // Operating system overrides:
--  coreMain = coreMain || (platform === 'linux') || (platform === 'win32' && process.arch === 'x86')
-+  coreMain = coreMain || (platform === 'linux' || process.platform === 'freebsd') || (platform === 'win32' && process.arch === 'x86')
+   coreMain =
+     coreMain ||
+-    platform === 'linux' ||
++    (platform === 'linux' || platform === 'freebsd') ||
+     (platform === 'win32' && process.arch === 'x86');
  
    // split package tests (used for macos in CI)
-   const PACKAGES_TO_TEST_IN_PARALLEL = 23

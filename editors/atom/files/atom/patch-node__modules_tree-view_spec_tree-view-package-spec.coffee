@@ -1,6 +1,6 @@
---- node_modules/tree-view/spec/tree-view-package-spec.coffee.orig	2020-09-14 19:30:31 UTC
+--- node_modules/tree-view/spec/tree-view-package-spec.coffee.orig	2020-10-29 14:16:56 UTC
 +++ node_modules/tree-view/spec/tree-view-package-spec.coffee
-@@ -5039,7 +5039,7 @@ describe "TreeView", ->
+@@ -5068,7 +5068,7 @@ describe "TreeView", ->
          treeView.rootDragAndDrop.onDragStart(dragStartEvent)
  
          expect(dragStartEvent.dataTransfer.getData("text/plain")).toEqual gammaDirPath

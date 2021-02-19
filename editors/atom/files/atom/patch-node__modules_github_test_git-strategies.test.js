@@ -1,6 +1,6 @@
---- node_modules/github/test/git-strategies.test.js.orig	2020-02-26 21:07:14 UTC
+--- node_modules/github/test/git-strategies.test.js.orig	2020-11-06 15:10:31 UTC
 +++ node_modules/github/test/git-strategies.test.js
-@@ -1535,7 +1535,7 @@ import * as reporterProxy from '../lib/reporter-proxy'
+@@ -1536,7 +1536,7 @@ import * as reporterProxy from '../lib/reporter-proxy'
            assert.match(options.env.DISPLAY, /^.+$/);
            assert.match(options.env.SSH_ASKPASS, /git-askpass-atom\.sh$/);
            assert.match(options.env.GIT_ASKPASS, /git-askpass-atom\.sh$/);
