@@ -120,6 +120,7 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-typescript/build/Release/tree_sitter_typescript_binding.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter/build/Release/tree_sitter_runtime_binding.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/vscode-ripgrep/bin/rg
+%%DATADIR%%/resources/app.asar.unpacked/node_modules/whats-my-line/node_modules/superstring/build/Release/superstring.node
 %%DATADIR%%/resources/app.asar.unpacked/resources/atom.png
 %%DATADIR%%/resources/app/apm/.github/no-response.yml
 %%DATADIR%%/resources/app/apm/BUNDLED_NODE_VERSION
