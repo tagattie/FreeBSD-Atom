@@ -10,6 +10,8 @@ share/applications/atom.desktop
 %%DATADIR%%/icudtl.dat
 %%DATADIR%%/libEGL.so
 %%DATADIR%%/libGLESv2.so
+%%DATADIR%%/libvk_swiftshader.so
+%%DATADIR%%/libvulkan.so
 %%DATADIR%%/locales/am.pak
 %%DATADIR%%/locales/ar.pak
 %%DATADIR%%/locales/bg.pak
@@ -63,7 +65,6 @@ share/applications/atom.desktop
 %%DATADIR%%/locales/vi.pak
 %%DATADIR%%/locales/zh-CN.pak
 %%DATADIR%%/locales/zh-TW.pak
-%%DATADIR%%/natives_blob.bin
 %%DATADIR%%/resources.pak
 %%DATADIR%%/resources/LICENSE.md
 %%DATADIR%%/resources/app.asar
@@ -72,6 +73,10 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/@atom/watcher/build/Release/watcher.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/ctags/build/Release/ctags.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/fs-admin/build/Release/fs_admin.node
+%%DATADIR%%/resources/app.asar.unpacked/node_modules/fswin/electron/ia32/fswin.node
+%%DATADIR%%/resources/app.asar.unpacked/node_modules/fswin/electron/x64/fswin.node
+%%DATADIR%%/resources/app.asar.unpacked/node_modules/fswin/node/ia32/fswin.node
+%%DATADIR%%/resources/app.asar.unpacked/node_modules/fswin/node/x64/fswin.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/git-utils/build/Release/git.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/github/bin/git-askpass-atom.js
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/github/bin/git-askpass-atom.sh
@@ -81,6 +86,7 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/github/bin/linux-ssh-wrapper.sh
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/keyboard-layout/build/Release/keyboard-layout-manager.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/keytar/build/Release/keytar.node
+%%DATADIR%%/resources/app.asar.unpacked/node_modules/language-rust-bundled/node_modules/tree-sitter-rust/build/Release/tree_sitter_rust_binding.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/nslog/build/Release/nslog.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/oniguruma/build/Release/onig_scanner.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/pathwatcher/build/Release/pathwatcher.node
@@ -115,12 +121,10 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-python/build/Release/tree_sitter_python_binding.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-regex/build/Release/tree_sitter_regex_binding.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-ruby/build/Release/tree_sitter_ruby_binding.node
-%%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-rust/build/Release/tree_sitter_rust_binding.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-typescript/build/Release/tree_sitter_tsx_binding.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter-typescript/build/Release/tree_sitter_typescript_binding.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/tree-sitter/build/Release/tree_sitter_runtime_binding.node
 %%DATADIR%%/resources/app.asar.unpacked/node_modules/vscode-ripgrep/bin/rg
-%%DATADIR%%/resources/app.asar.unpacked/node_modules/whats-my-line/node_modules/superstring/build/Release/superstring.node
 %%DATADIR%%/resources/app.asar.unpacked/resources/atom.png
 %%DATADIR%%/resources/app/apm/.github/no-response.yml
 %%DATADIR%%/resources/app/apm/BUNDLED_NODE_VERSION
@@ -6338,12 +6342,12 @@ share/applications/atom.desktop
 %%DATADIR%%/resources/app/apm/templates/theme/styles/colors.less
 %%DATADIR%%/resources/app/apm/templates/theme/styles/syntax-variables.less
 %%DATADIR%%/resources/app/atom.sh
-%%DATADIR%%/resources/electron.asar
 %%DATADIR%%/snapshot_blob.bin
 %%DATADIR%%/swiftshader/libEGL.so
 %%DATADIR%%/swiftshader/libGLESv2.so
 %%DATADIR%%/v8_context_snapshot.bin
 %%DATADIR%%/version
+%%DATADIR%%/vk_swiftshader_icd.json
 share/icons/hicolor/1024x1024/apps/atom.png
 share/icons/hicolor/128x128/apps/atom.png
 share/icons/hicolor/16x16/apps/atom.png

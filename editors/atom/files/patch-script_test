@@ -1,4 +1,4 @@
---- script/test.orig	2021-01-13 18:29:23 UTC
+--- script/test.orig	2021-04-09 16:13:53 UTC
 +++ script/test
 @@ -69,7 +69,7 @@ if (process.platform === 'darwin') {
      'MacOS',
@@ -9,7 +9,7 @@
    const executablePaths = glob.sync(
      path.join(CONFIG.buildOutputPath, 'atom-*', 'atom')
    );
-@@ -243,7 +243,7 @@ function runCoreMainProcessTests(callback) {
+@@ -244,7 +244,7 @@ function runCoreMainProcessTests(callback) {
      testPath
    ];
  
@@ -18,7 +18,7 @@
      testArguments.push('--no-sandbox');
    }
  
-@@ -396,7 +396,7 @@ function requestedTestSuites(platform) {
+@@ -397,7 +397,7 @@ function requestedTestSuites(platform) {
    // Operating system overrides:
    coreMain =
      coreMain ||
